@@ -1,0 +1,45 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-kfy-Johari-Surendra Singh Pangtey-SP-Shauka-Myth & History.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-SP-Shauka-Myth_%26_History.webm",
+  "format": "WebM",
+  "duration": "252",
+  "title": "Myth & History",
+  "description": "Surendra Singh Pangtey narrates the origin story with a historic account in Johari",
+  "year": "",
+  "date": "",
+  "projectName": "Johari",
+  "language": "Kumaoni",
+  "languageISO": "kfy",
+  "dialect": "Johari",
+  "recordingPlace": "Pithoragarh district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Surendra Singh Pangtey",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Myth & History",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-SP-Shauka-Myth_%26_History.webm/500px-OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-SP-Shauka-Myth_%26_History.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/S.S._Pangtey_%28from_MarginalizedAadhaar%2C_2019%29.jpg/500px-S.S._Pangtey_%28from_MarginalizedAadhaar%2C_2019%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "hi",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-SP-Shauka-Myth_%26_History.webm.hi.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-kfy-Johari-Surendra Singh Pangtey-SP-Shauka-Myth & History.webm.hi.srt": "Psubhashish"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "languageISO": "thq",
+  "language": "Tharu",
+  "place": "Saptari district, Nepal",
+  "map": [
+    26.6,
+    86.75
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Achhai_Chaudhary_%28cropped%29.png/500px-Achhai_Chaudhary_%28cropped%29.png",
+    "by": "Sanjib Chaudhary"
+  },
+  "deposits": [],
+  "extras": []
+}

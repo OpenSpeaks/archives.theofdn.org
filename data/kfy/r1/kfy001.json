@@ -1,0 +1,45 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-kfy-Johari-Surendra Singh Pangtey-Subhashish Panigrahi-Introduction.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-Subhashish_Panigrahi-Introduction.webm",
+  "format": "WebM",
+  "duration": "25",
+  "title": "Introduction",
+  "description": "This video is taken from Johari (original title: जोहारी), the [[:w:Johari (dialect) |eponymous]] 2026 short film by Subhashish Panigrahi. The film, part of the OpenSpeaks Archives, uses archival footage from the production of Panigrahi's 2021 documentary Marginalized Aadhaar. Johari features interviews with Surendra Singh Pangtey, a native speaker of the Johari dialect of the Kumaoni language, author, and former Indian Army and Indian Administrative Service officer. He speaks in two major forms of Johari. One form is used in highly context-specific environments, mostly historically, such as when two Shauka individuals on horses meet for a very brief moment as their horses cross paths. This form uses a wide set of words from the now-extinct Rankas and Shaukiya-Khun, both forms used by the tribe in the past. The other, second form is used in everyday conversation by the Shauka people, known as Johari.",
+  "year": "",
+  "date": "",
+  "projectName": "Johari",
+  "language": "Kumaoni",
+  "languageISO": "kfy",
+  "dialect": "Johari",
+  "recordingPlace": "Pithoragarh district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Surendra Singh Pangtey",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Introduction",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-Subhashish_Panigrahi-Introduction.webm/500px-OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-Subhashish_Panigrahi-Introduction.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/S.S._Pangtey_%28from_MarginalizedAadhaar%2C_2019%29.jpg/500px-S.S._Pangtey_%28from_MarginalizedAadhaar%2C_2019%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-Subhashish_Panigrahi-Introduction.webm.en.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-kfy-Johari-Surendra Singh Pangtey-Subhashish Panigrahi-Introduction.webm.en.srt": "Psubhashish"
+  }
+}

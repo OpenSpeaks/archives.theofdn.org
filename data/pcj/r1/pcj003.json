@@ -1,0 +1,57 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Pcj-Gorum-Opino Gomango-Balaram Muduli-Language in Children's Education.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/OpenSpeaks-Pcj-Gorum-Opino_Gomango-Balaram_Muduli-Language_in_Children%27s_Education.webm",
+  "format": "WebM",
+  "duration": "75",
+  "title": "Language in Children's Education",
+  "description": "In this video, Balaram Muduli, a speaker of the Gorum language from Odisha, India, introduces himself and discusses the challenges posed by the lack of teachers to teach in Gorum. Muduli was interviewed on the 1st March, 2026, by Opino Gomango, a Sora-language speaker in Bhubaneswar, Odisha. The interview was subtitled in English at the location by Gomango, based on a verbatim Odia translation by Muduli. Footage and subtitles were edited by Subhashish Panigrahi and were published under the OpenSpeaks Archives project in 2026.",
+  "year": "",
+  "date": "",
+  "projectName": "Gorum",
+  "language": "Gorum",
+  "languageISO": "pcj",
+  "dialect": "",
+  "recordingPlace": "Koraput district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Balaram Muduli",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Language in Children's Education",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/OpenSpeaks-Pcj-Gorum-Opino_Gomango-Balaram_Muduli-Language_in_Children%27s_Education.webm/500px-OpenSpeaks-Pcj-Gorum-Opino_Gomango-Balaram_Muduli-Language_in_Children%27s_Education.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Balaram_Muduli_%28cropped%29.jpg/500px-Balaram_Muduli_%28cropped%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Pcj-Gorum-Opino_Gomango-Balaram_Muduli-Language_in_Children%27s_Education.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Pcj-Gorum-Opino_Gomango-Balaram_Muduli-Language_in_Children%27s_Education.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Pcj-Gorum-Opino Gomango-Balaram Muduli-Language in Children's Education.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Pcj-Gorum-Opino Gomango-Balaram Muduli-Language in Children's Education.webm.or.srt": "Psubhashish"
+  }
+}

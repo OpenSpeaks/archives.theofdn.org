@@ -1,0 +1,57 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Jun-Opino Gomango-Kshetrabasi Juanga-Short Introduction.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/OpenSpeaks-Jun-Opino_Gomango-Kshetrabasi_Juanga-Short_Introduction.webm",
+  "format": "WebM",
+  "duration": "43",
+  "title": "Short Introduction",
+  "description": "In this video, Kshetrabasi Juanga, a speaker of Juang language of Odisha, India and a resident of Keonjhar district of the Odisha state, introduces himself on 28 September 2025. Interviewed by Opino Gomango in Mysore, Karnataka, India. Unused or trimmed archival footage was edited by Panigrahi and published under the OpenSpeaks Archives project in 2026. Odia subtitles are by Kshetrabasi Juanga and English subtitles by Panigrahi.",
+  "year": "",
+  "date": "",
+  "projectName": "Juang",
+  "language": "Juang",
+  "languageISO": "jun",
+  "dialect": "",
+  "recordingPlace": "Keonjhar district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Kshetrabasi Juanga",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Short Introduction",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/OpenSpeaks-Jun-Opino_Gomango-Kshetrabasi_Juanga-Short_Introduction.webm/500px-OpenSpeaks-Jun-Opino_Gomango-Kshetrabasi_Juanga-Short_Introduction.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Kshetrabasi_Juanga.png/500px-Kshetrabasi_Juanga.png",
+      "by": "Opino Gomango / Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Jun-Opino_Gomango-Kshetrabasi_Juanga-Short_Introduction.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Jun-Opino_Gomango-Kshetrabasi_Juanga-Short_Introduction.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Jun-Opino Gomango-Kshetrabasi Juanga-Short Introduction.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Jun-Opino Gomango-Kshetrabasi Juanga-Short Introduction.webm.or.srt": "Psubhashish"
+  }
+}

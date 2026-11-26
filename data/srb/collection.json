@@ -1,0 +1,45 @@
+{
+  "languageISO": "srb",
+  "language": "Sora",
+  "place": "Rayagada district, Odisha, India",
+  "map": [
+    19.17,
+    83.42
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ramani_Dalbehera_01.jpg/500px-Ramani_Dalbehera_01.jpg",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [
+    {
+      "label": "Language Archive Cologne",
+      "url": "https://hdl.handle.net/11341/0000-0000-0000-439E"
+    }
+  ],
+  "extras": [
+    {
+      "title": "Lanjia Sora elder Ramani standing in front of a house",
+      "fileName": "Lanjia_Sora_elder_Ramani_in_Rejingtal,_Rayagada_district,_Odisha,_India.jpg",
+      "url": "https://hdl.handle.net/11341/0000-0000-0000-439F",
+      "id": "hdl:11341/0000-0000-0000-439F"
+    },
+    {
+      "title": "Lanjia Sora elder Ramani in traditional attire",
+      "fileName": "Lanjia_Saura_woman_in_traditional_jewelry.jpg",
+      "url": "https://hdl.handle.net/11341/0000-0000-0000-43A0",
+      "id": "hdl:11341/0000-0000-0000-43A0"
+    },
+    {
+      "title": "Government Upper Primary School, Rejingtal, Rayagada district, Odisha",
+      "fileName": "Government_Upper_Primary_School,_Rejingtal,_Rayagada_district,_Odisha.jpg",
+      "url": "https://hdl.handle.net/11341/0000-0000-0000-43A1",
+      "id": "hdl:11341/0000-0000-0000-43A1"
+    },
+    {
+      "title": "MarginalizedAadhaar, by Subhashish Panigrahi",
+      "fileName": "Marginalized_Aadhaar-Subhashish-Panigrahi.pdf",
+      "url": "https://hdl.handle.net/11341/0000-0000-0000-43DF",
+      "id": "hdl:11341/0000-0000-0000-43DF"
+    }
+  ]
+}

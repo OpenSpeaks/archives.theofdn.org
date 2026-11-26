@@ -1,0 +1,42 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-pcj-Gorum-Opino Gomango-Balaram Muduli-Issues with Language Education.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/OpenSpeaks-pcj-Gorum-Opino_Gomango-Balaram_Muduli-Issues_with_Language_Education.webm",
+  "format": "WebM",
+  "duration": "78",
+  "title": "Issues with Language Education",
+  "description": "Balaram Muduli, a Gorum-language speaker, discusses the issues with native language education",
+  "year": "",
+  "date": "",
+  "projectName": "Gorum",
+  "language": "Gorum",
+  "languageISO": "pcj",
+  "dialect": "",
+  "recordingPlace": "Koraput district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Balaram Muduli",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Issues with Language Education",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/OpenSpeaks-pcj-Gorum-Opino_Gomango-Balaram_Muduli-Issues_with_Language_Education.webm/500px-OpenSpeaks-pcj-Gorum-Opino_Gomango-Balaram_Muduli-Issues_with_Language_Education.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Balaram_Muduli_%28cropped%29.jpg/500px-Balaram_Muduli_%28cropped%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

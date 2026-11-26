@@ -1,0 +1,203 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Raji bhasha.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/OpenSpeaks-Raji_bhasha.wav",
+  "format": "WAV",
+  "duration": "1",
+  "title": "Says “राजी भाषा”",
+  "description": "Pronunciation of \"Raji bhasha\" (\"राजी भाषा\", meaning Raji language) in Raji, as said by Kaliprasad Raji, a fluent native Raji speaker. This snippet is derived from a longer video interview of him by Uday Raj Aaley for the OpenSpeaks Archives. The original video was recorded in Bardiya district, Nepal, where Raji introduces himself in the Raji language and discusses how his language is used every day. He was interviewed on the 25th February, 2026 in his home in Nepal. The interview was subtitled in Nepali at the location by Aaley, based on a verbatim Nepali translation by Raji.",
+  "year": "2026",
+  "date": "25 February 2026",
+  "projectName": "Raji",
+  "language": "Raji",
+  "languageISO": "rji",
+  "dialect": "",
+  "recordingPlace": "Bardiya district, Nepal",
+  "country": "Nepal",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Kaliprasad Raji",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Uday Raj Aaley",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “राजी भाषा”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Kaliprasad_Raji_%28cropped%29.png/500px-Kaliprasad_Raji_%28cropped%29.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "ar",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.ar.srt",
+  "additionalSubtitles": [
+    {
+      "language": "bgc",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.bgc.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "bh",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.bh.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "bho",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.bho.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "en",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.en.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "es",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.es.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "fr",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.fr.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "hi",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.hi.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "hif-Latn",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.hif-Latn.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "hif",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.hif.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "id",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.id.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "ja",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.ja.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "mr",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.mr.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "ms",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.ms.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "mwr",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.mwr.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "ne",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.ne.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "new",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.new.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "pt-br",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.pt-br.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "raj",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.raj.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "rji",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.rji.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "ru",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.ru.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "sa",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.sa.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "zh",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Raji_bhasha.wav.zh.srt",
+      "creators": "स्वर्ण (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "स्वर्ण (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Raji bhasha.wav.ar.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.bgc.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.bh.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.bho.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.es.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.fr.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.hi.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.hif-Latn.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.hif.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.id.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.ja.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.mr.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.ms.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.mwr.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.ne.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.new.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.pt-br.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.raj.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.rji.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.ru.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.sa.srt": "स्वर्ण",
+    "TimedText:OpenSpeaks-Raji bhasha.wav.zh.srt": "स्वर्ण"
+  }
+}

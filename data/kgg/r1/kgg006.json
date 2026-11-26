@@ -1,0 +1,36 @@
+{
+  "_version": "1.7",
+  "fileName": "Gyani Maiya-kgg mehaq 1.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Gyani_Maiya-kgg_mehaq_1.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “mehaq”",
+  "description": "Gyani Maiya Sen-Kusunda saying the word \"mehaq\" (literally, \"ban-raja\" or forest-king, and a reference to a Kusunda person) in the Kusunda language. This audio is extracted from media recorded by Subhashish Panigrahi for the 2019/2023 documentary film Gyani Maiya. The original recording from 2018 includes an interview in which Gyani Maiya Sen-Kusunda answers several questions asked by Uday Raj Aaley in Nepali based on broader questions by Panigrahi. Sen-Kusunda answers mostly in Kusunda and occasionally in Nepali.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Gejmehac Gipan",
+  "language": "Kusunda",
+  "languageISO": "kgg",
+  "dialect": "",
+  "recordingPlace": "Dang district, Nepal",
+  "country": "Nepal",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Gyani Maiya Sen-Kusunda",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Uday Raj Aaley",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “mehaq”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {}
+}

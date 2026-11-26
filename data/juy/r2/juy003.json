@@ -1,0 +1,41 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-juy-Juray-Dinabandhu Gamango-Pronunciation Juray 01.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/OpenSpeaks-juy-Juray-Dinabandhu_Gamango-Pronunciation_Juray_01.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “Juray”",
+  "description": "Pronunciation of the word \"Juray\" by Dinabandhu Gamango",
+  "year": "",
+  "date": "",
+  "projectName": "Juray",
+  "language": "Juray",
+  "languageISO": "juy",
+  "dialect": "",
+  "recordingPlace": "Rayagada district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Dinabandhu Gamango",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Juray”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Dinabandhu_Gamango_01_%28cropped%29.png/500px-Dinabandhu_Gamango_01_%28cropped%29.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-rnp-Rongpa-K.S. Badwal-Pronunciation Rongpo.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/OpenSpeaks-rnp-Rongpa-K.S._Badwal-Pronunciation_Rongpo.wav",
+  "format": "WAV",
+  "duration": "1",
+  "title": "Says “Rongpo”",
+  "description": "A native user pronuncing the word \"Rongpo\" in the Rongpa language",
+  "year": "",
+  "date": "",
+  "projectName": "Rongpo",
+  "language": "Rongpo",
+  "languageISO": "rnp",
+  "dialect": "Marcha",
+  "recordingPlace": "Chamoli district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "K.S. Badwal",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Bimla Badwal",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Rongpo”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Bimla_and_KS_Badwal.png/500px-Bimla_and_KS_Badwal.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

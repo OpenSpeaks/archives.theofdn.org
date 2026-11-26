@@ -1,0 +1,57 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-pcj-Gorum-Balaram Muduli-OG-Use of Gorum Language.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/OpenSpeaks-pcj-Gorum-Balaram_Muduli-OG-Use_of_Gorum_Language.webm",
+  "format": "WebM",
+  "duration": "66",
+  "title": "Use of Gorum Language",
+  "description": "In this video, Balaram Muduli, a speaker of the Gorum language from Odisha, India, introduces himself and discusses the challenges posed by the lack of teachers to teach in Gorum. Muduli was interviewed on the 1st March, 2026, by Opino Gomango, a Sora-language speaker in Bhubaneswar, Odisha. The interview was subtitled in English at the location by Gomango, based on a verbatim Odia translation by Muduli. Footage and subtitles were edited by Subhashish Panigrahi and were published under the OpenSpeaks Archives project in 2026.",
+  "year": "",
+  "date": "",
+  "projectName": "Gorum",
+  "language": "Gorum",
+  "languageISO": "pcj",
+  "dialect": "",
+  "recordingPlace": "Koraput district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Balaram Muduli",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Use of Gorum Language",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/OpenSpeaks-pcj-Gorum-Balaram_Muduli-OG-Use_of_Gorum_Language.webm/500px-OpenSpeaks-pcj-Gorum-Balaram_Muduli-OG-Use_of_Gorum_Language.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Balaram_Muduli_%28cropped%29.jpg/500px-Balaram_Muduli_%28cropped%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-pcj-Gorum-Balaram_Muduli-OG-Use_of_Gorum_Language.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "ml",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-pcj-Gorum-Balaram_Muduli-OG-Use_of_Gorum_Language.webm.ml.srt",
+      "creators": "Ranjithsiji (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-pcj-Gorum-Balaram Muduli-OG-Use of Gorum Language.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-pcj-Gorum-Balaram Muduli-OG-Use of Gorum Language.webm.ml.srt": "Ranjithsiji"
+  }
+}

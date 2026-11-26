@@ -1,0 +1,49 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-rji-Raji-Uday Raj Aaley-Kaliprasad Raji-Introduction and Use of Raji.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenSpeaks-rji-Raji-Uday_Raj_Aaley-Kaliprasad_Raji-Introduction_and_Use_of_Raji.webm",
+  "format": "WebM",
+  "duration": "81",
+  "title": "Introduction and Use of Raji",
+  "description": "In this video, Kaliprasad Raji, a speaker of the Raji language from Bardiya district, Nepal, introduces himself and discusses how his language is used every day. Raji was interviewed on the 25th February, 2026, by Uday Raj Aaley in the former's home in Nepal. The interview was subtitled in Nepali at the location by Aaley, based on a verbatim Nepali translation by Raji. Footage and subtitles were edited by Subhashish Panigrahi and were published under the OpenSpeaks Archives project in 2026.",
+  "year": "2026",
+  "date": "25 February 2026",
+  "projectName": "Raji",
+  "language": "Raji",
+  "languageISO": "rji",
+  "dialect": "",
+  "recordingPlace": "Bardiya district, Nepal",
+  "country": "Nepal",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Kaliprasad Raji",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Uday Raj Aaley",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Introduction and Use of Raji",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenSpeaks-rji-Raji-Uday_Raj_Aaley-Kaliprasad_Raji-Introduction_and_Use_of_Raji.webm/500px-OpenSpeaks-rji-Raji-Uday_Raj_Aaley-Kaliprasad_Raji-Introduction_and_Use_of_Raji.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Kaliprasad_Raji_%28cropped%29.png/500px-Kaliprasad_Raji_%28cropped%29.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "ne",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-rji-Raji-Uday_Raj_Aaley-Kaliprasad_Raji-Introduction_and_Use_of_Raji.webm.ne.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-rji-Raji-Uday Raj Aaley-Kaliprasad Raji-Introduction and Use of Raji.webm.ne.srt": "Psubhashish"
+  }
+}

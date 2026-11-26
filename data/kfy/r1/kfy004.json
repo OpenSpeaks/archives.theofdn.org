@@ -1,0 +1,37 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-kfy-Johari-Surendra Singh Pangtey Johari-bhasha.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey_Johari-bhasha.wav",
+  "format": "WAV",
+  "duration": "1",
+  "title": "Says “जोहारी भाषा”",
+  "description": "Surendra Singh Pangtey, a native speaker of Shakiya Khun (Johari-Kumaoni) pronouncing \"जोहारी भाषा\" (Johari language)",
+  "year": "",
+  "date": "",
+  "projectName": "Johari",
+  "language": "Kumaoni",
+  "languageISO": "kfy",
+  "dialect": "Johari",
+  "recordingPlace": "Pithoragarh district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Surendra Singh Pangtey",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “जोहारी भाषा”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/S.S._Pangtey_%28from_MarginalizedAadhaar%2C_2019%29.jpg/500px-S.S._Pangtey_%28from_MarginalizedAadhaar%2C_2019%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

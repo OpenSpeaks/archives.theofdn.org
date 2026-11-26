@@ -1,0 +1,41 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks - lmn - Lambadi - Pronunciation - Teej.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/OpenSpeaks_-_lmn_-_Lambadi_-_Pronunciation_-_Teej.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “तीज (teej)”",
+  "description": "Pronunciation of the word \"तीज\" (teej) in Lambadi language by Nenavath Mohan",
+  "year": "2019",
+  "date": "4 September 2019",
+  "projectName": "Lambadi",
+  "language": "Lambadi",
+  "languageISO": "lmn",
+  "dialect": "",
+  "recordingPlace": "Telangana, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Nenavath Mohan",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Meghavath Sathish",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “तीज (teej)”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Nenavath_Mohan_03.png/500px-Nenavath_Mohan_03.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

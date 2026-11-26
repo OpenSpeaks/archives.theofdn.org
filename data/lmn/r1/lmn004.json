@@ -1,0 +1,41 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Lmn-Lambadi-Nenavath Mohan- Lambada 01.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/OpenSpeaks-Lmn-Lambadi-Nenavath_Mohan-_Lambada_01.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “Lambada”",
+  "description": "In this audio, Nenavath Mohan, a native speaker of Lambadi language, pronounces \"Lambada\" (Lambadi). It is derived from a longer conversation between Nenavath and Meghavath Sathish, also a native Lambadi speaker. They both discusses Aadhaar, the Indian digital ID, in the context of their community life in a village in Vikarabad district, Telangana, India. They were interviewed on the 4th September, 2019, in Hyderabad, Telangana, by Subhashish Panigrahi, a Baleswari-Odia-language speaker, for the documentary film MarginalizedAadhaar. The interview was partially subtitled in Hindi at the location by Panigrahi, based on a verbatim translation by Meghavath and Nenavath. Footage, some of which was used in the film, and subtitles, all later translated and reviewed by Nenavath, were edited and translated into English by Panigrahi and were published under the OpenSpeaks Archives project in 2026.",
+  "year": "2019",
+  "date": "4 September 2019",
+  "projectName": "Lambadi",
+  "language": "Lambadi",
+  "languageISO": "lmn",
+  "dialect": "",
+  "recordingPlace": "Telangana, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Nenavath Mohan",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Meghavath Sathish",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Lambada”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Nenavath_Mohan_03.png/500px-Nenavath_Mohan_03.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-srb-Idital-Opino Gomango-Namad Dalbehera-Intro.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/OpenSpeaks-srb-Idital-Opino_Gomango-Namad_Dalbehera-Intro.webm",
+  "format": "WebM",
+  "duration": "110",
+  "title": "Intro",
+  "description": "In this interview, Namad Dalbehera, an Indian Sora Idital artist introduces himself in the Sora language. Interviewed in 2019 by Opino Gomango and Subhashish Panigrahi during the latter's 2021 documentary film, MarginalizedAadhaar. Unused or trimmed archival footage from the film was edited by Panigrahi and published under the OpenSpeaks Archives in 2025. Subtitles are by Gomango with edits by Panigrahi.",
+  "year": "2019",
+  "date": "",
+  "projectName": "Lanjia Sora",
+  "language": "Sora",
+  "languageISO": "srb",
+  "dialect": "",
+  "recordingPlace": "Rayagada district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Namad Dalbehera",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Intro",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/OpenSpeaks-srb-Idital-Opino_Gomango-Namad_Dalbehera-Intro.webm/500px-OpenSpeaks-srb-Idital-Opino_Gomango-Namad_Dalbehera-Intro.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Namad_Dalbehera_01.jpg/500px-Namad_Dalbehera_01.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-srb-Idital-Opino_Gomango-Namad_Dalbehera-Intro.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-srb-Idital-Opino_Gomango-Namad_Dalbehera-Intro.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-srb-Idital-Opino Gomango-Namad Dalbehera-Intro.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-srb-Idital-Opino Gomango-Namad Dalbehera-Intro.webm.or.srt": "Psubhashish"
+  }
+}

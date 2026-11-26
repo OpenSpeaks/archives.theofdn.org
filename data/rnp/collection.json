@@ -1,0 +1,15 @@
+{
+  "languageISO": "rnp",
+  "language": "Rongpo",
+  "place": "Chamoli district, Uttarakhand, India",
+  "map": [
+    30.55,
+    79.55
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Bimla_and_KS_Badwal.png/500px-Bimla_and_KS_Badwal.png",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [],
+  "extras": []
+}

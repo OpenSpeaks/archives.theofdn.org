@@ -1,0 +1,41 @@
+{
+  "_version": "1.7",
+  "fileName": "Pronunciation of \"Sora\".wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Pronunciation_of_%22Sora%22.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “Sora”",
+  "description": "Pronunciation of the word \"Sora\" in the Sora language, spoken by Ramani Dalbehera",
+  "year": "2019",
+  "date": "",
+  "projectName": "Lanjia Sora",
+  "language": "Sora",
+  "languageISO": "srb",
+  "dialect": "Lanjia Sora",
+  "recordingPlace": "Rayagada district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Ramani Dalbehera",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Sora”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ramani_Dalbehera_01.jpg/500px-Ramani_Dalbehera_01.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-rnp-Marcha-K.S. Bharwal-Bimla Bharwal-Wedding Ceremony.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/OpenSpeaks-rnp-Marcha-K.S._Bharwal-Bimla_Bharwal-Wedding_Ceremony.webm",
+  "format": "WebM",
+  "duration": "225",
+  "title": "Wedding Ceremony",
+  "description": "In this video, the couple, K.S. Bharwal and Bimla Bharwal, two Marcha-Rongpo-language speakers and a couple, share the events around their wedding many decades ago. Interviewed in 2019 by Subhashish Panigrahi during his 2021 documentary film, MarginalizedAadhaar. Unused or trimmed archival footage from the film was edited by Panigrahi and published under the OpenSpeaks Archives project in 2025. Hindi subtitles are by Kimmi Pal, native speaker and OpenSpeaks Fellow, with edits by Panigrahi, and English translations by Panigrahi.",
+  "year": "",
+  "date": "",
+  "projectName": "Rongpo",
+  "language": "Rongpo",
+  "languageISO": "rnp",
+  "dialect": "Marcha",
+  "recordingPlace": "Chamoli district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "K.S. Badwal",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Bimla Badwal",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Wedding Ceremony",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/OpenSpeaks-rnp-Marcha-K.S._Bharwal-Bimla_Bharwal-Wedding_Ceremony.webm/500px-OpenSpeaks-rnp-Marcha-K.S._Bharwal-Bimla_Bharwal-Wedding_Ceremony.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Bimla_and_KS_Badwal.png/500px-Bimla_and_KS_Badwal.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "hi",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-rnp-Marcha-K.S._Bharwal-Bimla_Bharwal-Wedding_Ceremony.webm.hi.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-rnp-Marcha-K.S. Bharwal-Bimla Bharwal-Wedding Ceremony.webm.hi.srt": "Psubhashish"
+  }
+}

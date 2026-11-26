@@ -1,0 +1,42 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-jun-Kshetrabasi Juanga-OG-State of Language Documentation.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/OpenSpeaks-jun-Kshetrabasi_Juanga-OG-State_of_Language_Documentation.webm",
+  "format": "WebM",
+  "duration": "153",
+  "title": "State of Language Documentation",
+  "description": "In this video, Kshetrabasi Juanga, a speaker of Juang language of Odisha, India and a resident of Keonjhar district of the Odisha state, discusses the current state of documentation of his language. Interviewed by Opino Gomango in Bhubaneswar, Odisha, India and subtitled in English by Gomango, with edits by Subhashish Panigrahi, based on Juang to Odia translation by Juanga. Footage was edited by Panigrahi and published under the OpenSpeaks Archives project in 2026. This is a commissioned interview with Gomango and Juanga holding moral rights.",
+  "year": "",
+  "date": "",
+  "projectName": "Juang",
+  "language": "Juang",
+  "languageISO": "jun",
+  "dialect": "",
+  "recordingPlace": "Keonjhar district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Kshetrabasi Juanga",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "State of Language Documentation",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/OpenSpeaks-jun-Kshetrabasi_Juanga-OG-State_of_Language_Documentation.webm/500px-OpenSpeaks-jun-Kshetrabasi_Juanga-OG-State_of_Language_Documentation.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Kshetrabasi_Juanga.png/500px-Kshetrabasi_Juanga.png",
+      "by": "Opino Gomango / Subhashish Panigrahi"
+    }
+  }
+}

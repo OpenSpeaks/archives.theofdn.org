@@ -1,0 +1,37 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-sci-Sri Lanka Malay-Sejahan Buckman-pronunciation of \"Melayu Sri Lanka\".wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/OpenSpeaks-sci-Sri_Lanka_Malay-Sejahan_Buckman-pronunciation_of_%22Melayu_Sri_Lanka%22.wav",
+  "format": "WAV",
+  "duration": "1",
+  "title": "Says “Melayu Sri Lanka”",
+  "description": "Sri Lanka Malay speaker, Sejahan Buckman, pronuncing \"Melayu Sri Lanka\", the name of his language",
+  "year": "",
+  "date": "",
+  "projectName": "Melayu Sri Lanka",
+  "language": "Sri Lanka Malay",
+  "languageISO": "sci",
+  "dialect": "",
+  "recordingPlace": "Colombo, Sri Lanka",
+  "country": "Sri Lanka",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Sejahan Buckman",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Melayu Sri Lanka”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sajehan_Buckman_%28cropped%29.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Jun-Kshetrabasi Juanga.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/OpenSpeaks-Jun-Kshetrabasi_Juanga.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “Juanga”",
+  "description": "Kshetrabasi Juanga, a native speaker of Juanga language, pronouncing \"Juanga\"",
+  "year": "",
+  "date": "",
+  "projectName": "Juang",
+  "language": "Juang",
+  "languageISO": "jun",
+  "dialect": "",
+  "recordingPlace": "Keonjhar district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Kshetrabasi Juanga",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Juanga”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Kshetrabasi_Juanga.png/500px-Kshetrabasi_Juanga.png",
+      "by": "Opino Gomango / Subhashish Panigrahi"
+    }
+  }
+}

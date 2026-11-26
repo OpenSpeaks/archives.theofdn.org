@@ -1,0 +1,15 @@
+{
+  "languageISO": "sci",
+  "language": "Sri Lanka Malay",
+  "place": "Colombo, Sri Lanka",
+  "map": [
+    6.93,
+    79.86
+  ],
+  "cover": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sajehan_Buckman_%28cropped%29.png",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [],
+  "extras": []
+}

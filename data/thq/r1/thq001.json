@@ -1,0 +1,49 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-thq-Eastern Tharu-Achhai Chaudhary-SC-Medicinal Plants 01.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/OpenSpeaks-thq-Eastern_Tharu-Achhai_Chaudhary-SC-Medicinal_Plants_01.webm",
+  "format": "WebM",
+  "duration": "78",
+  "title": "Medicinal Plants",
+  "description": "In this video, Achhai Chaudhary, a speaker of the Eastern (Saptariya) Tharu language of Nepal and a resident of Saptari District from the Madhesh Province of Nepal, shares about the medicinal properties of several local plants in his native language, Eastern (Saptariya) Tharu, in 2025. Interviewed by Sanjib Chaudhary. Unused or trimmed archival footage from the film was edited by Subhashish Panigrahi and published under the OpenSpeaks Archives project in 2026. Eastern Tharu, Nepali, and English subtitles are by Sanjib Chaudhary, and the subtitles are edited by Panigrahi.",
+  "year": "",
+  "date": "",
+  "projectName": "Saptariya Tharu",
+  "language": "Tharu",
+  "languageISO": "thq",
+  "dialect": "Saptariya Tharu",
+  "recordingPlace": "Saptari district, Nepal",
+  "country": "Nepal",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Achhai Chaudhary",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Sanjib Chaudhary",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Medicinal Plants",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/OpenSpeaks-thq-Eastern_Tharu-Achhai_Chaudhary-SC-Medicinal_Plants_01.webm/500px-OpenSpeaks-thq-Eastern_Tharu-Achhai_Chaudhary-SC-Medicinal_Plants_01.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Achhai_Chaudhary_%28cropped%29.png/500px-Achhai_Chaudhary_%28cropped%29.png",
+      "by": "Sanjib Chaudhary"
+    }
+  },
+  "subtitleLanguage": "ne",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-thq-Eastern_Tharu-Achhai_Chaudhary-SC-Medicinal_Plants_01.webm.ne.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-thq-Eastern Tharu-Achhai Chaudhary-SC-Medicinal Plants 01.webm.ne.srt": "Psubhashish"
+  }
+}

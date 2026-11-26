@@ -1,0 +1,37 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-thq-Saptariya-Tharu-Sanjib Chaudhary-Pronunciation Tharu.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/OpenSpeaks-thq-Saptariya-Tharu-Sanjib_Chaudhary-Pronunciation_Tharu.wav",
+  "format": "WAV",
+  "duration": "0",
+  "title": "Says “Tharu”",
+  "description": "Pronunciation of the word \"Tharu\" by Sanjib Chaudhary",
+  "year": "",
+  "date": "",
+  "projectName": "Saptariya Tharu",
+  "language": "Tharu",
+  "languageISO": "thq",
+  "dialect": "Saptariya Tharu",
+  "recordingPlace": "Saptari district, Nepal",
+  "country": "Nepal",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Sanjib Chaudhary",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Tharu”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Sanjib_Chaudhary_01_%28cropped%29.png/500px-Sanjib_Chaudhary_01_%28cropped%29.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen-Kusunda-Uday Raj Aaley-Cooking Process.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/OpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm",
+  "format": "WebM",
+  "duration": "70",
+  "title": "Cooking Process",
+  "description": "In this brief conversation with Uday Raj Aaley, the late Gyani Maiya Sen-Kusunda (1937–2020), a Kusunda community elder from Dang, Nepal, shares how the Kusunda people used to cook during their semi-nomadic days in forests, in her native language, Kusunda. Recorded by Subhashish Panigrahi in 2018 for the production of his 2019 documentary film, Gyani Maiya. Unused or trimmed, archival footage from the film was edited by Panigrahi and published under the Gejmehac Gipan project in 2025. Kusunda and Nepali subtitles are by Aaley, and English translations by Panigrahi.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Gejmehac Gipan",
+  "language": "Kusunda",
+  "languageISO": "kgg",
+  "dialect": "",
+  "recordingPlace": "Dang district, Nepal",
+  "country": "Nepal",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Gyani Maiya Sen-Kusunda",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Uday Raj Aaley",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [
+    {
+      "prop": "P1184",
+      "label": "Handle ID",
+      "value": "11341/0000-0000-0000-A233"
+    }
+  ],
+  "firstPublishedTitle": "Cooking Process",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/OpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm/500px-OpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm.jpg"
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "kgg",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm.kgg.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "ne",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm.ne.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen-Kusunda-Uday Raj Aaley-Cooking Process.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen-Kusunda-Uday Raj Aaley-Cooking Process.webm.kgg.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen-Kusunda-Uday Raj Aaley-Cooking Process.webm.ne.srt": "Psubhashish"
+  }
+}

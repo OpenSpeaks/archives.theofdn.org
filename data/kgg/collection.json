@@ -1,0 +1,24 @@
+{
+  "languageISO": "kgg",
+  "language": "Kusunda",
+  "place": "Dang district, Nepal",
+  "map": [
+    28.05,
+    82.3
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Landscape_Poster_-_Gejmehac_Gipan.jpg/500px-Landscape_Poster_-_Gejmehac_Gipan.jpg",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [
+    {
+      "label": "Language Archive Cologne",
+      "url": "https://hdl.handle.net/11341/0000-0000-0000-A231"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Gejmehac_Gipan"
+    }
+  ],
+  "extras": []
+}

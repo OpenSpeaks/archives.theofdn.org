@@ -1,0 +1,59 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Body Parts.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/OpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Body_Parts.webm",
+  "format": "WebM",
+  "duration": "52",
+  "title": "Body Parts",
+  "description": "In this conversation with Uday Raj Aaley, the late Gyani Maiya Sen-Kusunda (1937–2020), a community elder from Dang, Nepal, says the names of body parts in her native language, Kusunda. Recorded by Subhashish Panigrahi in 2018 for the production of his 2019 documentary film, Gyani Maiya. This video is from footage unused in the film and was edited and published under the Gejmehac Gipan project in 2024. Nepali subtitles are by Aaley, and English translations are by Panigrahi.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Gejmehac Gipan",
+  "language": "Kusunda",
+  "languageISO": "kgg",
+  "dialect": "",
+  "recordingPlace": "Dang district, Nepal",
+  "country": "Nepal",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Gyani Maiya Sen-Kusunda",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Uday Raj Aaley",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [
+    {
+      "prop": "P1184",
+      "label": "Handle ID",
+      "value": "11341/0000-0000-0000-A232"
+    }
+  ],
+  "firstPublishedTitle": "Body Parts",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/OpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Body_Parts.webm/500px-OpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Body_Parts.webm.jpg"
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Body_Parts.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "ne",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Body_Parts.webm.ne.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Body Parts.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Body Parts.webm.ne.srt": "Psubhashish"
+  }
+}

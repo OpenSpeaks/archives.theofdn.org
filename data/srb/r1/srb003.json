@@ -1,0 +1,48 @@
+{
+  "_version": "1.7",
+  "fileName": "",
+  "fileType": "video",
+  "fileUrl": "",
+  "format": "MP4",
+  "duration": "",
+  "title": "Jeweley and attire worn by Lanjia Sora women",
+  "description": "",
+  "year": "2019",
+  "date": "",
+  "projectName": "Lanjia Sora",
+  "language": "Sora",
+  "languageISO": "srb",
+  "dialect": "Lanjia Sora",
+  "recordingPlace": "Rayagada district, Odisha, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Ramani Dalbehera",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Opino Gomango",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "onCommons": false,
+  "identifiers": [
+    {
+      "prop": "P1184",
+      "label": "Handle ID",
+      "value": "11341/0000-0000-0000-43A5"
+    }
+  ],
+  "firstPublishedTitle": "Jeweley and attire worn by Lanjia Sora women",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ramani_Dalbehera_01.jpg/500px-Ramani_Dalbehera_01.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ramani_Dalbehera_01.jpg/500px-Ramani_Dalbehera_01.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

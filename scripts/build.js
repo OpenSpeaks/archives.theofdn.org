@@ -2,13 +2,14 @@
 // Builds dist/: home, a page per collection and per session in each language, and the data downloads
 import { readdirSync, readFileSync, mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
-import { DATA_DIR, OUT_DIR, STATIC_DIR, SITE_URL, ARK_SHOULDER } from "./config.js";
+import { ROOT, DATA_DIR, OUT_DIR, STATIC_DIR, SITE_URL, ARK_SHOULDER } from "./config.js";
 import { mediaUrl } from "./records.js";
 import { load } from "./records.js";
 import { dublinCore } from "./dublin-core.js";
 import { createHash } from "node:crypto";
 import { LANGS, setLang, prefix } from "./strings.js";
-import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows } from "./pages.js";
+import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows, langOf } from "./pages.js";
+import { dataStrings } from "./data-strings.js";
 
 function write(rel, content) {
   const full = join(OUT_DIR, rel);
@@ -31,7 +32,9 @@ const collections = all.filter((c) => c.sessions.length).sort((a, b) => a.langua
 rmSync(OUT_DIR, { recursive: true, force: true });
 for (const name of readdirSync(STATIC_DIR)) write(name, readFileSync(join(STATIC_DIR, name)));
 
-const places = collections.map((c) => ({ iso: c.iso, name: c.language, at: c.map, items: c.sessions.reduce((n, s) => n + s.items.length, 0) }));
+// the English names and record text, for translating with Localise
+writeFileSync(join(ROOT, "strings", "data", "en.json"), JSON.stringify(dataStrings(collections), null, 2) + "\n");
+
 
 // the two-letter folder Commons keeps a file in, from the md5 of its name
 const folder = (name) => createHash("md5").update(name.replaceAll(" ", "_")).digest("hex").slice(0, 2);
@@ -40,6 +43,7 @@ const folder = (name) => createHash("md5").update(name.replaceAll(" ", "_")).dig
 for (const lang of LANGS) {
   setLang(lang);
   const at = prefix(lang);
+  const places = collections.map((c) => ({ iso: c.iso, name: langOf(c), at: c.map, items: c.sessions.reduce((n, s) => n + s.items.length, 0) }));
   write(at + "index.html", home(collections, places));
   write(at + "about/index.html", aboutPage(collections));
   write(at + "data/index.html", dataPage(collections, items.length));

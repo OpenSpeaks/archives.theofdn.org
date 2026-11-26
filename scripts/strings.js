@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT, BASE } from "./config.js";
 
@@ -6,6 +6,9 @@ import { ROOT, BASE } from "./config.js";
 const DIR = join(ROOT, "strings");
 export const LANGS = ["en", ...readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "en.json").map((f) => f.slice(0, -5)).sort()];
 export const STRINGS = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(readFileSync(join(DIR, l + ".json"), "utf8"))]));
+// names and record text, strings/data/<code>.json
+const dataFile = (l) => join(DIR, "data", l + ".json");
+export const DATA = Object.fromEntries(LANGS.map((l) => [l, existsSync(dataFile(l)) ? JSON.parse(readFileSync(dataFile(l), "utf8")) : {}]));
 
 let lang = "en";
 export const setLang = (l) => { lang = l; };

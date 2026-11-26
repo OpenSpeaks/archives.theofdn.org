@@ -89,4 +89,10 @@ The website's menus, labels and headings are in the `strings` folder. English is
 
 Fill in the empty text next to each name. Keep anything in curly brackets, such as `{n}`, exactly as it is. Text left empty shows in English. A new language needs its own file with the same names as `en.json`. Its pages are built under its code, such as `/or/`.
 
-Record text, such as titles and descriptions, comes from the Tome records, not from these files.
+## Translate names and record text
+
+Titles, descriptions and the names of languages, people and places are in `strings/data/`. The build writes `en.json` from the records each time, so don't edit it. Odia goes in `or.json`.
+
+Open `en.json` in Localise, then open `or.json` as the existing translation. Fill names from Wikidata fills the names Wikidata already has in Odia. Type the rest, then use Names for Wikidata to send the new names there through QuickStatements.
+
+A title or description written in Odia in the Tome record is used first. Text left empty shows in English.

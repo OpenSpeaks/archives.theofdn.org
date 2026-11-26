@@ -49,6 +49,15 @@ function loadWordlists(dir, col, errors) {
   }).filter(Boolean);
 }
 
+// Tome's people list with roles, or the older interviewees list
+export function peopleOf(t) {
+  if ((t.people || []).some((p) => p.name)) return t.people.filter((p) => p.name).map((p) => ({ name: p.name, qid: p.wikidataQid || "", roles: p.roles || [] }));
+  return (t.interviewees || []).filter((p) => p.fullName).map((p) => ({ name: p.fullName, qid: p.wikidataQid || "", roles: p.role ? p.role.toLowerCase().split(", ") : [] }));
+}
+
+// person name -> Wikidata id, from every record that has one
+export const QIDS = new Map();
+
 // collections > sessions > items, read from data/<iso>/collection.json and data/<iso>/r<n>/
 export function load(dataDir) {
   const errors = [];
@@ -78,26 +87,32 @@ export function load(dataDir) {
         const item = { id, n: Number(im[2]), session, tome, raw: readFileSync(path, "utf8"), path: `${iso}/${dir}/${name}` };
         item.subtitles = subs.filter((s) => s[1] === id).map((s) => ({ language: s[2], file: s[0], text: readFileSync(join(base, dir, s[0]), "utf8") }));
         session.items.push(item);
+        for (const p of peopleOf(tome)) if (p.qid && !QIDS.has(p.name)) QIDS.set(p.name, p.qid);
         items.push(item);
       }
       for (const s of subs) if (!session.items.some((it) => it.id === s[1])) errors.push(`${iso}/${dir}/${s[0]}: there's no ${s[1]}.json for this subtitle`);
       if (!session.items.length) continue;
       session.items.sort((a, b) => a.n - b.n);
-      const first = session.items[0].tome;
       const roles = new Map();
       for (const it of session.items) {
-        const t = it.tome;
-        const list = (t.people || []).some((p) => p.name) ? t.people.map((p) => [p.name, (p.roles || []).join(", ")]) : (t.interviewees || []).map((p) => [p.fullName, (p.role || "").toLowerCase()]);
-        for (const [name, role] of list) if (name && !roles.has(name)) roles.set(name, role);
+        for (const p of peopleOf(it.tome)) {
+          if (!roles.has(p.name)) roles.set(p.name, new Set());
+          for (const r of p.roles) roles.get(p.name).add(r);
+        }
       }
-      session.people = [...roles].map(([name, role]) => ({ name, role }));
-      const speaking = session.people.filter((p) => /speaker|interviewee|participant/i.test(p.role) || !p.role);
+      session.people = [...roles].map(([name, set]) => ({ name, roles: [...set] }));
+      const speaking = session.people.filter((p) => p.roles.some((r) => /speaker|interviewee|participant/i.test(r)) || !p.roles.length);
       session.speakers = (speaking.length ? speaking : session.people.slice(0, 1)).map((p) => p.name);
-      session.variety = first.dialect || "";
-      session.project = first.projectName || "";
-      session.place = first.recordingPlace || col.place;
-      session.date = first.date || first.year || "";
-      session.recordist = first.recordist || "";
+      // every value the items hold, in item order
+      const all = (f) => [...new Set(session.items.map((it) => f(it.tome)).filter(Boolean))];
+      session.variety = all((t) => t.dialect).join(", ");
+      session.project = all((t) => t.projectName).join(", ");
+      session.places = all((t) => t.recordingPlace);
+      session.place = session.places.join("; ") || col.place;
+      session.dates = all((t) => t.date || t.year).sort();
+      session.date = session.dates.length > 1 ? `${session.dates[0]} to ${session.dates[session.dates.length - 1]}` : session.dates[0] || "";
+      session.recordists = all((t) => t.recordist);
+      session.recordist = session.recordists.join(", ");
       session.portrait = session.items.map((it) => it.tome.extra?.portrait).find(Boolean);
       col.sessions.push(session);
     }

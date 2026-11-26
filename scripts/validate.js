@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { DATA_DIR, ROOT } from "./config.js";
 import { load, isoOf } from "./records.js";
-import { STRINGS } from "./strings.js";
+import { STRINGS, DATA } from "./strings.js";
 
 const LICENCES = ["cc-by-sa-4.0", "cc-by-4.0", "cc-zero", "cc-by-sa-3.0", "cc-by-3.0"];
 const tome = JSON.parse(readFileSync(join(ROOT, "schema", "tome.json"), "utf8"));
@@ -39,6 +39,12 @@ for (const [lang, strings] of Object.entries(STRINGS)) {
     const slots = (s) => (s.match(/\{\w+\}/g) || []).sort().join(" ");
     if (slots(strings[key]) !== slots(text)) errors.push(`strings/${lang}.json: "${key}" should keep ${slots(text)}`);
   }
+}
+
+for (const [lang, names] of Object.entries(DATA)) {
+  if (lang === "en") continue;
+  const known = DATA.en;
+  for (const key of Object.keys(names)) if (!(key in known)) warnings.push(`strings/data/${lang}.json: "${key}" is no longer in the archive`);
 }
 
 const unique = [...new Set(errors)];

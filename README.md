@@ -24,3 +24,7 @@ Open http://127.0.0.1:8765/.
 Each session gets a page at `/<language>-r<n>/`, such as `/gbm-r2/`. The build writes each item's Tome record, a Dublin Core copy and its subtitles (SRT, plus WebVTT for the player) next to the page. The `/data/` page has all records as JSON, CSV and Dublin Core.
 
 To add or change records, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licence
+
+The code is under the [Anti-Capitalist Software License v1.4](LICENSE). The content is under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless stated otherwise. Each item's own licence is in its Tome record.

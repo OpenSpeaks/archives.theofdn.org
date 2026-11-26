@@ -48,11 +48,15 @@ function citeBox(text) {
   return `<div class="cite"><span>Cite</span><p>${esc(text)}</p><button type="button" class="copy" data-cite="${esc(text)}">Copy</button></div>`;
 }
 
+// handle prefixes of the archives we deposit with
+const HANDLE_PREFIX = { "11341": "Language Archive Cologne", "2196": "Endangered Languages Archive" };
+const handleArchive = (h) => HANDLE_PREFIX[String(h).split("/")[0]] || "Handle " + h;
+
 function deposits(item) {
   const t = item.tome;
   const out = [];
   for (const i of (t.identifiers || []).filter((x) => x.value?.trim())) {
-    if (i.prop === "P1184") out.push(`<a href="https://hdl.handle.net/${esc(i.value)}">Language Archive Cologne</a>`);
+    if (i.prop === "P1184") out.push(`<a href="https://hdl.handle.net/${esc(i.value)}">${handleArchive(i.value)}</a>`);
   }
   if (t.onCommons && t.fileName) out.push(`<a href="https://commons.wikimedia.org/wiki/File:${esc(encodeURIComponent(t.fileName.replaceAll(" ", "_")))}">Wikimedia Commons</a>`);
   return out.join("<br>");
@@ -198,9 +202,9 @@ function player(it) {
   const src = mediaUrl(t);
   const tracks = it.subtitles.map((s) => ({ src: u(`${it.session.id}/${it.id}.${s.language}.vtt`), lang: s.language.split("-")[0], label: trackLabel(s.language, c) }));
   if (!src) {
-    const handle = (t.identifiers || []).find((i) => i.prop === "P1184");
+    const handle = (t.identifiers || []).find((i) => i.prop === "P1184" && i.value?.trim());
     const poster = posterUrl(t);
-    return `<div class="frame">${poster ? `<img src="${esc(poster)}" alt="" loading="lazy">` : ""}<a class="away" href="https://hdl.handle.net/${esc(handle?.value)}">Watch at Language Archive Cologne &rarr;</a></div>`;
+    return `<div class="frame">${poster ? `<img src="${esc(poster)}" alt="" loading="lazy">` : ""}${handle ? `<a class="away" href="https://hdl.handle.net/${esc(handle.value)}">Watch at ${handleArchive(handle.value)} &rarr;</a>` : ""}</div>`;
   }
   if (t.fileType === "audio") return `<div class="sound"><audio controls preload="none" src="${esc(src)}"></audio></div>`;
   return `<div class="frame"><img src="${esc(posterUrl(t))}" alt="" loading="lazy"><button type="button" class="play" data-src="${esc(src)}" data-tracks="${esc(JSON.stringify(tracks))}">Play${mins(t.duration) ? " " + mins(t.duration) : ""}</button></div>
@@ -328,6 +332,27 @@ export function aboutPage(collections) {
 <p>OpenSpeaks Archives is a public digital archive supporting community-led documentation of mother tongues and local languages. It contributes to Wikimedia projects, communities, and the open knowledge movement. It currently lists recordings in ${collections.length} languages.</p>
 </div>`;
   return shell({ title: `About – ${SITE_NAME}`, body, collections });
+}
+
+// theofdn.org sends ids it has no page for here, as /ark/#<id>
+export function arkPage(collections) {
+  const body = `<div class="wrap prose">
+<h1 class="display small">finding a record</h1>
+<p class="ark-note" aria-live="polite">Looking up the identifier…</p>
+</div>`;
+  const script = `<script>
+(function () {
+  var id = decodeURIComponent(location.hash.slice(1)), note = document.querySelector(".ark-note");
+  var word = /^([a-z]{3}-w\\d+)-(\\d+)$/.exec(id);
+  if (word) return location.replace("${u("")}" + word[1] + "/#" + Number(word[2]));
+  fetch("${u("ark.json")}").then(function (r) { return r.json(); }).then(function (d) {
+    if (d.targets[id]) location.replace(d.targets[id]);
+    else note.textContent = "There's no record with the identifier " + (id || "given") + ".";
+  });
+})();
+</script>
+`;
+  return shell({ title: `Finding a record – ${SITE_NAME}`, body, collections, script });
 }
 
 export function dataPage(collections, total) {

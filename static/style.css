@@ -229,6 +229,7 @@ footer .ticks { padding-block: 1rem .2rem; }
 .words-count { margin: 0; font-weight: 600; }
 .wordrows { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--line); }
 .wordrows li { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: .4rem 0; border-bottom: 1px solid var(--line); }
+.wordrows li.hit { outline: 3px solid var(--orange-ink); outline-offset: -3px; }
 .word { font-size: 1.15rem; overflow-wrap: anywhere; }
 .say { font: 700 .8rem/1 var(--text); padding: .45rem .7rem; background: #e8521b; color: #000; border: 2px solid #000; cursor: pointer; }
 .say:hover { background: #000; color: #fff; }

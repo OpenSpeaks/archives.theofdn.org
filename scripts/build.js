@@ -2,11 +2,12 @@
 // Builds dist/: home, a page per collection and per session, and the data downloads
 import { readdirSync, readFileSync, mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
-import { DATA_DIR, OUT_DIR, STATIC_DIR } from "./config.js";
+import { DATA_DIR, OUT_DIR, STATIC_DIR, SITE_URL, ARK_SHOULDER } from "./config.js";
+import { mediaUrl } from "./records.js";
 import { load } from "./records.js";
 import { dublinCore } from "./dublin-core.js";
 import { createHash } from "node:crypto";
-import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, csvRows } from "./pages.js";
+import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows } from "./pages.js";
 
 function write(rel, content) {
   const full = join(OUT_DIR, rel);
@@ -32,6 +33,7 @@ for (const name of readdirSync(STATIC_DIR)) write(name, readFileSync(join(STATIC
 const places = collections.map((c) => ({ iso: c.iso, name: c.language, at: c.map, items: c.sessions.reduce((n, s) => n + s.items.length, 0) }));
 write("index.html", home(collections, places));
 write("about/index.html", aboutPage(collections));
+write("ark/index.html", arkPage(collections));
 write("data/index.html", dataPage(collections, items.length));
 
 // the two-letter folder Commons keeps a file in, from the md5 of its name
@@ -56,6 +58,27 @@ for (const c of collections) {
     }
   }
 }
+
+// every id and where it leads; theofdn.org reads this to forward ark:15056/osa-*
+const ark = {};
+const at = (path) => SITE_URL + path;
+for (const c of collections) {
+  ark[c.iso] = at(`${c.iso}/`);
+  for (const x of c.extras) ark[x.id] = x.url;
+  for (const w of c.wordlists) {
+    ark[w.id] = at(`${w.id}/`);
+  }
+  for (const s of c.sessions) {
+    ark[s.id] = at(`${s.id}/`);
+    for (const it of s.items) {
+      ark[it.id] = at(`${s.id}/#${it.id}`);
+      const ext = (it.tome.fileName?.split(".").pop() || it.tome.format || "").toLowerCase();
+      if (mediaUrl(it.tome)) ark[`${it.id}/${ext}`] = mediaUrl(it.tome);
+      for (const sub of it.subtitles) ark[`${it.id}/${sub.language}/srt`] = at(`${s.id}/${sub.file}`);
+    }
+  }
+}
+write("ark.json", JSON.stringify({ shoulder: ARK_SHOULDER, targets: ark }) + "\n");
 
 write("data/records.json", JSON.stringify(Object.fromEntries(items.map((it) => [it.id, it.tome])), null, 2) + "\n");
 write("data/records.csv", csvRows(items));

@@ -152,6 +152,7 @@ function wordlist(box) {
   var prev = box.querySelector(".prev"), next = box.querySelector(".next");
   var sayer = box.querySelector(".sayer"), find = box.querySelector("#find");
   var all = [], shown = [], page = 0, size = 100;
+  var wanted = parseInt(location.hash.slice(1), 10);
   var base = "https://upload.wikimedia.org/wikipedia/commons/";
   function pad(n) { return ("0000" + n).slice(-5); }
   function render() {
@@ -177,6 +178,8 @@ function wordlist(box) {
       pid.setAttribute("aria-label", "Copy the link to " + id);
       pid.innerHTML = "<code></code><span class=\"pid-done\" aria-live=\"polite\"></span>";
       pid.firstChild.textContent = id;
+      li.id = String(w[0]);
+      if (w[0] === wanted) li.className = "hit";
       li.append(say, word, pid);
       rows.appendChild(li);
     });
@@ -194,6 +197,13 @@ function wordlist(box) {
   fetch(box.dataset.src).then(function (r) { return r.json(); }).then(function (data) {
     all = data;
     filter();
+    var at = all.findIndex(function (w) { return w[0] === wanted; });
+    if (at > 0) {
+      page = Math.floor(at / size);
+      render();
+    }
+    var hit = rows.querySelector(".hit");
+    if (hit) hit.scrollIntoView({ block: "center" });
   }, function () {
     note.textContent = "The word list didn't load. Download the CSV above instead.";
   });

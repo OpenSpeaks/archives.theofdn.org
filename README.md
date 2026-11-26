@@ -1,6 +1,6 @@
 # OpenSpeaks Archives
 
-Recordings made with speakers of Indigenous and endangered languages in South Asia, published by O Foundation.
+Recordings made with speakers of Indigenous and endangered languages in South Asia, published by OpenSpeaks Archives. The website is hosted by O Foundation.
 
 ## Run it
 

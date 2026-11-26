@@ -1,5 +1,5 @@
 // Dublin Core (oai_dc) for one item, from its Tome record
-import { arkUrl, PUBLISHER, SITE_NAME } from "./config.js";
+import { arkUrl, SITE_NAME } from "./config.js";
 import { isoOf, plain } from "./records.js";
 
 const x = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[c]);
@@ -24,7 +24,7 @@ export function dcFields(item) {
   for (const k of t.keywords || []) add("subject", k);
   add("description", plain(t.description));
   for (const e of t.extraDescriptions || []) add("description", plain(e.text));
-  add("publisher", `${SITE_NAME}, ${PUBLISHER}`);
+  add("publisher", SITE_NAME);
   add("date", t.date || t.year);
   add("type", t.fileType === "audio" ? "Sound" : "MovingImage");
   add("format", t.mimeType || MIME[t.format] || (t.fileName?.endsWith(".webm") ? "video/webm" : t.format));

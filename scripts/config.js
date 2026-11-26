@@ -7,7 +7,8 @@ export const OUT_DIR = join(ROOT, "dist");
 export const STATIC_DIR = join(ROOT, "static");
 
 export const SITE_NAME = "OpenSpeaks Archives";
-export const PUBLISHER = "O Foundation";
+// publishes nothing; hosts the website
+export const HOST = "O Foundation";
 export const SITE_URL = (process.env.SITE_URL || "http://127.0.0.1:8765/").replace(/\/?$/, "/");
 export const BASE = new URL(SITE_URL).pathname;
 

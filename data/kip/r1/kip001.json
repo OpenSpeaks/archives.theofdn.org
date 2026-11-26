@@ -1,0 +1,222 @@
+{
+  "_version": "1.7",
+  "_exportedAt": "2026-11-26T18:52:39.769Z",
+  "sourceType": "commons",
+  "sourceIdentifier": "OpenSpeaks-kip-Sheshi Kham-Deewash Thapa-Tika Kumari Budha-oral history.webm",
+  "onCommons": true,
+  "commonsChecked": "OpenSpeaks-kip-Sheshi Kham-Deewash Thapa-Tika Kumari Budha-oral history.webm",
+  "fileUrl": "",
+  "format": "",
+  "mimeType": "",
+  "fileName": "OpenSpeaks-kip-Sheshi Kham-Deewash Thapa-Tika Kumari Budha-oral history.webm",
+  "fileType": "video",
+  "duration": "",
+  "color": "Color",
+  "sound": "Stereo",
+  "isOpenSpeaks": true,
+  "title": "Sheshi Kham language documentation",
+  "titleLang": "",
+  "extraTitles": [],
+  "year": "",
+  "description": "In this video, Tika Kumari Budha, a childhood development trainer from Jungkot, Rolpa district, Nepal, speaks in the Sheshi Kham variety of the Kham Magar language. Interviewed by Uday Raj Aaley and recorded by Deewash Thapa in Jungkot on 17 July 2026 for OpenSpeaks Archives. She talks about her family's farming year, with corn sown in the Jeth (Jyeshtha) and Baisakh months, barley and wheat in November and December, and mustard and millet. Women wove aloe fibre into thread and mats while men sowed and ploughed, and in winter many men went to Butwal, Bhairawa, Kathmandu and India or other countries abroad to earn money. Sheshi Kham and Nepali subtitles are by Budha, transcribed and typed by Aaley, and English translations are by Panigrahi. Video edited by Panigrahi.",
+  "primaryDescLang": "en",
+  "extraDescriptions": [],
+  "projectName": "OpenSpeaks Archives",
+  "cast": "",
+  "country": "India",
+  "language": "Sheshi Kham",
+  "languageISO": "kip",
+  "dialect": "Sheshi",
+  "dialectNames": "",
+  "recordingPlace": "Jungkot",
+  "otherPlaces": [],
+  "studio": "",
+  "producer": "",
+  "director": "",
+  "writer": "",
+  "cinematographer": "",
+  "editor": "",
+  "recordist": "Deewash Thapa",
+  "publisher": "",
+  "creator": "",
+  "wikidataQid": "",
+  "contributors": [],
+  "genre": "interview",
+  "topic": "oral history, Sheshi Kham, Nepal, language documentation",
+  "keywords": [],
+  "sequenceNumber": "",
+  "releaseDate": "2026-11-27",
+  "date": "2026-07-17",
+  "dateDigitised": "",
+  "doi": "",
+  "eidr": "",
+  "imdb": "",
+  "identifiers": [
+  { "prop": "P724", "label": "Internet Archive ID", "value": "OpenSpeaks-kip-Sheshi_Kham-Deewash_Thapa-Tika_Kumari_Budha-oral_history" }
+],
+  "subtitleLanguage": "Sheshi Kham",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText:OpenSpeaks-kip-Sheshi_Kham-Deewash_Thapa-Tika_Kumari_Budha-oral_history.webm.kip.srt",
+  "subtitleCreators": "Uday Raj Aaley (subtitler)",
+  "subtitleEditorsReviewers": "Tika Kumari Budha (subtitler), Subhashish Panigrahi (editor)",
+  "additionalSubtitles": [
+    {
+      "language": "Nepali",
+      "pageUrl": "TimedText:OpenSpeaks-kip-Sheshi Kham-Deewash Thapa-Tika Kumari Budha-oral history.webm.ne.srt",
+      "creators": "Uday Raj Aaley (subtitler)",
+      "editorsReviewers": "Tika Kumari Budha (subtitler), Subhashish Panigrahi (editor)"
+    },
+    {
+      "language": "English",
+      "pageUrl": "TimedText:OpenSpeaks-kip-Sheshi Kham-Deewash Thapa-Tika Kumari Budha-oral history.webm.en.srt",
+      "creators": "Subhashish Panigrahi (translator)",
+      "editorsReviewers": "Uday Raj Aaley (subtitler)"
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "username": "",
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412"
+    }
+  ],
+  "frameworkEnabled": true,
+  "frameworkParams": {
+    "p1": false,
+    "p2": false,
+    "p3": false
+  },
+  "source": "{{Creator:Subhashish Panigrahi}}",
+  "license": "cc-by-sa-4.0",
+  "categories": "Tika Kumari Budha\nSheshi Kham language\nSubhashish Panigrahi",
+  "otherFields": "",
+  "metadataBy": [
+    "[[:d:Q28469412|Subhashish Panigrahi]] (metadata editor)"
+  ],
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-kip-Sheshi Kham-Deewash Thapa-Tika Kumari Budha-oral history.webm.kip.srt": "Psubhashish"
+  },
+  "wikidataReview": false,
+  "interviewees": [
+    {
+      "fullName": "Tika Kumari Budha",
+      "wikidataQid": "Q142306047",
+      "username": "",
+      "creatorName": "",
+      "gender": "unknown",
+      "role": "Speaker, Interviewee",
+      "genderFromWikidata": false
+    }
+  ],
+  "people": [
+    {
+      "name": "Tika Kumari Budha",
+      "username": "",
+      "wikidataQid": "Q142306047",
+      "creatorName": "",
+      "gender": "unknown",
+      "genderFromWikidata": false,
+      "roles": [
+        "credited",
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "username": "",
+      "wikidataQid": "Q28469412",
+      "creatorName": "Subhashish Panigrahi",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "copyright"
+      ]
+    },
+    {
+      "name": "Uday Raj Aaley",
+      "username": "",
+      "wikidataQid": "Q108217430",
+      "creatorName": "",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "interviewer"
+      ]
+    },
+    {
+      "name": "Deewash Thapa",
+      "username": "",
+      "wikidataQid": "Q142306039",
+      "creatorName": "",
+      "gender": "unknown",
+      "genderFromWikidata": false,
+      "roles": [
+        "recordist"
+      ]
+    }
+  ],
+  "describer": {
+    "name": "",
+    "wikidataQid": "",
+    "username": "Psubhashish"
+  },
+  "peopleConsent": true,
+  "oralHistory": {
+    "enabled": true,
+    "dialectDetails": "",
+    "recordingContext": "field_recording",
+    "recordingEquipment": "Lavalier microphone, DSLR camera",
+    "interviewer": "Uday Raj Aaley",
+    "recorder": "",
+    "consentType": "written",
+    "consentInformed": true,
+    "consentRevocable": false,
+    "sensitiveContent": false,
+    "sensitiveContentNotes": "",
+    "consentRecordLocation": "Jungkot",
+    "communityReviewed": true,
+    "communityReviewDate": "2026-07-17",
+    "communityReviewNotes": "",
+    "communityReviewers": "",
+    "transcriptAvailable": false,
+    "transcriptLanguages": "",
+    "transcriptWriter": "",
+    "transcriptEditor": "",
+    "transcriptDate": "",
+    "transcriptLink": "",
+    "additionalTranscripts": []
+  },
+  "extra": {},
+  "rawMetadata": {},
+  "wikidata": {
+    "item": "Q142306043",
+    "matches": {
+      "language:Sheshi Kham": "Q12952622",
+      "place:Jungkot": "Q142306040",
+      "topic:oral history": "Q558929",
+      "topic:Sheshi Kham": "Q12952622",
+      "topic:Nepal": "Q837",
+      "topic:language documentation": "Q1133221",
+      "genre:interview": "Q178651",
+      "equipment:Lavalier microphone": "Q3312047",
+      "equipment:DSLR camera": "Q196342",
+      "project:OpenSpeaks Archives": "Q131755825",
+      "language:Sheshi": "skip",
+      "person:Tika Kumari Budha": "Q142306047",
+      "person:Subhashish Panigrahi": "Q28469412",
+      "person:Uday Raj Aaley": "Q108217430",
+      "person:Deewash Thapa": "Q142306039"
+    },
+    "descriptions": {},
+    "replace": {},
+    "remove": {},
+    "searched": true
+  },
+  "firstPublishedUrl": "",
+  "firstPublishedTitle": "Agriculture",
+  "firstPublishedByUrl": "",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "originalTitle": "",
+  "originalTitleLang": ""
+}

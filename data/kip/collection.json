@@ -1,0 +1,13 @@
+{
+  "languageISO": "kip",
+  "language": "Sheshi Kham",
+  "wikidata": "Q12952622",
+  "place": "Jungkot, Rolpa district, Nepal",
+  "map": [
+    28.41,
+    82.55
+  ],
+  "deposits": [
+  { "label": "Internet Archive", "url": "https://archive.org/details/OpenSpeaks-kip-Sheshi_Kham-Deewash_Thapa-Tika_Kumari_Budha-oral_history" }
+]
+}

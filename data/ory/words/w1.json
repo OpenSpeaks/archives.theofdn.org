@@ -1,0 +1,21 @@
+{
+  "title": "Odia words and phrases",
+  "speaker": "Subhashish Panigrahi",
+  "tool": "",
+  "language": "Odia",
+  "languageISO": "ory",
+  "dialect": "",
+  "license": "cc-zero",
+  "description": "Odia words and phrases spoken by Subhashish Panigrahi, one recording each. Most were recorded with Lingua Libre. The Baleswari words he recorded are in their own list.",
+  "deposits": [
+    {
+      "label": "Library of Congress",
+      "url": "https://lccn.loc.gov/2024307217",
+      "id": "LCCN 2024307217"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation_by_Psubhashish"
+    }
+  ]
+}

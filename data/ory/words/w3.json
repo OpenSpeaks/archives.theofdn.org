@@ -1,0 +1,23 @@
+{
+  "title": "Baleswari Odia words",
+  "speaker": "Musamoni Panigrahi",
+  "tool": "",
+  "language": "Odia",
+  "languageISO": "ory",
+  "dialect": "Baleswari",
+  "license": "cc-zero",
+  "description": "Words in the Baleswari variety of Odia spoken by Musamoni Panigrahi, one recording each. Subhashish Panigrahi recorded her telling stories and singing in 2014 and 2015, and the words were taken from those recordings, including the stories \"Budhi Asuruni\" and \"Budhara Kukura - Budhira Biradi\".",
+  "deposits": [
+    {
+      "label": "Library of Congress",
+      "url": "https://lccn.loc.gov/2024307217",
+      "id": "LCCN 2024307217"
+    },
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Baleswari_Odia_pronunciation_by_Musamani_Panigrahi"
+    }
+  ],
+  "recordist": "Subhashish Panigrahi",
+  "date": "2014–2015"
+}

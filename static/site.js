@@ -62,11 +62,11 @@ function ccMenu(v, frame, tracks) {
   btn.className = "cc";
   btn.textContent = "CC";
   btn.setAttribute("aria-expanded", "false");
-  btn.setAttribute("aria-label", "Subtitles");
+  btn.setAttribute("aria-label", STRINGS.subtitles);
   var menu = document.createElement("ul");
   menu.className = "cc-menu";
   menu.hidden = true;
-  var choices = tracks.map(function (t) { return t.label; }).concat("Off");
+  var choices = tracks.map(function (t) { return t.label; }).concat(STRINGS.subtitlesOff);
   choices.forEach(function (label, i) {
     var li = document.createElement("li");
     var b = document.createElement("button");
@@ -130,7 +130,7 @@ document.addEventListener("click", function (e) {
   if (p) {
     var note = p.querySelector(".pid-done");
     return copy(p.dataset.url, function () {
-      note.textContent = "Link copied";
+      note.textContent = STRINGS.linkCopied;
       setTimeout(function () { note.textContent = ""; }, 2000);
     }, function () {
       note.textContent = p.dataset.url;
@@ -139,7 +139,7 @@ document.addEventListener("click", function (e) {
   var cp = e.target.closest(".copy");
   if (cp) {
     copy(cp.dataset.cite, function () {
-      cp.textContent = "Copied";
+      cp.textContent = STRINGS.copied;
     }, function () {
       getSelection().selectAllChildren(cp.previousElementSibling);
     });
@@ -168,14 +168,14 @@ function wordlist(box) {
       var say = document.createElement("button");
       say.type = "button";
       say.className = "say";
-      say.textContent = "Play";
-      say.setAttribute("aria-label", "Play " + w[1]);
+      say.textContent = STRINGS.play;
+      say.setAttribute("aria-label", STRINGS.playWord.replace("{word}", w[1]));
       say.dataset.src = base + w[3][0] + "/" + w[3] + "/" + encodeURIComponent(w[2].replace(/ /g, "_"));
       var pid = document.createElement("button");
       pid.type = "button";
       pid.className = "pid";
       pid.dataset.url = box.dataset.url + "-" + pad(w[0]);
-      pid.setAttribute("aria-label", "Copy the link to " + id);
+      pid.setAttribute("aria-label", STRINGS.copyLink.replace("{id}", id));
       pid.innerHTML = "<code></code><span class=\"pid-done\" aria-live=\"polite\"></span>";
       pid.firstChild.textContent = id;
       li.id = String(w[0]);
@@ -184,7 +184,7 @@ function wordlist(box) {
       rows.appendChild(li);
     });
     var end = Math.min(start + size, shown.length);
-    note.textContent = shown.length ? (start + 1) + " to " + end + " of " + shown.length.toLocaleString("en-IN") + " words" : "No words match.";
+    note.textContent = shown.length ? STRINGS.wordsShown.replace("{from}", start + 1).replace("{to}", end).replace("{n}", shown.length.toLocaleString("en-IN")) : STRINGS.wordsNone;
     prev.disabled = page === 0;
     next.disabled = end >= shown.length;
   }
@@ -205,7 +205,7 @@ function wordlist(box) {
     var hit = rows.querySelector(".hit");
     if (hit) hit.scrollIntoView({ block: "center" });
   }, function () {
-    note.textContent = "The word list didn't load. Download the CSV above instead.";
+    note.textContent = STRINGS.wordsFailed;
   });
   find.addEventListener("input", filter);
   prev.onclick = function () { page--; render(); rows.scrollIntoView(); };

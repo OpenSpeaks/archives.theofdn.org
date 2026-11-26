@@ -82,3 +82,11 @@ Pronunciation recordings are kept as word lists in a collection's `words` folder
 ## Publish from the terminal
 
 From the repository's folder, run `npm run push "about page"` with your own short message in the quotes. It checks the records, builds the site, commits every change, brings in any changes made on GitHub and pushes. If the check fails, nothing is committed.
+
+## Translate the interface
+
+The website's menus, labels and headings are in the `strings` folder. English is in `en.json`, and Odia is in `or.json`.
+
+Fill in the empty text next to each name. Keep anything in curly brackets, such as `{n}`, exactly as it is. Text left empty shows in English. A new language needs its own file with the same names as `en.json`. Its pages are built under its code, such as `/or/`.
+
+Record text, such as titles and descriptions, comes from the Tome records, not from these files.

@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { DATA_DIR, ROOT } from "./config.js";
 import { load, isoOf } from "./records.js";
+import { STRINGS } from "./strings.js";
 
 const LICENCES = ["cc-by-sa-4.0", "cc-by-4.0", "cc-zero", "cc-by-sa-3.0", "cc-by-3.0"];
 const tome = JSON.parse(readFileSync(join(ROOT, "schema", "tome.json"), "utf8"));
@@ -29,6 +30,15 @@ for (const it of items) {
   if (!t.fileUrl && !t.fileName && !(t.identifiers || []).length) errors.push(`${where}: add a "fileUrl", a Commons "fileName" or an identifier where it can be watched`);
   if (t._version !== tome.version) warnings.push(`${where}: Tome ${t._version}, current is ${tome.version}; run npm run tome-sync`);
   if (t.fileType === "video" && !it.subtitles.length) warnings.push(`${where}: no subtitle files yet`);
+}
+
+for (const [lang, strings] of Object.entries(STRINGS)) {
+  for (const key of Object.keys(strings)) if (!(key in STRINGS.en)) errors.push(`strings/${lang}.json: "${key}" isn't in en.json`);
+  for (const [key, text] of Object.entries(STRINGS.en)) {
+    if (!strings[key]) continue;
+    const slots = (s) => (s.match(/\{\w+\}/g) || []).sort().join(" ");
+    if (slots(strings[key]) !== slots(text)) errors.push(`strings/${lang}.json: "${key}" should keep ${slots(text)}`);
+  }
 }
 
 const unique = [...new Set(errors)];

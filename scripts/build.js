@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Builds dist/: home, a page per collection and per session, and the data downloads
+// Builds dist/: home, a page per collection and per session in each language, and the data downloads
 import { readdirSync, readFileSync, mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { DATA_DIR, OUT_DIR, STATIC_DIR, SITE_URL, ARK_SHOULDER } from "./config.js";
@@ -7,6 +7,7 @@ import { mediaUrl } from "./records.js";
 import { load } from "./records.js";
 import { dublinCore } from "./dublin-core.js";
 import { createHash } from "node:crypto";
+import { LANGS, setLang, prefix } from "./strings.js";
 import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows } from "./pages.js";
 
 function write(rel, content) {
@@ -31,23 +32,32 @@ rmSync(OUT_DIR, { recursive: true, force: true });
 for (const name of readdirSync(STATIC_DIR)) write(name, readFileSync(join(STATIC_DIR, name)));
 
 const places = collections.map((c) => ({ iso: c.iso, name: c.language, at: c.map, items: c.sessions.reduce((n, s) => n + s.items.length, 0) }));
-write("index.html", home(collections, places));
-write("about/index.html", aboutPage(collections));
-write("ark/index.html", arkPage(collections));
-write("data/index.html", dataPage(collections, items.length));
 
 // the two-letter folder Commons keeps a file in, from the md5 of its name
 const folder = (name) => createHash("md5").update(name.replaceAll(" ", "_")).digest("hex").slice(0, 2);
 
+// pages in every language; records, subtitles and downloads once, at the root
+for (const lang of LANGS) {
+  setLang(lang);
+  const at = prefix(lang);
+  write(at + "index.html", home(collections, places));
+  write(at + "about/index.html", aboutPage(collections));
+  write(at + "data/index.html", dataPage(collections, items.length));
+  for (const c of collections) {
+    write(`${at}${c.iso}/index.html`, collectionPage(c, collections));
+    for (const w of c.wordlists) write(`${at}${w.id}/index.html`, wordlistPage(w, collections));
+    for (const s of c.sessions) write(`${at}${s.id}/index.html`, sessionPage(s, collections));
+  }
+}
+setLang("en");
+write("ark/index.html", arkPage(collections));
+
 for (const c of collections) {
-  write(`${c.iso}/index.html`, collectionPage(c, collections));
   for (const w of c.wordlists) {
-    write(`${w.id}/index.html`, wordlistPage(w, collections));
     write(`${w.id}/words.json`, JSON.stringify(w.words.map((x) => [x.n, x.word, x.file, folder(x.file)])));
     write(`${w.id}/${w.id}.csv`, readFileSync(join(DATA_DIR, c.iso, "words", `${w.key}.csv`)));
   }
   for (const s of c.sessions) {
-    write(`${s.id}/index.html`, sessionPage(s, collections));
     for (const it of s.items) {
       write(`${s.id}/${it.id}.json`, it.raw);
       write(`${s.id}/${it.id}.dc.xml`, dublinCore(it));

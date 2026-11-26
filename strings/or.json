@@ -67,7 +67,7 @@
   "video": "ଭିଡ଼ିଓ",
   "subtitles": "ସବଟାଇଟଲ",
   "subtitlesIn": "{language}ରେ ସବଟାଇଟଲ",
-  "subtitlesInBy": "{names}ଙ୍କ ଦ୍ୱାରା {language}ରେ ସବଟାଇଟଲ",
+  "subtitlesInBy": "{names}ଙ୍କଦ୍ୱାରା {language}ରେ ସବଟାଇଟଲ",
   "subtitlesOff": "ବନ୍ଦ",
   "tomeRecord": "Tome ରେକର୍ଡ (JSON)",
   "dublinCore": "Dublin Core (XML)",

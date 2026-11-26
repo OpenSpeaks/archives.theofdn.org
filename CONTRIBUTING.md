@@ -81,4 +81,4 @@ Pronunciation recordings are kept as word lists in a collection's `words` folder
 
 ## Publish from the terminal
 
-From the repository's folder, run `npm run push "about page"` with your own short message in the quotes. It checks the records, builds the site, commits every change and pushes it. If the check fails, nothing is committed.
+From the repository's folder, run `npm run push "about page"` with your own short message in the quotes. It checks the records, builds the site, commits every change, brings in any changes made on GitHub and pushes. If the check fails, nothing is committed.

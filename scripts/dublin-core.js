@@ -31,7 +31,7 @@ export function dcFields(item) {
   add("identifier", arkUrl(item.id));
   for (const i of t.identifiers || []) add("identifier", i.prop === "P1184" ? `https://hdl.handle.net/${i.value}` : i.value);
   add("language", isoOf(t));
-  for (const s of item.subtitles) add("relation", arkUrl(`${item.id}.${s.language}.srt`));
+  for (const s of item.subtitles) add("relation", arkUrl(`${item.id}/${s.language}/srt`));
   add("coverage", t.recordingPlace);
   add("relation", arkUrl(item.session.id));
   add("rights", LICENCES[t.license] || t.license);

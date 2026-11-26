@@ -237,6 +237,10 @@ footer .ticks { padding-block: 1rem .2rem; }
 .pager button:disabled { background: var(--page); color: var(--ink); border-style: dashed; cursor: default; }
 
 /* Footer */
+.footcols { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1.5rem; padding-block: 1.5rem .5rem; }
+.footcols h2 { font: 800 .95rem/1.2 var(--text); margin: 0 0 .5rem; color: var(--orange-ink); }
+.footcols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .35rem; }
+.footcols a { font-weight: 600; }
 footer .bar { position: relative; }
 .logo { width: 34px; height: 34px; fill: var(--orange-ink); }
 .count { color: var(--orange-ink); font-variant-numeric: tabular-nums; font-weight: 800; }

@@ -1,37 +1,204 @@
 {
   "_version": "1.7",
+  "_exportedAt": "2026-11-26T07:18:32.761Z",
+  "sourceType": "",
+  "sourceIdentifier": "",
+  "onCommons": true,
+  "commonsChecked": "OpenSpeaks-Juy-Juray-Manjula Bhuyan-Opino Gomango-Aadhaar and Information Access.webm",
+  "fileUrl": "",
+  "format": "",
+  "mimeType": "",
   "fileName": "OpenSpeaks-Juy-Juray-Manjula Bhuyan-Opino Gomango-Aadhaar and Information Access.webm",
   "fileType": "video",
-  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/OpenSpeaks-Juy-Juray-Manjula_Bhuyan-Opino_Gomango-Aadhaar_and_Information_Access.webm",
-  "format": "WebM",
   "duration": "111",
+  "color": "Color",
+  "sound": "Stereo",
+  "isOpenSpeaks": true,
   "title": "Aadhaar and Information Access",
-  "description": "In this video, Manjula Bhuyan, a speaker of the Juray language of India and a resident of Rayagada district from the Odisha state, discusses use of Aadhaar and public information access-related issues in her native, Juray, language in 2019. Interviewed by Opino Gomango and Subhashish Panigrahi for the latter's 2021 documentary film, MarginalizedAadhaar. Unused or trimmed archival footage from the film was edited by Panigrahi and published under the OpenSpeaks Archives project in 2025. Odia subtitles are by Dinabandhu Gomango and English translations by Panigrahi.",
+  "titleLang": "",
+  "extraTitles": [
+    {
+      "langCode": "or",
+      "text": "ଆଧାର ଏବଂ ସୂଚନା ଉପଲବ୍ଧତା"
+    }
+  ],
   "year": "",
-  "date": "",
-  "projectName": "Juray",
+  "description": "In this video, Manjula Bhuyan, a speaker of the Juray language of India and a resident of Rayagada district in Odisha state, discusses the use of Aadhaar and public information access-related issues in her native Juray language in 2019. Interviewed by Opino Gomango and Subhashish Panigrahi for the latter's 2021 documentary film, MarginalizedAadhaar. Unused or trimmed archival footage from the film was edited by Panigrahi and published as part of the OpenSpeaks Archives project in 2025. Odia subtitles are by Dinabandhu Gomango, and English translations are by Panigrahi.",
+  "primaryDescLang": "en",
+  "extraDescriptions": [
+    {
+      "langCode": "or",
+      "text": "ଏହି ଭିଡ଼ିଓରେ ଭାରତର ଜୁରାୟ ଭାଷାଭାଷୀ ଏବଂ ଓଡ଼ିଶାର ରାୟଗଡ଼ାର ବାସିନ୍ଦା ମଞ୍ଜୁଳା ଭୁୟାଁ ୨୦୧୯ରେ ନିଜ ମାତୃଭାଷା ଜୁରାୟ ଭାଷାରେ ଆଧାର ଏବଂ ସାର୍ବଜନୀନ ସୂଚନା ଉପଲବ୍ଧତା ଉପରେ ଆଲୋଚନା କରିଛନ୍ତି । ଓପିନୋ ଗମାଙ୍ଗୋ ଏବଂ ଶୁଭାଶିଷ ପାଣିଗ୍ରାହୀଙ୍କ ଦ୍ୱାରା ତାଙ୍କର ୨୦୨୧ ଡକ୍ୟୁମେଣ୍ଟାରୀ ଚଳଚ୍ଚିତ୍ର ''ମାର୍ଜିନାଲାଇଜଡ୍ ଆଧାର'' ପାଇଁ ଏହି ସାକ୍ଷାତକାର ହୋଇଥିଲା । ଏହି ଚଳଚ୍ଚିତ୍ରର ବ୍ୟବହୃତ କିମ୍ବା ଅବ୍ୟବହୃତ ଅଭିଲେଖୀୟ ଫୁଟେଜକୁ ପାଣିଗ୍ରାହୀ ସମ୍ପାଦନା କରିଥିଲେ ଯାହା ୨୦୨୫ରେ ଓପନସ୍ପିକ୍ସ ଆର୍କାଇଭ୍ ପ୍ରକଳ୍ପର ଅଂଶବିଶେଷ ଭାବେ ପ୍ରକାଶ ପାଇଥିଲା । ଓଡ଼ିଆ ସବ୍ଟାଇଟେଲଗୁଡ଼ିକ ଦୀନବନ୍ଧୁ ଗମାଙ୍ଗୋଙ୍କ ଦ୍ୱାରା ଏବଂ ଇଂରାଜୀ ଅନୁବାଦଗୁଡ଼ିକ ପାଣିଗ୍ରହୀଙ୍କ ଦ୍ୱାର। ହୋଇଥିଲା ।"
+    }
+  ],
+  "projectName": "Juray language documentation",
+  "cast": "",
+  "country": "India",
   "language": "Juray",
   "languageISO": "juy",
   "dialect": "",
-  "recordingPlace": "Rayagada district, Odisha, India",
-  "country": "India",
+  "dialectNames": "",
+  "recordingPlace": "Jholasahi",
+  "otherPlaces": [],
+  "studio": "",
+  "producer": "Subhashish Panigrahi",
+  "director": "Subhashish Panigrahi",
+  "writer": "",
+  "cinematographer": "Subhashish Panigrahi",
+  "editor": "Subhashish Panigrahi",
   "recordist": "",
+  "publisher": "",
+  "creator": "",
+  "wikidataQid": "",
+  "contributors": [],
+  "genre": "interview",
+  "topic": "language documentation, oral history, Juray",
+  "keywords": [],
+  "sequenceNumber": "",
+  "releaseDate": "2021-03-18",
+  "date": "2019-11-16",
+  "dateDigitised": "",
+  "doi": "2196/azw9uu5f-269t-uprm-flog-do3u5iowveui",
+  "eidr": "",
+  "imdb": "",
+  "identifiers": [
+    {
+      "prop": "P1184",
+      "label": "Handle ID",
+      "url": "https://hdl.handle.net/$1",
+      "value": ""
+    }
+  ],
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText:OpenSpeaks-Juy-Juray-Manjula_Bhuyan-Opino_Gomango-Aadhaar_and_Information_Access.webm.en.srt",
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleEditorsReviewers": "",
+  "additionalSubtitles": [],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "username": "",
+      "wikidataQid": "Q28469412",
+      "creatorName": "Subhashish Panigrahi",
+      "creatorFrom": "Q28469412"
+    }
+  ],
+  "frameworkEnabled": true,
+  "frameworkParams": {
+    "p1": true,
+    "p2": true,
+    "p3": true
+  },
+  "source": "{{Creator:Subhashish Panigrahi}}",
+  "license": "cc-by-sa-4.0",
+  "categories": "Juray language\nManjula Bhuyan\nSubhashish Panigrahi",
+  "otherFields": "",
+  "metadataBy": [],
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Juy-Juray-Manjula Bhuyan-Opino Gomango-Aadhaar and Information Access.webm.en.srt": "Psubhashish"
+  },
+  "wikidataReview": false,
   "interviewees": [
     {
       "fullName": "Manjula Bhuyan",
-      "role": "Speaker"
-    },
-    {
-      "fullName": "Opino Gomango",
-      "role": "Interviewer"
+      "wikidataQid": "Q138762809",
+      "username": "",
+      "creatorName": "",
+      "gender": "female",
+      "role": "Speaker, Interviewee",
+      "genderFromWikidata": true
     }
   ],
-  "license": "cc-by-sa-4.0",
-  "onCommons": true,
-  "identifiers": [],
-  "firstPublishedTitle": "Aadhaar and Information Access",
-  "firstPublishedBy": "OpenSpeaks Archives",
-  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "people": [
+    {
+      "name": "Manjula Bhuyan",
+      "username": "",
+      "wikidataQid": "Q138762809",
+      "creatorName": "",
+      "gender": "female",
+      "genderFromWikidata": true,
+      "roles": [
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Opino Gomango",
+      "username": "",
+      "wikidataQid": "Q113517841",
+      "creatorName": "Opino Gomango",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "transcriber",
+        "subtitler",
+        "interviewer",
+        "reviewer"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "username": "",
+      "wikidataQid": "Q28469412",
+      "creatorName": "Subhashish Panigrahi",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "archivist",
+        "documenter",
+        "copyright",
+        "director",
+        "producer",
+        "cinematographer",
+        "editor"
+      ]
+    },
+    {
+      "name": "Dinabandhu Gamango",
+      "username": "",
+      "wikidataQid": "Q138978470",
+      "creatorName": "",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "transcriber",
+        "translator",
+        "subtitler",
+        "reviewer"
+      ]
+    }
+  ],
+  "describer": {
+    "name": "Subhashish Panigrahi",
+    "wikidataQid": "",
+    "username": "Psubhashish"
+  },
+  "peopleConsent": true,
+  "oralHistory": {
+    "enabled": true,
+    "dialectDetails": "",
+    "recordingContext": "field_recording",
+    "recordingEquipment": "Lavalier microphone, DSLR camera",
+    "interviewer": "Opino Gomango",
+    "recorder": "",
+    "consentType": "verbal",
+    "consentInformed": true,
+    "consentRevocable": false,
+    "sensitiveContent": false,
+    "sensitiveContentNotes": "",
+    "consentRecordLocation": "",
+    "communityReviewed": true,
+    "communityReviewDate": "2025-12-15",
+    "communityReviewNotes": "Community assessment was first conducted in November 2019 by Dinabandhu Gamango. Opino Gomango further assessed the recording in December 2025 before the publication.",
+    "communityReviewers": "Opino Gomango, Dinabandhu Gamango",
+    "transcriptAvailable": false,
+    "transcriptLanguages": "",
+    "transcriptWriter": "",
+    "transcriptEditor": "",
+    "transcriptDate": "",
+    "transcriptLink": "",
+    "additionalTranscripts": []
+  },
   "extra": {
     "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/OpenSpeaks-Juy-Juray-Manjula_Bhuyan-Opino_Gomango-Aadhaar_and_Information_Access.webm/500px-OpenSpeaks-Juy-Juray-Manjula_Bhuyan-Opino_Gomango-Aadhaar_and_Information_Access.webm.jpg",
     "portrait": {
@@ -39,11 +206,37 @@
       "by": "Subhashish Panigrahi"
     }
   },
-  "subtitleLanguage": "en",
-  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Juy-Juray-Manjula_Bhuyan-Opino_Gomango-Aadhaar_and_Information_Access.webm.en.srt",
-  "additionalSubtitles": [],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
-  "timedTextAuthors": {
-    "TimedText:OpenSpeaks-Juy-Juray-Manjula Bhuyan-Opino Gomango-Aadhaar and Information Access.webm.en.srt": "Psubhashish"
-  }
+  "rawMetadata": {},
+  "wikidata": {
+    "item": "Q142294617",
+    "matches": {
+      "place:Rayagada district": "Q2577997",
+      "place:Jholasahi": "Q141777138",
+      "project:Juray language documentation": "Q139801338",
+      "genre:interview": "Q178651",
+      "topic:language documentation": "Q1133221",
+      "topic:oral history": "Q558929",
+      "topic:Juray": "Q6314963",
+      "person:Manjula Bhuyan": "Q138762809",
+      "person:Opino Gomango": "Q113517841",
+      "person:Subhashish Panigrahi": "Q28469412",
+      "person:Dinabandhu Gamango": "Q138978470",
+      "language:Juray": "Q6314963",
+      "equipment:Lavalier microphone": "Q3312047",
+      "equipment:DSLR camera": "Q196342",
+      "project:OpenSpeaks Archives": "Q131755825"
+    },
+    "descriptions": {},
+    "replace": {},
+    "remove": {},
+    "searched": true
+  },
+  "originalTitle": "",
+  "originalTitleLang": "",
+  "firstPublishedUrl": "http://hdl.handle.net/2196/azw9uu5f-269t-uprm-flog-do3u5iowveui",
+  "firstPublishedTitle": "Juray",
+  "firstPublishedBy": "Endangered Languages Archive",
+  "firstPublishedByUrl": "https://www.elararchive.org/",
+  "isFilm": true,
+  "sourceFromHolders": true
 }

@@ -1,0 +1,53 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-him-Bangani-Jayprakash Chauhan-SP-Access in Bangani.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/OpenSpeaks-him-Bangani-Jayprakash_Chauhan-SP-Access_in_Bangani.webm",
+  "format": "WebM",
+  "duration": "95",
+  "title": "Access in Bangani",
+  "description": "In this video, Jayprakash Chauhan, a speaker of the Bangani language of India, shares about the then status quo of access to information and the online use of Bangani in his native language. Interviewed in 2019 by Subhashish Panigrahi during his 2021 documentary film, MarginalizedAadhaar. Unused or trimmed archival footage from the film was edited by Panigrahi and published under the OpenSpeaks Archives project in 2025. Hindi and English subtitles are by Panigrahi.",
+  "year": "",
+  "date": "",
+  "projectName": "Bangani",
+  "language": "Bangani",
+  "languageISO": "him",
+  "dialect": "",
+  "recordingPlace": "Uttarkashi district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Jayprakash Chauhan",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Access in Bangani",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/OpenSpeaks-him-Bangani-Jayprakash_Chauhan-SP-Access_in_Bangani.webm/500px-OpenSpeaks-him-Bangani-Jayprakash_Chauhan-SP-Access_in_Bangani.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Jayprakash_Chauhan_01_%28cropped%29.png/500px-Jayprakash_Chauhan_01_%28cropped%29.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-him-Bangani-Jayprakash_Chauhan-SP-Access_in_Bangani.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "hi",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-him-Bangani-Jayprakash_Chauhan-SP-Access_in_Bangani.webm.hi.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-him-Bangani-Jayprakash Chauhan-SP-Access in Bangani.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-him-Bangani-Jayprakash Chauhan-SP-Access in Bangani.webm.hi.srt": "Psubhashish"
+  }
+}

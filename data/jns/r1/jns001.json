@@ -1,0 +1,53 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Jns-Jaunsari-Deepak Joshi-SP-Introduction Village.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/OpenSpeaks-Jns-Jaunsari-Deepak_Joshi-SP-Introduction_Village.webm",
+  "format": "WebM",
+  "duration": "31",
+  "title": "Introduction Village",
+  "description": "In this brief video, Deepak Joshi, a speaker of the Jaunsari language of India, shares about his village, Kyawa, in his native language. Interviewed in 2019 by Subhashish Panigrahi during his 2021 documentary film, MarginalizedAadhaar. Unused or trimmed archival footage from the film was edited by Panigrahi and published under the OpenSpeaks Archives project in 2025. Hindi and English subtitles are by Panigrahi.",
+  "year": "",
+  "date": "",
+  "projectName": "Jaunsari",
+  "language": "Jaunsari",
+  "languageISO": "jns",
+  "dialect": "",
+  "recordingPlace": "Jaunsar-Bawar, Dehradun district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Deepak Joshi",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Introduction Village",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/OpenSpeaks-Jns-Jaunsari-Deepak_Joshi-SP-Introduction_Village.webm/500px-OpenSpeaks-Jns-Jaunsari-Deepak_Joshi-SP-Introduction_Village.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Deepak_Joshi.png/500px-Deepak_Joshi.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Jns-Jaunsari-Deepak_Joshi-SP-Introduction_Village.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "hi",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Jns-Jaunsari-Deepak_Joshi-SP-Introduction_Village.webm.hi.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Jns-Jaunsari-Deepak Joshi-SP-Introduction Village.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Jns-Jaunsari-Deepak Joshi-SP-Introduction Village.webm.hi.srt": "Psubhashish"
+  }
+}

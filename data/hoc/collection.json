@@ -1,0 +1,20 @@
+{
+  "languageISO": "hoc",
+  "language": "Ho",
+  "place": "Keshpada, Mayurbhanj district, Odisha, India",
+  "map": [
+    21.95,
+    86.1
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Documentation_of_rasi_preparation_during_the_production_of_Mage_Porob.jpg/500px-Documentation_of_rasi_preparation_during_the_production_of_Mage_Porob.jpg",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Ruum_Sakam"
+    }
+  ],
+  "extras": []
+}

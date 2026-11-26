@@ -1,0 +1,227 @@
+{
+  "_version": "1.7",
+  "_exportedAt": "2026-11-26T04:30:08.519Z",
+  "sourceType": "commons",
+  "sourceIdentifier": "OpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm",
+  "onCommons": true,
+  "commonsChecked": "OpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm",
+  "fileUrl": "",
+  "format": "",
+  "mimeType": "",
+  "fileName": "OpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm",
+  "fileType": "video",
+  "duration": "",
+  "color": "Color",
+  "sound": "Stereo",
+  "isOpenSpeaks": true,
+  "title": "Illahabadi-Awadhi documentation: Discussion on agriculture",
+  "titleLang": "",
+  "extraTitles": [
+    {
+      "langCode": "awa",
+      "text": "इलाहाबादी-अवधी दस्तावेजीकरण: खेती-बारी पर बतकही"
+    },
+    {
+      "langCode": "hi",
+      "text": "इलाहाबादी-अवधी दस्तावेजीकरणः कृषि पर चर्चा"
+    }
+  ],
+  "year": "",
+  "description": "In this video, Shailendra Kumar Mishra, a farmer and a speaker of the Allahabadi variety of the [[:w:Awadhi language|Awadhi language]] from Allahabad, Uttar Pradesh, India, discusses the agricultural practices in his village. Interviewed by Subhashish Panigrahi for the OpenSpeaks Archives, with support from Abhinav Srivastava of Azad Reads and Harshavardhan Mishra. In the interview, Shailendra briefly shares which crops he and his family grow year-round and how they make paneer from milk.",
+  "primaryDescLang": "en",
+  "extraDescriptions": [
+    {
+      "langCode": "hi",
+      "text": "इस वीडियो में, भारत के उत्तर प्रदेश के इलाहाबाद के एक किसान और अवधी भाषा की इलाहाबादी बोली के वक्ता शैलेंद्र कुमार मिश्रा अपने गाँव में कृषि प्रथाओं पर चर्चा करते हैं। आजाद रीड्स के अभिनव श्रीवास्तव, और हर्षवर्धन मिश्रा के समर्थन से ओपनस्पीक्स अभिलेखागार के लिए शुभाशीष पाणिग्राही द्वारा साक्षात्कार। साक्षात्कार में, शैलेंद्र ने संक्षेप में बताया कि वह और उनका परिवार साल भर कौन सी फसलें उगाते हैं और वे दूध से पनीर कैसे बनाते हैं।"
+    }
+  ],
+  "projectName": "OpenSpeaks Archives",
+  "cast": "",
+  "country": "India",
+  "language": "Awadhi",
+  "languageISO": "\"awa\"",
+  "dialect": "",
+  "recordingPlace": "Prayagraj",
+  "otherPlaces": [],
+  "studio": "",
+  "producer": "",
+  "director": "",
+  "writer": "",
+  "cinematographer": "",
+  "editor": "Subhashish Panigrahi",
+  "recordist": "Subhashish Panigrahi",
+  "publisher": "",
+  "creator": "",
+  "wikidataQid": "",
+  "contributors": [],
+  "genre": "interview",
+  "topic": "language documentation, oral history, Awadhi",
+  "keywords": [],
+  "sequenceNumber": "",
+  "releaseDate": "2026-11-15",
+  "date": "2026-07-25",
+  "dateDigitised": "",
+  "doi": "",
+  "eidr": "",
+  "imdb": "",
+  "identifiers": [],
+  "subtitleLanguage": "awa",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm.awa.srt",
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleEditorsReviewers": "Abhinav Srivatsava (reviewer)",
+  "additionalSubtitles": [
+    {
+      "language": "hi",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm.hi.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "username": "",
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412"
+    }
+  ],
+  "frameworkEnabled": true,
+  "frameworkParams": {
+    "p1": false,
+    "p2": false,
+    "p3": false
+  },
+  "source": "{{Creator:Subhashish Panigrahi}}",
+  "license": "cc-by-sa-4.0",
+  "categories": "Awadhi language\nShailendra Kumar Mishra\nFiles uploaded from OpenSpeaks Archives in 2026\nSubhashish Panigrahi",
+  "otherFields": "",
+  "metadataBy": [
+    "[[User:Psubhashish|Subhashish Panigrahi]] (metadata editor)",
+    "[[User:Psubhashish]] (metadata editor)"
+  ],
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm.awa.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm.hi.srt": "Psubhashish"
+  },
+  "wikidataReview": false,
+  "interviewees": [
+    {
+      "fullName": "Shailendra Kumar Mishra",
+      "wikidataQid": "Q142174199",
+      "username": "",
+      "creatorName": "",
+      "gender": "unknown",
+      "role": "Participant",
+      "genderFromWikidata": false
+    }
+  ],
+  "people": [
+    {
+      "name": "Shailendra Kumar Mishra",
+      "username": "",
+      "wikidataQid": "Q142174199",
+      "creatorName": "",
+      "gender": "unknown",
+      "genderFromWikidata": false,
+      "roles": [
+        "credited",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "username": "",
+      "wikidataQid": "Q28469412",
+      "creatorName": "Subhashish Panigrahi",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "copyright",
+        "recordist",
+        "editor"
+      ]
+    },
+    {
+      "name": "Abhinav Srivatsava",
+      "username": "",
+      "wikidataQid": "Q142174142",
+      "creatorName": "",
+      "gender": "male",
+      "genderFromWikidata": true,
+      "roles": [
+        "reviewer"
+      ]
+    },
+    {
+      "name": "Harsha Vardhan Mishra",
+      "username": "",
+      "wikidataQid": "",
+      "creatorName": "",
+      "gender": "unknown",
+      "genderFromWikidata": false,
+      "roles": [
+        "reviewer"
+      ]
+    }
+  ],
+  "describer": {
+    "name": "",
+    "wikidataQid": "",
+    "username": ""
+  },
+  "peopleConsent": false,
+  "oralHistory": {
+    "enabled": true,
+    "dialectDetails": "",
+    "recordingContext": "field_recording",
+    "recordingEquipment": "Lavalier microphone, Mirrorless camera",
+    "interviewer": "",
+    "recorder": "",
+    "consentType": "verbal",
+    "consentInformed": true,
+    "consentRevocable": false,
+    "sensitiveContent": false,
+    "sensitiveContentNotes": "",
+    "consentRecordLocation": "Prayagraj",
+    "communityReviewed": true,
+    "communityReviewDate": "2026-11-13",
+    "communityReviewNotes": "The speaker, Shailendra Kumar Mishra, translated some of the terms into Hindi, such as the names of the vegetables, after the recording. Harsha Vardhan Mishra later helped with partial translation into Hindi. Abhinav Srivatsava prepared the first draft of the English translation and reviewed the Allahabadi (Awadhi) version of the subtitle. This version became the main source of truth to guide the English and Hindi subtitles.",
+    "communityReviewers": "Abhinav Srivatsava, Harsha Vardhan Mishra",
+    "transcriptAvailable": false,
+    "transcriptLanguages": "",
+    "transcriptWriter": "",
+    "transcriptEditor": "",
+    "transcriptDate": "",
+    "transcriptLink": "",
+    "additionalTranscripts": []
+  },
+  "extra": {},
+  "rawMetadata": {},
+  "wikidata": {
+    "item": "Q142174832",
+    "matches": {
+      "language:Awadhi": "Q29579",
+      "place:Prayagraj": "Q162442",
+      "person:Subhashish Panigrahi": "Q28469412",
+      "topic:language documentation": "Q1133221",
+      "topic:oral history": "Q558929",
+      "topic:Awadhi": "Q29579",
+      "genre:interview": "Q178651",
+      "equipment:Lavalier microphone": "Q3312047",
+      "equipment:Mirrorless camera": "Q209918",
+      "person:Shailendra Kumar Mishra": "Q142174199",
+      "person:Abhinav Srivatsava": "Q142174142",
+      "project:OpenSpeaks Archives": "Q131755825"
+    },
+    "descriptions": {},
+    "replace": {},
+    "remove": {},
+    "searched": true
+  },
+  "firstPublishedUrl": "https://pad.ma/YMI/",
+  "firstPublishedTitle": "OpenSpeaks Archives: Shailendra Kumar Mishra on Agriculture in Allahabadi-Awadhi",
+  "firstPublishedByUrl": "",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "originalTitle": "",
+  "originalTitleLang": ""
+}

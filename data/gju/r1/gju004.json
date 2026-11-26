@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Wedding Song.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/OpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm",
+  "format": "WebM",
+  "duration": "99",
+  "title": "Wedding Song",
+  "description": "In this interview, Taukeer Alam sings a couplet from a wedding song and narrates about wedding songs of the Van Gujjar in his native language, Van Gujjari. Recorded in Dehradun, Uttarakhand state, India by Subhashish Panigrahi 2019 for the production of his 2021 documentary, MarginalizedAadhaar. The footage was unused in the film and was edited and published under the मारी जबान मारी बिरसा (Maari Jaban Maari Birsa) project in 2024. Van Gujjari and Hindi subtitles are by Alam, and the translation to English is by Panigrahi.",
+  "year": "2019",
+  "date": "",
+  "projectName": "Maari Jaban Maari Birsa",
+  "language": "Gujari",
+  "languageISO": "gju",
+  "dialect": "Van Gujjari",
+  "recordingPlace": "Dehradun, Uttarakhand, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Taukeer Alam",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Wedding Song",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/OpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm/500px-OpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Taukeer_Alam.png/500px-Taukeer_Alam.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "gju-deva",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm.gju-deva.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "hi",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm.hi.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Wedding Song.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Wedding Song.webm.gju-deva.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Wedding Song.webm.hi.srt": "Psubhashish"
+  }
+}

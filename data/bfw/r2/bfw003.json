@@ -1,0 +1,45 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Bfw-Munaremo-Mangala Sisa-Pendom.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/OpenSpeaks-Bfw-Munaremo-Mangala_Sisa-Pendom.webm",
+  "format": "WebM",
+  "duration": "262",
+  "title": "Pendom",
+  "description": "Mangala Sisa, speaker of the Bonda language, and Gobardhan Panda, anthropologist and researcher, discuss the preparation of \"Pendom\", a drink similar to handia, how it was consumed during the then recently concluded Pus Porob, and drink together. Their conversations are in Bonda language with occasional use of the Desia language (marked within 'single quote' in subtitles). Recorded by Prateek Pattanaik in 2018 for the production of Remosam, a 2019 documentary by Subhashish Panigrahi. A small part of the footage was used in the film, and the longer version was edited and published in the Munaremo project in 2024. Subtitling by Gobardhan Panda and Subhashish Panigrahi using Panda's 1998 book Remosam as a reference.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Munaremo",
+  "language": "Bonda",
+  "languageISO": "bfw",
+  "dialect": "",
+  "recordingPlace": "Malkangiri district, Odisha, India",
+  "country": "India",
+  "recordist": "Prateek Pattanaik",
+  "interviewees": [
+    {
+      "fullName": "Mangala Sisa",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Gobardhan Panda",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Pendom",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/OpenSpeaks-Bfw-Munaremo-Mangala_Sisa-Pendom.webm/500px-OpenSpeaks-Bfw-Munaremo-Mangala_Sisa-Pendom.webm.jpg"
+  },
+  "subtitleLanguage": "or",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Mangala_Sisa-Pendom.webm.or.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Mangala Sisa-Pendom.webm.or.srt": "Psubhashish"
+  }
+}

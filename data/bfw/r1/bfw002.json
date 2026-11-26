@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-body parts.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/OpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm",
+  "format": "WebM",
+  "duration": "52",
+  "title": "Body parts",
+  "description": "In this monologue, Gobardhan Panda, an autodidact anthropologist from Koraput, Odisha, India, shows body parts and says their names in the Bonda language. Recorded by Prateek Pattanaik in 2018 for the production of Remosam, a 2019 documentary by Subhashish Panigrahi. The footage was unused in the film and was edited and published under the Munaremo project in 2024. Subtitling by Subhashish Panigrahi using the 1998 book Remosam as a reference.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Munaremo",
+  "language": "Bonda",
+  "languageISO": "bfw",
+  "dialect": "",
+  "recordingPlace": "Malkangiri district, Odisha, India",
+  "country": "India",
+  "recordist": "Prateek Pattanaik",
+  "interviewees": [
+    {
+      "fullName": "Gobardhan Panda",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Body parts",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/OpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm/500px-OpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Gobardhan_Panda_%28cropped%29.jpg/500px-Gobardhan_Panda_%28cropped%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "bfw",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm.bfw.srt",
+  "additionalSubtitles": [
+    {
+      "language": "en",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm.en.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-body parts.webm.bfw.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-body parts.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-body parts.webm.or.srt": "Psubhashish"
+  }
+}

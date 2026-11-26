@@ -1,0 +1,471 @@
+1
+00:00:00,875 --> 00:00:01,668
+Lalit Banra: What is your name?
+
+2
+00:00:01,918 --> 00:00:02,544
+Sunaram Singh.
+
+3
+00:00:02,836 --> 00:00:03,378
+Sunaram Singh...
+
+4
+00:00:04,045 --> 00:00:04,379
+Tiyu.
+
+5
+00:00:04,504 --> 00:00:04,838
+Alright...
+
+6
+00:00:05,338 --> 00:00:06,256
+What do you do?
+
+7
+00:00:06,589 --> 00:00:07,048
+Agriculture.
+
+8
+00:00:07,757 --> 00:00:09,300
+What do you grow?
+
+9
+00:00:10,051 --> 00:00:12,887
+I grow paddy and vegetables.
+
+10
+00:00:13,263 --> 00:00:15,056
+Horse gram, paddy...horse gram...
+
+11
+00:00:15,140 --> 00:00:16,641
+Vegetables, horsegram...
+
+12
+00:00:17,016 --> 00:00:17,684
+And?
+
+13
+00:00:18,101 --> 00:00:19,811
+Cabbage and tomato...
+
+14
+00:00:19,978 --> 00:00:20,562
+Hmm...
+
+15
+00:00:20,562 --> 00:00:21,187
+Yes...
+
+16
+00:00:21,187 --> 00:00:23,815
+These are being cultivated...
+
+17
+00:00:24,315 --> 00:00:26,609
+Hmm...
+
+18
+00:00:27,026 --> 00:00:28,278
+You cultivated...
+
+19
+00:00:28,528 --> 00:00:28,778
+Yes...
+
+20
+00:00:28,945 --> 00:00:32,365
+How much in Rupees do you earn for farming in a year?
+
+21
+00:00:32,782 --> 00:00:34,075
+That isn't being counted.
+
+22
+00:00:34,325 --> 00:00:35,034
+Ok...
+
+23
+00:00:35,285 --> 00:00:35,785
+Yes
+
+24
+00:00:35,785 --> 00:00:37,537
+One of my children is studying.
+
+25
+00:00:37,871 --> 00:00:38,246
+Hmm...
+
+26
+00:00:38,246 --> 00:00:39,497
+so the money is being spent...
+
+27
+00:00:39,497 --> 00:00:39,998
+being spent...
+
+28
+00:00:40,123 --> 00:00:42,000
+Do you feel
+
+29
+00:00:42,000 --> 00:00:44,377
+that you're getting the right price for your cultivation?
+
+30
+00:00:45,420 --> 00:00:46,713
+Yes, we are getting the price...
+
+31
+00:00:46,713 --> 00:00:48,298
+whatever is going in the market...
+
+32
+00:00:48,465 --> 00:00:50,925
+Are you getting the price same with the market?
+
+33
+00:00:50,967 --> 00:00:52,051
+Same rate.
+
+34
+00:00:52,051 --> 00:00:52,886
+Or is it decreasing?
+
+35
+00:00:54,345 --> 00:00:56,014
+Decreases from time to time.
+
+36
+00:00:56,014 --> 00:00:58,141
+Meaning, does it decrease a lot?
+
+37
+00:00:58,391 --> 00:01:00,769
+How much tomatoes and brinjals (eggplants)
+
+38
+00:01:00,769 --> 00:01:02,729
+are sold this year?
+
+39
+00:01:03,688 --> 00:01:06,274
+Earlier, the price was 20-15...
+
+40
+00:01:06,441 --> 00:01:06,775
+Hmm...
+
+41
+00:01:06,900 --> 00:01:10,111
+Now in kilo...
+
+42
+00:01:11,112 --> 00:01:13,406
+For one and a half kilos,
+
+43
+00:01:13,615 --> 00:01:14,449
+ten Rupees.
+
+44
+00:01:14,574 --> 00:01:15,575
+Ten Rupees?
+
+45
+00:01:15,867 --> 00:01:17,118
+So, now you're saying
+
+46
+00:01:17,452 --> 00:01:19,871
+how much you grow...
+
+47
+00:01:19,871 --> 00:01:22,373
+Yeah, initially the price is high
+
+48
+00:01:22,373 --> 00:01:24,834
+and it drops later.
+
+49
+00:01:24,834 --> 00:01:26,753
+Okay...when you farmed,
+
+50
+00:01:26,753 --> 00:01:28,421
+what problems did you face?
+
+51
+00:01:29,422 --> 00:01:31,090
+There is only the water problem.
+
+52
+00:01:31,257 --> 00:01:32,425
+Okay, it's just the water problem.
+
+53
+00:01:32,425 --> 00:01:35,887
+Yes, the problem with water and of the boundary not being built.
+
+54
+00:01:36,054 --> 00:01:36,554
+Yes...
+
+55
+00:01:36,721 --> 00:01:38,848
+The cows are abandoned (old)—that's the problem.
+
+56
+00:01:38,848 --> 00:01:40,058
+That's the problem.
+
+57
+00:01:40,558 --> 00:01:43,520
+Okay, when the government is doing so much for water,
+
+58
+00:01:43,978 --> 00:01:47,232
+hmm...there are schemes for every borewell
+
+59
+00:01:47,232 --> 00:01:49,651
+or scheme for well...
+
+60
+00:01:49,901 --> 00:01:50,151
+Hmm...
+
+61
+00:01:50,318 --> 00:01:53,404
+So, have you gotten (a well) dug up or not?
+
+62
+00:01:53,696 --> 00:01:54,614
+(A well) has not been dug up.
+
+63
+00:01:54,989 --> 00:01:59,994
+But I did not get it dug as our field is on the river bank...
+
+64
+00:01:59,994 --> 00:02:01,120
+By the river bank...still...
+
+65
+00:02:01,120 --> 00:02:02,580
+along the river bank
+
+66
+00:02:02,789 --> 00:02:04,999
+When...when you were told about it,
+
+67
+00:02:04,999 --> 00:02:07,168
+it was announced about this programme's arrival
+
+68
+00:02:07,168 --> 00:02:10,421
+in that time how could it not reach you?...
+
+69
+00:02:10,713 --> 00:02:12,924
+at the Gram Panchayat level
+
+70
+00:02:12,924 --> 00:02:19,180
+you...anyone..an Agriculture Officer
+
+71
+00:02:19,180 --> 00:02:22,392
+or...gram panchayat
+
+72
+00:02:22,475 --> 00:02:24,060
+did they come to explain that
+
+73
+00:02:24,060 --> 00:02:26,062
+this is a government scheme?
+
+74
+00:02:27,814 --> 00:02:28,731
+Were you told about it?
+
+75
+00:02:29,149 --> 00:02:31,359
+Yes, government people have been explaining for the past few days now.
+
+76
+00:02:31,693 --> 00:02:32,569
+So...
+
+77
+00:02:32,569 --> 00:02:34,112
+They came and called a meeting...
+
+78
+00:02:34,654 --> 00:02:35,071
+Hmm...
+
+79
+00:02:35,488 --> 00:02:37,031
+They were looking for the children...
+
+80
+00:02:37,031 --> 00:02:37,824
+Not the children...
+
+81
+00:02:37,824 --> 00:02:39,742
+Did they contact you or not?
+
+82
+00:02:39,909 --> 00:02:41,119
+No, they did't contact me.
+
+83
+00:02:41,119 --> 00:02:41,911
+Didn't contact...
+
+84
+00:02:41,911 --> 00:02:43,246
+Ok, alright.
+
+85
+00:02:43,788 --> 00:02:44,998
+So, what's said now
+
+86
+00:02:45,415 --> 00:02:47,917
+is that when you farm...
+
+87
+00:02:48,042 --> 00:02:49,961
+Where do you spend the money from?
+
+88
+00:02:50,044 --> 00:02:51,462
+Are you spending your own money
+
+89
+00:02:51,462 --> 00:02:53,047
+or taking loan from somewhere?
+
+90
+00:02:53,214 --> 00:02:54,424
+No, my money...
+
+91
+00:02:54,424 --> 00:02:55,633
+Own...from own expenses...
+
+92
+00:02:55,675 --> 00:02:56,593
+With own expanses...
+
+93
+00:02:56,593 --> 00:02:57,510
+With you own expanses...
+
+94
+00:02:57,677 --> 00:02:58,469
+..(I am) farming.
+
+95
+00:02:58,636 --> 00:02:59,387
+(backgroud chatter)
+
+96
+00:02:59,554 --> 00:03:03,808
+You...banks are providing loans
+
+97
+00:03:03,808 --> 00:03:07,645
+or co-operative societies are providing loans
+
+98
+00:03:07,812 --> 00:03:10,064
+Do you know about this or not?
+
+99
+00:03:10,315 --> 00:03:11,608
+I know...I know...
+
+100
+00:03:11,858 --> 00:03:13,109
+So why aren't you taking the loan?
+
+101
+00:03:14,319 --> 00:03:15,612
+Earlier my father...
+
+102
+00:03:15,778 --> 00:03:16,154
+Hmm...
+
+103
+00:03:16,362 --> 00:03:18,656
+had taken a loan that isn't over after paying off.
+
+104
+00:03:19,908 --> 00:03:23,244
+Since bank people cheat like this, I don't accept it (loan).
+
+105
+00:03:23,494 --> 00:03:23,745
+No...
+
+106
+00:03:23,870 --> 00:03:25,580
+Okay, sometimes we heard
+
+107
+00:03:25,580 --> 00:03:28,249
+that agricultural loans will be pardoned.
+
+108
+00:03:28,374 --> 00:03:28,750
+Hmm......
+
+109
+00:03:28,750 --> 00:03:30,668
+So why it (loan) was not pardoned then?
+
+110
+00:03:31,002 --> 00:03:34,339
+Did you talk to the bank people about this or not?
+
+111
+00:03:35,423 --> 00:03:39,552
+I remember from my father's time.
+
+112
+00:03:39,761 --> 00:03:40,136
+Hmm...
+
+113
+00:03:40,219 --> 00:03:42,305
+As my father was worried, 
+
+114
+00:03:42,388 --> 00:03:45,725
+I thought a loan would be very difficult.
+
+115
+00:03:45,808 --> 00:03:46,392
+Hmm...
+
+116
+00:03:46,392 --> 00:03:49,604
+So, I decided not to communicate with the bank.
+
+117
+00:03:49,604 --> 00:03:50,271
+You...
+
+118
+00:03:50,271 --> 00:03:51,230
+decided...

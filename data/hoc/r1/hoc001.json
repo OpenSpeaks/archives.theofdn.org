@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Hoc-Ruum Sakam-Ladura Singh Haiburu-Lalit Singh Banra-Body Parts.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/OpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm",
+  "format": "WebM",
+  "duration": "332",
+  "title": "Body Parts",
+  "description": "In this interview, Lalit Singh Banra, asks Ladura Singh Haiburu the names of body parts in the Ho language. Recorded by Subhashish Panigrahi at Keshpada, Mayurbhanj district, Odisha, India, for his 2019 documentary Mage Porob. The footage was unused in the film and was edited and published under the 𑢼𑣃𑣃𑣊 𑢾𑣁𑣌𑣁𑣖 (Ruum Sakam) project in 2024. Ho subtitles by Ganesh Birua and Rajiv Sawayan, translation to Odia by Sawayan, Birua and Panigrahi, and to English by Birua and Panigrahi. Subtitles edited by Panigrahi.",
+  "year": "2019",
+  "date": "",
+  "projectName": "Ruum Sakam",
+  "language": "Ho",
+  "languageISO": "hoc",
+  "dialect": "",
+  "recordingPlace": "Keshpada, Mayurbhanj district, Odisha, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Ladura Singh Haiburu",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Lalit Singh Banra",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Body Parts",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/OpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm/500px-OpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm.jpg"
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "hoc-latn",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm.hoc-latn.srt",
+      "creators": "Singkiring57 (subtitler), Achim55 (editor)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "hoc",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm.hoc.srt",
+      "creators": "Subhashish Panigrahi (subtitler), Gbirua123 (editor)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ladura Singh Haiburu-Lalit Singh Banra-Body Parts.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ladura Singh Haiburu-Lalit Singh Banra-Body Parts.webm.hoc-latn.srt": "Singkiring57",
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ladura Singh Haiburu-Lalit Singh Banra-Body Parts.webm.hoc.srt": "Psubhashish"
+  }
+}

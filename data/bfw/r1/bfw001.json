@@ -1,0 +1,45 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-Story.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/OpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-Story.webm",
+  "format": "WebM",
+  "duration": "728",
+  "title": "Story",
+  "description": "Gobardhan Panda, a researcher of Bonda language, recites the Bonda origin myth in the form of a poem he wrote in the Bonda language. He also translates the meaning of the stanzas in the Odia language. Recorded by Prateek Pattanaik in 2018 for the production of Remosam, a 2019 documentary by Subhashish Panigrahi. This footage was unused in the film and edited and published under the Munaremo project in 2024. Subtitled by Gobardhan Panda and Subhashish Panigrahi.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Munaremo",
+  "language": "Bonda",
+  "languageISO": "bfw",
+  "dialect": "",
+  "recordingPlace": "Malkangiri district, Odisha, India",
+  "country": "India",
+  "recordist": "Prateek Pattanaik",
+  "interviewees": [
+    {
+      "fullName": "Gobardhan Panda",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Story",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/OpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-Story.webm/500px-OpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-Story.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Gobardhan_Panda_%28cropped%29.jpg/500px-Gobardhan_Panda_%28cropped%29.jpg",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "or",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-Story.webm.or.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-Story.webm.or.srt": "Psubhashish"
+  }
+}

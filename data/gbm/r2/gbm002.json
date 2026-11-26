@@ -1,0 +1,45 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-gbm-Jaunpuri-Surendra Dutt-RP-Current State of Farming.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/OpenSpeaks-gbm-Jaunpuri-Surendra_Dutt-RP-Current_State_of_Farming.webm",
+  "format": "WebM",
+  "duration": "105",
+  "title": "Current State of Farming",
+  "description": "In this video, Surendra Dutt, a Jaunpuri speaker from Bangseel, Uttarakhand, India, discusses the state of his farming occupation at the time of recording in 2019. Interview conducted and recorded by Subhashish Panigrahi on location for his 2021 documentary film, MarginalizedAadhaar.",
+  "year": "",
+  "date": "",
+  "projectName": "Jaunpuri",
+  "language": "Garhwali",
+  "languageISO": "gbm",
+  "dialect": "Jaunpuri",
+  "recordingPlace": "Tehri Garhwal district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Surendra Dutt",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Current State of Farming",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/OpenSpeaks-gbm-Jaunpuri-Surendra_Dutt-RP-Current_State_of_Farming.webm/500px-OpenSpeaks-gbm-Jaunpuri-Surendra_Dutt-RP-Current_State_of_Farming.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Surendra_Dutt.png/500px-Surendra_Dutt.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "hi",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-gbm-Jaunpuri-Surendra_Dutt-RP-Current_State_of_Farming.webm.hi.srt",
+  "additionalSubtitles": [],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-gbm-Jaunpuri-Surendra Dutt-RP-Current State of Farming.webm.hi.srt": "Psubhashish"
+  }
+}

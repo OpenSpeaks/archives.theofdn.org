@@ -1,0 +1,37 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-jns-Jaunsari-Deepak Joshi- Jaunsari 01.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/OpenSpeaks-jns-Jaunsari-Deepak_Joshi-_Jaunsari_01.wav",
+  "format": "WAV",
+  "duration": "1",
+  "title": "Says “Jaunsari”",
+  "description": "Deepak Joshi, a native speaker of Jaunsari language, pronouncing \"Jaunsari\"",
+  "year": "",
+  "date": "",
+  "projectName": "Jaunsari",
+  "language": "Jaunsari",
+  "languageISO": "jns",
+  "dialect": "",
+  "recordingPlace": "Jaunsar-Bawar, Dehradun district, Uttarakhand, India",
+  "country": "India",
+  "recordist": "",
+  "interviewees": [
+    {
+      "fullName": "Deepak Joshi",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Says “Jaunsari”",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Deepak_Joshi.png/500px-Deepak_Joshi.png",
+      "by": "Subhashish Panigrahi"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "languageISO": "bfw",
+  "language": "Bonda",
+  "place": "Malkangiri district, Odisha, India",
+  "map": [
+    18.33,
+    82.2
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Munaremo-logo.svg/500px-Munaremo-logo.svg.png",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [
+    {
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Munaremo"
+    }
+  ],
+  "extras": []
+}

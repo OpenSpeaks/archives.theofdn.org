@@ -1,0 +1,15 @@
+{
+  "languageISO": "gbm",
+  "language": "Garhwali",
+  "place": "Tehri Garhwal district, Uttarakhand, India",
+  "map": [
+    30.5,
+    78.2
+  ],
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Sampati_01.png/500px-Sampati_01.png",
+    "by": "Subhashish Panigrahi"
+  },
+  "deposits": [],
+  "extras": []
+}

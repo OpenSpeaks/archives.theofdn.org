@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Story.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/OpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Story.webm",
+  "format": "WebM",
+  "duration": "71",
+  "title": "Story",
+  "description": "In this interview, Taukeer Alam narrates a story in his native language, Van Gujjari, that grandmothers often tell to young Van Gujjar children. Recorded by Subhashish Panigrahi 2019 for the production of his 2021 documentary, MarginalizedAadhaar. The footage was unused in the film and was edited and published under the मारी जबान मारी बिरसा (Maari Jaban Maari Birsa) project in 2024. Van Gujjari and Hindi subtitles by Alam, translation to English by Panigrahi. Video and subtitles edited by Panigrahi.",
+  "year": "2019",
+  "date": "",
+  "projectName": "Maari Jaban Maari Birsa",
+  "language": "Gujari",
+  "languageISO": "gju",
+  "dialect": "Van Gujjari",
+  "recordingPlace": "Dehradun, Uttarakhand, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Taukeer Alam",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Story",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/OpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Story.webm/500px-OpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Story.webm.jpg",
+    "portrait": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Taukeer_Alam.png/500px-Taukeer_Alam.png",
+      "by": "Subhashish Panigrahi"
+    }
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Story.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "gju-deva",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Story.webm.gju-deva.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "hi",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Story.webm.hi.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Story.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Story.webm.gju-deva.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Story.webm.hi.srt": "Psubhashish"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Hoc-Ruum Sakam-Ramai Singh-Lalit Singh Banra-Dama and Dumang.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/OpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm",
+  "format": "WebM",
+  "duration": "167",
+  "title": "Dama and Dumang",
+  "description": "In this interview, Ramai Singh and his friend briefly play a tune of the Mage Porob, a traditional festival of the Ho people. Singh is seen playing dama while his friend plays dumang and they explain to Lalit Singh Banra how these folk percussion instruments are made. Singh, his friend and Banra speak in the Ho language. Recorded by Subhashish Panigrahi at Keshpada, Mayurbhanj district, Odisha, India, for his 2019 documentary Mage Porob. The footage was unused in the film and was edited and published under the 𑢼𑣃𑣃𑣊 𑢾𑣁𑣌𑣁𑣖 (Ruum Sakam) project in 2024. Ho subtitles and translation to Odia and English by Ganesh Birua, and subtitles edited by Panigrahi.",
+  "year": "2019",
+  "date": "",
+  "projectName": "Ruum Sakam",
+  "language": "Ho",
+  "languageISO": "hoc",
+  "dialect": "",
+  "recordingPlace": "Keshpada, Mayurbhanj district, Odisha, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Ramai Singh",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Lalit Singh Banra",
+      "role": "Interviewer"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Dama and Dumang",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/OpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm/500px-OpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm.jpg"
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "hoc",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm.hoc.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ramai Singh-Lalit Singh Banra-Dama and Dumang.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ramai Singh-Lalit Singh Banra-Dama and Dumang.webm.hoc.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ramai Singh-Lalit Singh Banra-Dama and Dumang.webm.or.srt": "Psubhashish"
+  }
+}

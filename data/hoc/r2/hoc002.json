@@ -1,0 +1,56 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Hoc-Ruum Sakam-Mangal Singhku-Guan Bunga.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/OpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm",
+  "format": "WebM",
+  "duration": "193",
+  "title": "Guan Bunga",
+  "description": "In this interview, Mangal Singhku, a speaker of the Ho language, narrates the rituals of Guan Bunga, a religious ceremony of the Ho community of India. Guan Bunga, literally, \"cattle pen worship\", is performed by the family head, \"desauli\". Recorded by Subhashish Panigrahi at Keshpada, Mayurbhanj district, Odisha, India, for his 2019 documentary Mage Porob. Multiple videos unused/less used in the film were edited by Panigrahi into a single short documentary and published under the 𑢼𑣃𑣃𑣊 𑢾𑣁𑣌𑣁𑣖 (Ruum Sakam) project in 2024. Ho subtitles by Ganesh Birua, with translation to Odia by Panigrahi, and to English by Birua and Panigrahi, end edited by Panigrahi.",
+  "year": "2019",
+  "date": "",
+  "projectName": "Ruum Sakam",
+  "language": "Ho",
+  "languageISO": "hoc",
+  "dialect": "",
+  "recordingPlace": "Keshpada, Mayurbhanj district, Odisha, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Mangal Singhku",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Guan Bunga",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/OpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm/500px-OpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm.jpg"
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "hoc",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm.hoc.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    },
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Mangal Singhku-Guan Bunga.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Mangal Singhku-Guan Bunga.webm.hoc.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Mangal Singhku-Guan Bunga.webm.or.srt": "Psubhashish"
+  }
+}

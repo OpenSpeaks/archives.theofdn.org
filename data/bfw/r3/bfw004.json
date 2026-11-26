@@ -1,0 +1,53 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks-Bfw-Munaremo-Sukra Dhangdamajhi-Gobardhan Panda-Shamanism.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/OpenSpeaks-Bfw-Munaremo-Sukra_Dhangdamajhi-Gobardhan_Panda-Shamanism.webm",
+  "format": "WebM",
+  "duration": "239",
+  "title": "Shamanism",
+  "description": "In this video interview, Sukra Dhangdamajhi, a disari (Bonda shaman) from Malkangiri district, Odisha, India, shares his shamanic practices. Gobardhan Panda, a researcher of the Bonda language and the interviewer, and Dhangdamajhi speak in the Bonda language with occasional use of Desia, a lingua franca among Bonda, Gutob, Odia and other local communities. Desia parts are indicated within quotes (e.g. 'ନି-ନା, ସେରମୂଲ୍') in the Odia TimedText subtitles. Recorded by Prateek Pattanaik in 2018 for the production of Remosam, a 2019 documentary by Subhashish Panigrahi. This footage was partially used in the film and was later edited and published under the Munaremo project in 2024 by Panigrahi. Subtitled from Bonda to Odia by Gobardhan Panda and from Odia to English by Panigrahi, who also edited the Odia subtitles for clarity.",
+  "year": "2018",
+  "date": "",
+  "projectName": "Munaremo",
+  "language": "Bonda",
+  "languageISO": "bfw",
+  "dialect": "",
+  "recordingPlace": "Malkangiri district, Odisha, India",
+  "country": "India",
+  "recordist": "Prateek Pattanaik",
+  "interviewees": [
+    {
+      "fullName": "Sukra Dhangdamajhi",
+      "role": "Speaker"
+    },
+    {
+      "fullName": "Gobardhan Panda",
+      "role": "Speaker"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "identifiers": [],
+  "firstPublishedTitle": "Shamanism",
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+  "extra": {
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/OpenSpeaks-Bfw-Munaremo-Sukra_Dhangdamajhi-Gobardhan_Panda-Shamanism.webm/500px-OpenSpeaks-Bfw-Munaremo-Sukra_Dhangdamajhi-Gobardhan_Panda-Shamanism.webm.jpg"
+  },
+  "subtitleLanguage": "en",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Sukra_Dhangdamajhi-Gobardhan_Panda-Shamanism.webm.en.srt",
+  "additionalSubtitles": [
+    {
+      "language": "or",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Sukra_Dhangdamajhi-Gobardhan_Panda-Shamanism.webm.or.srt",
+      "creators": "Subhashish Panigrahi (subtitler)",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "timedTextAuthors": {
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Sukra Dhangdamajhi-Gobardhan Panda-Shamanism.webm.en.srt": "Psubhashish",
+    "TimedText:OpenSpeaks-Bfw-Munaremo-Sukra Dhangdamajhi-Gobardhan Panda-Shamanism.webm.or.srt": "Psubhashish"
+  }
+}

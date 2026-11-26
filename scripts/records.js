@@ -85,8 +85,14 @@ export function load(dataDir) {
       session.items.sort((a, b) => a.n - b.n);
       const first = session.items[0].tome;
       const roles = new Map();
-      for (const it of session.items) for (const p of it.tome.interviewees || []) if (p.fullName && !roles.has(p.fullName)) roles.set(p.fullName, p.role || "Participant");
+      for (const it of session.items) {
+        const t = it.tome;
+        const list = (t.people || []).some((p) => p.name) ? t.people.map((p) => [p.name, (p.roles || []).join(", ")]) : (t.interviewees || []).map((p) => [p.fullName, (p.role || "").toLowerCase()]);
+        for (const [name, role] of list) if (name && !roles.has(name)) roles.set(name, role);
+      }
       session.people = [...roles].map(([name, role]) => ({ name, role }));
+      const speaking = session.people.filter((p) => /speaker|interviewee|participant/i.test(p.role) || !p.role);
+      session.speakers = (speaking.length ? speaking : session.people.slice(0, 1)).map((p) => p.name);
       session.variety = first.dialect || "";
       session.project = first.projectName || "";
       session.place = first.recordingPlace || col.place;

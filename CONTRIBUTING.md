@@ -38,6 +38,39 @@ The variety comes from the Tome record's dialect field. Jaunpuri records have `"
 
 Run `npm run tome-sync`. It reads Tome's current source, saves its field list in `schema/tome.json` and lists records saved with an older Tome or with fields Tome has dropped. If Tome renamed a field, add the old and new names to `schema/renames.json` and run `npm run tome-sync -- --write`.
 
+## Update an item
+
+1. On the archive, open the item's session page and download its Tome record (JSON).
+2. Open that file in Tome. Make your changes, such as matching people and places with Wikidata, and download it again with "Saved file (.json)".
+3. Rename the download to the item's name, such as `juy001.json`, and put it in place of the old one in the session's folder, such as `data/juy/r1/`.
+4. If a subtitle changed, replace its file too, such as `juy001.en.srt`. A subtitle in a new language is a new file, such as `juy001.hi.srt`.
+5. Check it, then publish it, as below.
+
+Starting from the archive's own record keeps the fields Tome doesn't fill by itself, such as the poster and the speaker's photo under `extra`.
+
+### In the terminal
+
+From the repository's folder:
+
+```
+git --no-pager diff data/juy/r1/juy001.json
+npm run validate
+npm run build
+npm run serve
+```
+
+The first line shows what changed: red lines are removed, green lines are added. `npm run validate` should end with "items checked". `npm run serve` shows the site at http://127.0.0.1:8765/; press Ctrl+C to stop it. Then publish:
+
+```
+git add data/juy/r1/
+git commit -m "juy001 updated in Tome"
+git push
+```
+
+### On GitHub
+
+Open the session's folder, choose **Add file**, then **Upload files**, and add the renamed JSON and any subtitle files. Commit to a new branch and open a pull request. The check runs on it, and the site updates when it's merged.
+
 ## Using a record elsewhere
 
 Each item lists its Tome record and subtitle files for download. To describe the same recording on Wikimedia Commons or another archive, open the record in Tome and upload from there.

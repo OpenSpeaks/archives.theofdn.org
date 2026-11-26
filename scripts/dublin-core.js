@@ -29,7 +29,7 @@ export function dcFields(item) {
   add("type", t.fileType === "audio" ? "Sound" : "MovingImage");
   add("format", t.mimeType || MIME[t.format] || (t.fileName?.endsWith(".webm") ? "video/webm" : t.format));
   add("identifier", arkUrl(item.id));
-  for (const i of t.identifiers || []) add("identifier", i.prop === "P1184" ? `https://hdl.handle.net/${i.value}` : i.value);
+  for (const i of (t.identifiers || []).filter((x) => x.value?.trim())) add("identifier", i.prop === "P1184" ? `https://hdl.handle.net/${i.value}` : i.value);
   add("language", isoOf(t));
   for (const s of item.subtitles) add("relation", arkUrl(`${item.id}/${s.language}/srt`));
   add("coverage", t.recordingPlace);

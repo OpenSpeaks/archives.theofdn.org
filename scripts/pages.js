@@ -51,7 +51,7 @@ function citeBox(text) {
 function deposits(item) {
   const t = item.tome;
   const out = [];
-  for (const i of t.identifiers || []) {
+  for (const i of (t.identifiers || []).filter((x) => x.value?.trim())) {
     if (i.prop === "P1184") out.push(`<a href="https://hdl.handle.net/${esc(i.value)}">Language Archive Cologne</a>`);
   }
   if (t.onCommons && t.fileName) out.push(`<a href="https://commons.wikimedia.org/wiki/File:${esc(encodeURIComponent(t.fileName.replaceAll(" ", "_")))}">Wikimedia Commons</a>`);
@@ -72,7 +72,7 @@ function credits(people, recordists, photos, subtitlersList = []) {
   const seen = new Set();
   const pics = photos.filter((p) => p && !seen.has(p.src) && seen.add(p.src));
   return `<section class="credits-page"><h2>Credits</h2>
-<p>Speakers and interviewers: ${esc(names(people))}.</p>
+<p>People: ${esc(names(people))}.</p>
 ${recordists.length ? `<p>Recorded by ${esc(names(recordists))}.</p>` : ""}
 ${subtitlersList.length ? `<p>Subtitles by ${esc(names(subtitlersList))}.</p>` : ""}
 ${pics.length ? `<p>Photographs: ${pics.map((p) => `${esc(p.of)} by ${esc(p.by)}`).join("; ")}.</p>` : ""}
@@ -153,7 +153,7 @@ ${collections.map((c) => `<li><a href="${u(c.iso + "/")}"><span class="code">${c
 }
 
 function sessionRow(s) {
-  return `<li><a href="${u(s.id + "/")}">${s.portrait ? `<img src="${esc(s.portrait.src)}" alt="">` : '<span class="noimg"></span>'}<span><span class="lname">${esc(names(s.people.map((p) => p.name)))}</span><span class="lplace">${s.items.map((it) => esc(plain(it.tome.title))).join(", ")}</span></span><span class="num">${s.items.length} ${s.items.length === 1 ? "item" : "items"}</span></a></li>`;
+  return `<li><a href="${u(s.id + "/")}">${s.portrait ? `<img src="${esc(s.portrait.src)}" alt="">` : '<span class="noimg"></span>'}<span><span class="lname">${esc(names(s.speakers))}</span><span class="lplace">${s.items.map((it) => esc(plain(it.tome.title))).join(", ")}</span></span><span class="num">${s.items.length} ${s.items.length === 1 ? "item" : "items"}</span></a></li>`;
 }
 
 export function collectionPage(c, collections) {
@@ -207,6 +207,14 @@ function player(it) {
 <button type="button" class="full" hidden>Full screen</button>`;
 }
 
+// Tome's people list with roles, or the older interviewees list
+export function peopleOf(t) {
+  if ((t.people || []).some((p) => p.name)) return t.people.filter((p) => p.name).map((p) => ({ name: p.name, roles: p.roles || [] }));
+  return (t.interviewees || []).filter((p) => p.fullName).map((p) => ({ name: p.fullName, roles: p.role ? [p.role.toLowerCase()] : [] }));
+}
+
+const withRoles = (list) => list.map((p) => `${esc(p.name)}${p.roles.length ? ` (${esc(p.roles.join(", "))})` : ""}`).join("<br>");
+
 // who made a subtitle track, from the Tome record
 function subtitlers(t, language) {
   const tracks = [{ language: t.subtitleLanguage, creators: t.subtitleCreators }, ...(t.additionalSubtitles || [])];
@@ -222,7 +230,7 @@ function itemSection(it) {
   const c = s.collection;
   const title = plain(t.title);
   const year = (String(t.date || t.year).match(/\d{4}/) || [""])[0];
-  const cite = `${names(s.people.map((p) => p.name))}${year ? ` (${year})` : ""}. ${title}. ${c.language} [${c.iso}]. ${SITE_NAME}. ${arkUrl(it.id)}`;
+  const cite = `${names(s.speakers)}${year ? ` (${year})` : ""}. ${title}. ${c.language} [${c.iso}]. ${SITE_NAME}. ${arkUrl(it.id)}`;
   const ext = (t.fileName?.split(".").pop() || t.format || "").toLowerCase();
   const files = [
     ...(mediaUrl(t) ? [{ id: `${it.id}/${ext}`, name: `${it.id}.${ext}`, what: t.fileType === "audio" ? "Sound" : "Video", href: mediaUrl(t) }] : []),
@@ -236,7 +244,7 @@ ${fields([
   ["Other titles", (t.extraTitles || []).map((e) => esc(e.text)).join("<br>")],
   ["Language", `${esc(t.language)} (${esc(isoOf(t))})`],
   ["Variety", esc([t.dialect, t.dialectNames && `also called ${t.dialectNames}`].filter(Boolean).join(", "))],
-  ["People", esc(names((t.interviewees || []).map((p) => p.fullName)))],
+  ["People", withRoles(peopleOf(t))],
   ["Place", esc(t.recordingPlace)],
   ["Recorded", esc(t.date || t.year)],
   ["Recorded by", esc(t.recordist)],
@@ -257,14 +265,15 @@ ${citeBox(cite)}
 
 export function sessionPage(s, collections) {
   const c = s.collection;
-  const people = s.people.map((p) => p.name);
+  const people = s.speakers;
+  const everyone = s.people.map((p) => p.name);
   const body = `<div class="wrap collection">
 <p class="crumbs"><a href="${u("")}#languages">Languages</a> / <a href="${u(c.iso + "/")}">${esc(c.language)}</a>${s.variety ? ` / ${esc(s.variety)}` : ""} / Session ${s.n}</p>
 <div class="chead"><div><h1 class="display small">${esc(names(people))}</h1><p class="project">${esc([s.project, s.variety || c.language].filter(Boolean).join(", "))}</p>${pid(s.id)}</div>${s.portrait ? `<img src="${esc(s.portrait.src)}" alt="${esc(people[0])}">` : ""}</div>
 ${fields([
   ["Language", `<a href="${u(c.iso + "/")}">${esc(c.language)}</a> (${c.iso})`],
   ["Variety", esc(s.variety)],
-  ["People", s.people.map((p) => `${esc(p.name)}${p.role && p.role !== "Participant" ? ` (${esc(p.role.toLowerCase())})` : ""}`).join("<br>")],
+  ["People", s.people.map((p) => `${esc(p.name)}${p.role && p.role !== "participant" ? ` (${esc(p.role)})` : ""}`).join("<br>")],
   ["Place", esc(s.place)],
   ["Recorded", esc(s.date)],
   ["Recorded by", esc(s.recordist)],
@@ -273,7 +282,7 @@ ${fields([
 ])}
 <h2 class="sub">Items</h2>
 <div class="items">${s.items.map(itemSection).join("\n")}</div>
-${credits(people, s.recordist ? [s.recordist] : [], [s.portrait && { ...s.portrait, of: people[0] }], subtitleCredits(s))}
+${credits(everyone, s.recordist ? [s.recordist] : [], [s.portrait && { ...s.portrait, of: people[0] }], subtitleCredits(s))}
 </div>`;
   return shell({ title: `${names(people)}, ${c.language} – ${SITE_NAME}`, body, collections, active: c.iso });
 }

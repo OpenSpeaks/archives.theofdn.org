@@ -327,9 +327,24 @@ ${credits([w.speaker], w.recordist ? [w.recordist] : [], [])}
 }
 
 export function aboutPage(collections) {
+  const sessions = collections.flatMap((c) => c.sessions);
+  const items = sessions.flatMap((s) => s.items);
+  const subtitles = items.reduce((n, it) => n + it.subtitles.length, 0);
+  const words = collections.flatMap((c) => c.wordlists).reduce((n, w) => n + w.words.length, 0);
   const body = `<div class="wrap prose">
 <h1 class="display small">about</h1>
-<p>OpenSpeaks Archives is a public digital archive supporting community-led documentation of mother tongues and local languages. It contributes to Wikimedia projects, communities, and the open knowledge movement. It currently lists recordings in ${collections.length} languages.</p>
+<p>OpenSpeaks Archives is a public digital archive supporting community-led audio-visual documentation of mother tongues and local languages. It contributes to Wikimedia projects, communities, and the open knowledge movement. It currently lists recordings in ${collections.length} languages.</p>
+<h2>How the archive is arranged</h2>
+<p>Each language has a collection, and a collection holds recording sessions. A session is one sitting with a speaker or a group. Each video or sound recording in it is an item, with its subtitles and other files. Some collections also hold word lists of pronunciation recordings.</p>
+<p>The archive has ${sessions.length} sessions with ${items.length} items, ${subtitles} subtitle files and ${words.toLocaleString("en-GB")} recorded words.</p>
+<h2>Identifiers</h2>
+<p>Each collection, session, item, file and word has an identifier that stays the same if the website moves, such as <code>ark:15056/osa-juy001</code>. The copy button next to an identifier copies its link.</p>
+<h2>Deposits</h2>
+<p>We deposit recordings with the Endangered Languages Archive, Language Archive Cologne, the Library of Congress, and Pad.ma, and upload to Wikimedia Commons for use in Wikipedia and Wikimedia projects. Each collection page lists where its recordings are deposited.</p>
+<h2>Records</h2>
+<p>Each item is described in <a href="https://tome.toolforge.org/">Tome</a>, and the Tome record is kept as the archive's own record of the item. The Dublin Core and spreadsheet versions on the <a href="${u("data/")}">data</a> page are made from it.</p>
+<h2>Adding and correcting records</h2>
+<p>Records are added and corrected through pull requests on GitHub. The <a href="https://github.com/OpenSpeaks/archives.theofdn.org/blob/main/CONTRIBUTING.md">guide</a> lists the steps.</p>
 </div>`;
   return shell({ title: `About – ${SITE_NAME}`, body, collections });
 }

@@ -191,6 +191,8 @@ footer .ticks { padding-block: 1rem .2rem; }
 .desc { margin: 0; max-width: 68ch; }
 .credits-page { margin-top: 3rem; padding-top: 1rem; border-top: 4px solid var(--line); font-size: .9rem; }
 .credits-page h2 { font: 800 1.1rem/1.2 var(--text); margin: 0 0 .5rem; }
+.prose h2 { font: 800 1.1rem/1.2 var(--text); margin: 2rem 0 .5rem; }
+.prose code { font: 500 .9em ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
 .credits-page p { margin: 0 0 .4rem; max-width: 80ch; }
 .prose { padding-block: 3rem; }
 .prose p { max-width: 68ch; font-size: 1.1rem; }

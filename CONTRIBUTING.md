@@ -78,3 +78,7 @@ Each item lists its Tome record and subtitle files for download. To describe the
 ## Word lists
 
 Pronunciation recordings are kept as word lists in a collection's `words` folder, such as `data/ory/words/`. Each list has a JSON file describing it (`w1.json`) and a CSV of its words (`w1.csv`) with three columns: `n`, `word` and `file`. Add new words at the end with the next number, and never renumber, because each word's identifier is built from its number, such as `osa-ory-w1-00001`.
+
+## Publish from the terminal
+
+From the repository's folder, run `npm run push "about page"` with your own short message in the quotes. It checks the records, builds the site, commits every change and pushes it. If the check fails, nothing is committed.

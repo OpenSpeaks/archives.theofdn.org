@@ -8,6 +8,7 @@
     "validate": "node scripts/validate.js",
     "build": "node scripts/build.js",
     "tome-sync": "node scripts/tome-sync.js",
-    "serve": "cd dist && python3 -m http.server 8765 --bind 127.0.0.1"
+    "serve": "cd dist && python3 -m http.server 8765 --bind 127.0.0.1",
+    "push": "sh scripts/push.sh"
   }
 }

@@ -45,11 +45,12 @@
     {
       "language": "or",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Jun-Opino_Gomango-Kshetrabasi_Juanga-Short_Introduction.webm.or.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "Kshetrabasi Juanga (author)",
+  "subtitleEditorsReviewers": "Subhashish Panigrahi (editor)",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Jun-Opino Gomango-Kshetrabasi Juanga-Short Introduction.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Jun-Opino Gomango-Kshetrabasi Juanga-Short Introduction.webm.or.srt": "Psubhashish"

@@ -41,11 +41,11 @@
     {
       "language": "hi",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Jns-Jaunsari-Deepak_Joshi-SP-Introduction_Village.webm.hi.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Jns-Jaunsari-Deepak Joshi-SP-Introduction Village.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Jns-Jaunsari-Deepak Joshi-SP-Introduction Village.webm.hi.srt": "Psubhashish"

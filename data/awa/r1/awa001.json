@@ -27,7 +27,7 @@
     }
   ],
   "year": "",
-  "description": "In this video, Shailendra Kumar Mishra, a farmer and a speaker of the Allahabadi variety of the [[:w:Awadhi language|Awadhi language]] from Allahabad, Uttar Pradesh, India, discusses the agricultural practices in his village. Interviewed by Subhashish Panigrahi for the OpenSpeaks Archives, with support from Abhinav Srivastava of Azad Reads and Harshavardhan Mishra. In the interview, Shailendra briefly shares which crops he and his family grow year-round and how they make paneer from milk.",
+  "description": "In this video, Shailendra Kumar Mishra, a farmer and a speaker of the Allahabadi variety of the [[:w:Awadhi language|Awadhi language]] from Allahabad, Uttar Pradesh, India, discusses the agricultural practices in his village. Interviewed by Subhashish Panigrahi for the OpenSpeaks Archives, with support from Abhinav Srivastava of Azad Reads and Harsha Vardhan Mishra. In the interview, Shailendra briefly shares which crops he and his family grow year-round and how they make paneer from milk.",
   "primaryDescLang": "en",
   "extraDescriptions": [
     {
@@ -68,7 +68,7 @@
   "subtitleLanguage": "awa",
   "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-awa-Shailendra-Kumar-Mishra-Agriculture.webm.awa.srt",
   "subtitleCreators": "Subhashish Panigrahi (subtitler)",
-  "subtitleEditorsReviewers": "Abhinav Srivatsava (reviewer)",
+  "subtitleEditorsReviewers": "Harsha Vardhan Mishra (reviewer), Abhinav Srivastava (reviewer)",
   "additionalSubtitles": [
     {
       "language": "hi",
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "name": "Abhinav Srivatsava",
+      "name": "Abhinav Srivastava",
       "username": "",
       "wikidataQid": "Q142174142",
       "creatorName": "",
@@ -185,8 +185,8 @@
     "consentRecordLocation": "Prayagraj",
     "communityReviewed": true,
     "communityReviewDate": "2026-11-13",
-    "communityReviewNotes": "The speaker, Shailendra Kumar Mishra, translated some of the terms into Hindi, such as the names of the vegetables, after the recording. Harsha Vardhan Mishra later helped with partial translation into Hindi. Abhinav Srivatsava prepared the first draft of the English translation and reviewed the Allahabadi (Awadhi) version of the subtitle. This version became the main source of truth to guide the English and Hindi subtitles.",
-    "communityReviewers": "Abhinav Srivatsava, Harsha Vardhan Mishra",
+    "communityReviewNotes": "The speaker, Shailendra Kumar Mishra, translated some of the terms into Hindi, such as the names of the vegetables, after the recording. Harsha Vardhan Mishra later helped with partial translation into Hindi. Abhinav Srivastava prepared the first draft of the English translation and reviewed the Allahabadi (Awadhi) version of the subtitle. This version became the main source of truth to guide the English and Hindi subtitles.",
+    "communityReviewers": "Abhinav Srivastava, Harsha Vardhan Mishra",
     "transcriptAvailable": false,
     "transcriptLanguages": "",
     "transcriptWriter": "",
@@ -210,7 +210,7 @@
       "equipment:Lavalier microphone": "Q3312047",
       "equipment:Mirrorless camera": "Q209918",
       "person:Shailendra Kumar Mishra": "Q142174199",
-      "person:Abhinav Srivatsava": "Q142174142",
+      "person:Abhinav Srivastava": "Q142174142",
       "project:OpenSpeaks Archives": "Q131755825"
     },
     "descriptions": {},

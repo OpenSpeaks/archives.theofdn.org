@@ -47,17 +47,18 @@
     {
       "language": "kgg",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Nomadic_Life.webm.kgg.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "ne",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Nomadic_Life.webm.ne.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler), ShakespeareFan00 (editor)",
+  "subtitleCreators": "",
+  "subtitleEditorsReviewers": "ShakespeareFan00 (editor)",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Nomadic Life.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Nomadic Life.webm.kgg.srt": "Psubhashish",

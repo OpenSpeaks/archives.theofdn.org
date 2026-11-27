@@ -45,11 +45,11 @@
     {
       "language": "or",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-srb-Idital-Opino_Gomango-Namad_Dalbehera-Intro.webm.or.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-srb-Idital-Opino Gomango-Namad Dalbehera-Intro.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-srb-Idital-Opino Gomango-Namad Dalbehera-Intro.webm.or.srt": "Psubhashish"

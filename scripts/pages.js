@@ -94,7 +94,7 @@ function ticks(collections, active) {
 
 function subtitleCredits(s) {
   const found = new Set();
-  for (const it of s.items) for (const x of it.subtitles) for (const p of subtitlers(it.tome, x.language)) found.add(p.replace(/ \(editor\)/, ""));
+  for (const it of s.items) for (const x of it.subtitles) for (const p of subtitlers(it.tome, x.language, s.collection)) found.add(p.replace(/ \([^)]*\)$/, ""));
   return [...found];
 }
 
@@ -271,12 +271,12 @@ const withRoles = (list) => list.map((p) => {
   return `${esc(who(p.name))}${shown.length ? ` (${esc(roles(shown))})` : ""}`;
 }).join("<br>");
 
-// who made a subtitle track, from the Tome record
-function subtitlers(tm, language) {
-  const tracks = [{ language: tm.subtitleLanguage, creators: tm.subtitleCreators }, ...(tm.additionalSubtitles || [])];
+// who made a subtitle track, from the Tome record; Tome may store the track language as a code or a name
+function subtitlers(tm, language, c) {
+  const tracks = [{ language: tm.subtitleLanguage, creators: tm.subtitleCreators, editorsReviewers: tm.subtitleEditorsReviewers }, ...(tm.additionalSubtitles || [])];
   const users = new Set(Object.values(tm.timedTextAuthors || {}));
-  const creators = tracks.find((x) => x.language === language)?.creators || "";
-  return creators.split(",").map((p) => p.trim()).filter(Boolean)
+  const track = tracks.find((x) => x.language === language || x.language === trackLabel(language, c)) || {};
+  return [track.creators, track.editorsReviewers].filter(Boolean).join(",").split(",").map((p) => p.trim()).filter(Boolean)
     .map((p) => p.replace(/ \(subtitler\)$/, "")).map((p) => (users.has(p.replace(/ \(editor\)$/, "")) ? raw("commonsUser", { name: p }) : p));
 }
 
@@ -293,7 +293,7 @@ function itemSection(it) {
   const cite = `${names(s.speakers)}${year ? ` (${year})` : ""}. ${name}. ${c.language} [${c.iso}]. ${site()}. ${arkUrl(it.id)}`;
   const ext = (tm.fileName?.split(".").pop() || tm.format || "").toLowerCase();
   const subtitleWhat = (x) => {
-    const by = subtitlers(tm, x.language);
+    const by = subtitlers(tm, x.language, c);
     const language = esc(trackLabel(x.language, c));
     return by.length ? t("subtitlesInBy", { language, names: esc(by.join(", ")) }) : t("subtitlesIn", { language });
   };

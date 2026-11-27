@@ -47,11 +47,11 @@
     {
       "language": "hoc",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ladura_Singh_Haiburu-Lalit_Singh_Banra-Body_Parts.webm.hoc.srt",
-      "creators": "Subhashish Panigrahi (subtitler), Gbirua123 (editor)",
+      "creators": "Gbirua123 (editor)",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ladura Singh Haiburu-Lalit Singh Banra-Body Parts.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ladura Singh Haiburu-Lalit Singh Banra-Body Parts.webm.hoc-latn.srt": "Singkiring57",

@@ -41,17 +41,17 @@
     {
       "language": "gju-deva",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Van_Gujjari_Wedding.webm.gju-deva.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "hi",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Van_Gujjari_Wedding.webm.hi.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Van Gujjari Wedding.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Van Gujjari Wedding.webm.gju-deva.srt": "Psubhashish",

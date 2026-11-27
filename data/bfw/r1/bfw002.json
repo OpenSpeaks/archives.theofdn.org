@@ -41,17 +41,17 @@
     {
       "language": "en",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm.en.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "or",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Bfw-Munaremo-Gobardhan_Panda-body_parts.webm.or.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-body parts.webm.bfw.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Bfw-Munaremo-Gobardhan Panda-body parts.webm.en.srt": "Psubhashish",

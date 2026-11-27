@@ -47,17 +47,17 @@
     {
       "language": "kgg",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Uday_Raj_Aaley-Kusunda_language_endangerment.webm.kgg.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "ne",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen_Kusunda-Uday_Raj_Aaley-Kusunda_language_endangerment.webm.ne.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Uday Raj Aaley-Kusunda language endangerment.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen Kusunda-Uday Raj Aaley-Kusunda language endangerment.webm.kgg.srt": "Psubhashish",

@@ -37,17 +37,17 @@
     {
       "language": "hoc",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm.hoc.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "or",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Mangal_Singhku-Guan_Bunga.webm.or.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Mangal Singhku-Guan Bunga.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Mangal Singhku-Guan Bunga.webm.hoc.srt": "Psubhashish",

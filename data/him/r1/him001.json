@@ -41,11 +41,11 @@
     {
       "language": "hi",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-him-Bangani-Jayprakash_Chauhan-SP-Access_in_Bangani.webm.hi.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-him-Bangani-Jayprakash Chauhan-SP-Access in Bangani.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-him-Bangani-Jayprakash Chauhan-SP-Access in Bangani.webm.hi.srt": "Psubhashish"

@@ -1,6 +1,6 @@
 // Dublin Core (oai_dc) for one item, from its Tome record
 import { arkUrl, SITE_NAME } from "./config.js";
-import { isoOf, plain } from "./records.js";
+import { isoOf, peopleOf, plain } from "./records.js";
 
 const x = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[c]);
 
@@ -18,8 +18,11 @@ export function dcFields(item) {
   const add = (name, value) => value && out.push([name, value]);
   add("title", plain(t.title));
   for (const e of t.extraTitles || []) add("title", e.text);
-  add("creator", t.recordist);
-  for (const p of item.session.people) add("contributor", p.name);
+  // speakers and copyright holders are creators; a recordist is a contributor
+  const speakers = peopleOf(t).filter((p) => !p.roles.length || p.roles.some((r) => /speaker|interviewee|participant|singer|performer/i.test(r))).map((p) => p.name);
+  const creators = [...new Set([...speakers, ...(t.copyrightHolders || []).map((h) => h.displayName || h.creatorName)].filter(Boolean))];
+  for (const n of creators) add("creator", n);
+  for (const n of new Set([...item.session.people.map((p) => p.name), t.recordist])) if (n && !creators.includes(n)) add("contributor", n);
   for (const k of String(t.topic || "").split(",")) add("subject", k.trim());
   for (const k of t.keywords || []) add("subject", k);
   add("description", plain(t.description));

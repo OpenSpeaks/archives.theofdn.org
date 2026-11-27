@@ -41,17 +41,17 @@
     {
       "language": "gju-deva",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm.gju-deva.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "hi",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Gju-Maari_Jaban_Maari_Birsa-Taukeer_Alam-Wedding_Song.webm.hi.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Wedding Song.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Gju-Maari Jaban Maari Birsa-Taukeer Alam-Wedding Song.webm.gju-deva.srt": "Psubhashish",

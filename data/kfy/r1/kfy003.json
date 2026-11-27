@@ -41,17 +41,17 @@
     {
       "language": "hi",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kfy-Johari-Johari-Surendra_Singh_Pangtey-Torn_Shoes_%28Joke%29.webm.hi.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "kfy",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kfy-Johari-Johari-Surendra_Singh_Pangtey-Torn_Shoes_%28Joke%29.webm.kfy.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Kfy-Johari-Johari-Surendra Singh Pangtey-Torn Shoes (Joke).webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Kfy-Johari-Johari-Surendra Singh Pangtey-Torn Shoes (Joke).webm.hi.srt": "Psubhashish",

@@ -42,7 +42,8 @@
   "subtitleLanguage": "hi",
   "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-rnp-Marcha-K.S._Bharwal-Bimla_Bharwal-Wedding_Ceremony.webm.hi.srt",
   "additionalSubtitles": [],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "Kimmi Pal (author)",
+  "subtitleEditorsReviewers": "Bhawani Pal (advisor), Subhashish Panigrahi (editor)",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-rnp-Marcha-K.S. Bharwal-Bimla Bharwal-Wedding Ceremony.webm.hi.srt": "Psubhashish"
   }

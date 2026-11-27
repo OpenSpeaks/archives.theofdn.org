@@ -41,17 +41,17 @@
     {
       "language": "hoc",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm.hoc.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "or",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Ramai_Singh-Lalit_Singh_Banra-Dama_and_Dumang.webm.or.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ramai Singh-Lalit Singh Banra-Dama and Dumang.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Ramai Singh-Lalit Singh Banra-Dama and Dumang.webm.hoc.srt": "Psubhashish",

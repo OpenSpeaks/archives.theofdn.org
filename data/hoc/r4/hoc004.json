@@ -41,13 +41,13 @@
     {
       "language": "hoc",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Sunaram_Singh_Tiyu-Cultivation.webm.hoc.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
       "language": "or",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Hoc-Ruum_Sakam-Sunaram_Singh_Tiyu-Cultivation.webm.or.srt",
-      "creators": "Subhashish Panigrahi (subtitler)",
+      "creators": "",
       "editorsReviewers": ""
     },
     {
@@ -57,7 +57,7 @@
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Sunaram Singh Tiyu-Cultivation.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Hoc-Ruum Sakam-Sunaram Singh Tiyu-Cultivation.webm.hoc.srt": "Psubhashish",

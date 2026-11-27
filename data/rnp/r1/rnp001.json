@@ -42,7 +42,8 @@
   "subtitleLanguage": "hi",
   "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-rnp-Bimla-Badwal_K.S._Badwal-Nostalgic_Past.webm.hi.srt",
   "additionalSubtitles": [],
-  "subtitleCreators": "Subhashish Panigrahi (subtitler)",
+  "subtitleCreators": "Kimmi Pal (author)",
+  "subtitleEditorsReviewers": "Bhawani Pal (advisor), Subhashish Panigrahi (editor)",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-rnp-Bimla-Badwal K.S. Badwal-Nostalgic Past.webm.hi.srt": "Psubhashish"
   }

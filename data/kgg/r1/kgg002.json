@@ -53,11 +53,12 @@
     {
       "language": "ne",
       "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Kgg-Gejmehac_Gipan-Gyani_Maiya_Sen-Kusunda-Uday_Raj_Aaley-Cooking_Process.webm.ne.srt",
-      "creators": "",
+      "creators": "Uday Raj Aaley (subtitler)",
       "editorsReviewers": ""
     }
   ],
-  "subtitleCreators": "",
+  "subtitleCreators": "Uday Raj Aaley (subtitler)",
+  "subtitleEditorsReviewers": "Subhashish Panigrahi (editor)",
   "timedTextAuthors": {
     "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen-Kusunda-Uday Raj Aaley-Cooking Process.webm.en.srt": "Psubhashish",
     "TimedText:OpenSpeaks-Kgg-Gejmehac Gipan-Gyani Maiya Sen-Kusunda-Uday Raj Aaley-Cooking Process.webm.kgg.srt": "Psubhashish",

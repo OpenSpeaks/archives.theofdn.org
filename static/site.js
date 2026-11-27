@@ -13,16 +13,31 @@ function paper(el) {
     d[i] = base[0] + n; d[i + 1] = base[1] + n; d[i + 2] = base[2] + n * 1.1; d[i + 3] = 255;
   }
   cx.putImageData(img, 0, 0);
-  // fibres and specks , scattered differently on every load
-  for (var f = 0; f < w * h / 900; f++) {
-    var x = Math.random() * w, y = Math.random() * h, a = Math.random() * Math.PI, l = 2 + Math.random() * 9;
-    cx.strokeStyle = dark ? "rgba(255,255,255," + Math.random() * .05 + ")" : "rgba(90,70,50," + Math.random() * .09 + ")";
-    cx.lineWidth = Math.random() < .8 ? .6 : 1.1;
-    cx.beginPath(); cx.moveTo(x, y); cx.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); cx.stroke();
+  var r = Math.random;
+  var ink = dark ? "255,240,220" : "40,32,24";
+  // soft toner dot, blurred at the edge like a photocopy
+  function dot(x, y, size, alpha) {
+    var g = cx.createRadialGradient(x, y, 0, x, y, size);
+    g.addColorStop(0, "rgba(" + ink + "," + alpha + ")");
+    g.addColorStop(.5, "rgba(" + ink + "," + alpha * .55 + ")");
+    g.addColorStop(1, "rgba(" + ink + ",0)");
+    cx.fillStyle = g;
+    cx.fillRect(x - size, y - size, size * 2, size * 2);
   }
-  for (var s = 0; s < w * h / 6000; s++) {
-    cx.fillStyle = dark ? "rgba(255,240,220,.12)" : "rgba(60,45,30," + (.15 + Math.random() * .3) + ")";
-    cx.fillRect(Math.random() * w, Math.random() * h, Math.random() < .7 ? 1 : 2, 1);
+  // uneven toner , darker and lighter patches
+  for (var m = 0; m < 6; m++) dot(r() * w, r() * h, 80 + r() * 260, dark ? .02 : .035);
+  // loose specks
+  for (var s = 0; s < w * h / 2600; s++) dot(r() * w, r() * h, .6 + r() * r() * 2.4, (dark ? .1 : .18) + r() * .3);
+  // clumps where the toner gathered
+  for (var c = 0; c < w * h / 60000 + 2; c++) {
+    var x = r() * w, y = r() * h, spread = 4 + r() * 14;
+    for (var k = 0; k < 6 + r() * 18; k++) dot(x + (r() - .5) * spread * 2, y + (r() - .5) * spread, .5 + r() * 1.6, .15 + r() * .35);
+  }
+  // a faint drum streak now and then
+  if (r() < .6) {
+    var sy = r() * h;
+    cx.fillStyle = "rgba(" + ink + "," + (dark ? .04 : .06) + ")";
+    cx.fillRect(0, sy, w, .6 + r() * 1.2);
   }
   el.style.backgroundImage = "url(" + cv.toDataURL("image/png") + ")";
 }

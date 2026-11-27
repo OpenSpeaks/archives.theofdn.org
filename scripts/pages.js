@@ -109,10 +109,26 @@ ${pics.length ? `<p>${t("creditsPhotos", { list: pics.map((p) => t("creditsPhoto
 </section>`;
 }
 
-// links to the same page in the other languages
+// language codes as outlines from Noto Sans Bold and Noto Sans Oriya Bold, so they look the same without the fonts
+const CODES = {
+  en: ["16.71 10.0", "M5.8 10H0V0H5.8V1.7H2.1V3.9H5.5V5.7H2.1V8.2H5.8ZM16.7 10H14L9.7 2.4H9.6Q9.6 3.2 9.7 3.9Q9.7 4.6 9.7 5.3V10H7.8V0H10.5L14.9 7.5H14.9Q14.9 6.8 14.9 6.1Q14.8 5.4 14.8 4.7V0H16.7Z"],
+  or: ["9.93 10.73", "M5.8 10.7Q4 10.7 2.7 10.1Q1.4 9.5 0.7 8.3Q0 7.2 0 5.6Q0 3.9 0.7 2.5Q1.4 1.1 2.7 0L4.1 1.3Q3.5 1.8 3.1 2.4Q2.6 3.1 2.3 3.9Q2 4.7 2 5.6Q2 6.6 2.5 7.3Q2.9 8.1 3.8 8.5Q4.6 8.9 5.8 8.9Q6.8 8.9 7.4 8.6Q7.9 8.3 7.9 7.8Q7.9 7.4 7.6 7.2Q7.2 7 6.6 7Q5.9 7 5.1 7.3L4.3 5.8L6.3 5.1Q6.6 5 6.9 4.9Q7.3 4.7 7.5 4.5Q7.8 4.2 7.8 3.8Q7.8 3.5 7.5 3.2Q7.2 3 6.8 3Q6.3 3 6.1 3.3Q5.8 3.5 5.8 3.9Q5.8 4.1 6 4.5L4.1 5.1Q3.8 4.3 3.8 3.6Q3.8 2.5 4.6 1.9Q5.4 1.3 6.8 1.3Q8.3 1.3 9 2Q9.8 2.6 9.8 3.6Q9.8 4.2 9.5 4.6Q9.3 5 9 5.3Q8.6 5.6 8.2 5.8Q9.1 6.1 9.5 6.6Q9.9 7.2 9.9 8Q9.9 9.3 8.8 10Q7.8 10.7 5.8 10.7Z"],
+};
+
+function code(l) {
+  const name = esc(STRINGS[l].langName);
+  if (!CODES[l]) return name;
+  const [size, d] = CODES[l];
+  return `<svg viewBox="0 0 ${size}" role="img" aria-label="${name}"><path d="${d}"/></svg>`;
+}
+
+// every language as a short code, the current one marked; a menu once there are more than two
 function switcher(path) {
   if (path === null) return "";
-  return LANGS.filter((l) => l !== getLang()).map((l) => `<a href="${page(path, l)}" lang="${l}" hreflang="${l}">${esc(STRINGS[l].langName)}</a>`).join("");
+  const codes = LANGS.map((l) => l === getLang()
+    ? `<span class="on" lang="${l}" aria-current="true" title="${esc(STRINGS[l].langName)}">${code(l)}</span>`
+    : `<a href="${page(path, l)}" lang="${l}" hreflang="${l}" title="${esc(STRINGS[l].langName)}">${code(l)}</a>`);
+  return `<span class="switch" role="group" aria-label="${t("navLanguage")}">${codes.join("")}</span>`;
 }
 
 // title comes in escaped; path null for pages only in English
@@ -138,7 +154,6 @@ ${head}</head>
 <header class="paper">
   <div class="wrap bar">
     <a class="mark" href="${page("")}">${LOGO}</a>
-    <span class="arrow" aria-hidden="true">&rarr;</span>
     <nav aria-label="${t("navMain")}">
       <a href="${page("")}#languages">${t("navLanguages")}</a>
       <a href="${page("data/")}">${t("navData")}</a>

@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks - Language Documentation - Karbi - 6. Storytelling of the Karbi people.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/OpenSpeaks_-_Language_Documentation_-_Karbi_-_6._Storytelling_of_the_Karbi_people.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "format": "WAV",
+  "mimeType": "audio/wav",
+  "duration": "733",
+  "title": "Storytelling of the Karbi people",
+  "description": "Dharamsing Teron tells a Karbi story from the Jor Teron region, with an introduction and conclusion in English. The introduction starts at 01:55, the story in Karbi runs from 04:33 to 11:19, and the conclusion follows. The story, \"Votia temo\" (IPA /ot̪iaː t̪emɔ/), is about a hen (vo means bird in Karbi) who lives with a cat, a pig, a dog and a duck. The hen always finds and cooks the food while the others never help, and the story tells how she deals with them. Subhashish Panigrahi interviewed him remotely, with his permission, on 21 May 2017. This is part 6 of the nine-part interview, and mjw010 is the full recording.",
+  "primaryDescLang": "en",
+  "year": "2017",
+  "date": "2017-05-21",
+  "projectName": "Karbi",
+  "language": "Karbi",
+  "languageISO": "mjw",
+  "recordingPlace": "Karbi Anglong district, Assam, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "role": "Speaker, Interviewee"
+    }
+  ],
+  "people": [
+    {
+      "name": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "roles": [
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "interviewer",
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "sequenceNumber": "6",
+  "identifiers": [],
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/"
+}

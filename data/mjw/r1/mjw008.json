@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks - Language Documentation - Karbi - 8. Local festival celebrations by the Karbi people.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/OpenSpeaks_-_Language_Documentation_-_Karbi_-_8._Local_festival_celebrations_by_the_Karbi_people.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "format": "WAV",
+  "mimeType": "audio/wav",
+  "duration": "689",
+  "title": "Local festival celebrations by the Karbi people",
+  "description": "Dharamsing Teron describes Cho Mang Kan (IPA /t͡ʃo maːŋg kaːn/), a funeral festival held a few years after a death. It lasts three to five days and is expensive, so families take their time to decide when to hold it. The whole community takes part, especially young men and women, and the songs are openly erotic, which the community accepts. From 04:45 to 06:48 he describes in Karbi the procession, in which people of all ages carry the Jambili Athon (IPA /d͡ʒaːmbili aːt̪ʰɔn/), the Karbi emblem. It's a wooden pole of Bengwoi ke-er (Wrightia coccinea) topped with a carved bird, the Voraju (IPA /boraːd͡ʒu/, greater racket-tailed drongo), and each village has its own. Drummers play while young people sing and dance, and the gatherings drew 400 to 1,000 people, who feasted, drank local liquor and teased each other. He introduces the festival in English up to 04:45 and sums up in English after 06:48. On the Jambili Athon, see Robindra Teron, \"Traditional woodcraft, Jambili Athon of the Karbis\", Indian Journal of Traditional Knowledge 7(1), January 2008, pp. 103–107. Subhashish Panigrahi interviewed him remotely, with his permission, on 21 May 2017. This is part 8 of the nine-part interview, and mjw010 is the full recording.",
+  "primaryDescLang": "en",
+  "year": "2017",
+  "date": "2017-05-21",
+  "projectName": "Karbi",
+  "language": "Karbi",
+  "languageISO": "mjw",
+  "recordingPlace": "Karbi Anglong district, Assam, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "role": "Speaker, Interviewee"
+    }
+  ],
+  "people": [
+    {
+      "name": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "roles": [
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "interviewer",
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "sequenceNumber": "8",
+  "identifiers": [],
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/"
+}

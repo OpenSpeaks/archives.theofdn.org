@@ -1,0 +1,66 @@
+{
+  "_version": "1.7",
+  "fileName": "Full interview with Karbi language speaker D.S. Teron.flac",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Full_interview_with_Karbi_language_speaker_D.S._Teron.flac?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "format": "FLAC",
+  "mimeType": "audio/x-flac",
+  "duration": "3217",
+  "title": "Full interview with Karbi language speaker D.S. Teron",
+  "description": "The full 53-minute interview with Dharamsing Teron (D.S. Teron), a Karbi speaker from Karbi Anglong district, Assam, India. It covers the introduction and his name (00:00–01:48), the meaning of \"Karbi\" (01:48–03:27), his birthplace (03:27–04:18) and children's games (04:18–08:52). It then moves to the Karbi language (08:52–15:09), storytelling (15:09–27:21), a folk song (27:21–31:03), festivals (31:03–42:30) and his daily activities (42:30–52:37). Subhashish Panigrahi interviewed him remotely, with his permission, on 21 May 2017. mjw001 to mjw009 are the same interview in nine parts.",
+  "primaryDescLang": "en",
+  "year": "2017",
+  "date": "2017-05-21",
+  "projectName": "Karbi",
+  "language": "Karbi",
+  "languageISO": "mjw",
+  "recordingPlace": "Karbi Anglong district, Assam, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "role": "Speaker, Interviewee"
+    }
+  ],
+  "people": [
+    {
+      "name": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "roles": [
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "interviewer",
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "sequenceNumber": "10",
+  "identifiers": [
+    {
+      "prop": "P724",
+      "label": "Internet Archive ID",
+      "value": "karbi_201705"
+    }
+  ],
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/"
+}

@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks - Language Documentation - Karbi - 3. Interviewee D.S. Teron’s birthplace Jor Teron.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/OpenSpeaks_-_Language_Documentation_-_Karbi_-_3._Interviewee_D.S._Teron%E2%80%99s_birthplace_Jor_Teron.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "format": "WAV",
+  "mimeType": "audio/wav",
+  "duration": "50",
+  "title": "Interviewee D.S. Teron's birthplace Jor Teron",
+  "description": "Dharamsing Teron talks about Jor Teron, the village where he was born. It's named after his grandfather, a local community leader who founded the village. Subhashish Panigrahi interviewed him remotely, with his permission, on 21 May 2017. This is part 3 of the nine-part interview, and mjw010 is the full recording.",
+  "primaryDescLang": "en",
+  "year": "2017",
+  "date": "2017-05-21",
+  "projectName": "Karbi",
+  "language": "Karbi",
+  "languageISO": "mjw",
+  "recordingPlace": "Karbi Anglong district, Assam, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "role": "Speaker, Interviewee"
+    }
+  ],
+  "people": [
+    {
+      "name": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "roles": [
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "interviewer",
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "sequenceNumber": "3",
+  "identifiers": [],
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/"
+}

@@ -1,0 +1,18 @@
+{
+  "languageISO": "mjw",
+  "language": "Karbi",
+  "wikidata": "Q56591",
+  "place": "Karbi Anglong district, Assam, India",
+  "map": [
+    26.0,
+    93.5
+  ],
+  "cover": null,
+  "deposits": [
+    {
+      "label": "Internet Archive",
+      "url": "https://archive.org/details/karbi_201705"
+    }
+  ],
+  "extras": []
+}

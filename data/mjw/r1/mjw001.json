@@ -1,0 +1,60 @@
+{
+  "_version": "1.7",
+  "fileName": "OpenSpeaks - Language Documentation - Karbi - 1. Pronunciation of interviewee’s name.wav",
+  "fileType": "audio",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/OpenSpeaks_-_Language_Documentation_-_Karbi_-_1._Pronunciation_of_interviewee%E2%80%99s_name.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "format": "WAV",
+  "mimeType": "audio/wav",
+  "duration": "36",
+  "title": "Pronunciation of interviewee's name",
+  "description": "Dharamsing Teron (D.S. Teron), a Karbi speaker from Karbi Anglong district, Assam, India, says how his name is pronounced in Karbi and explains how Karbi family names are given. Subhashish Panigrahi interviewed him remotely, with his permission, on 21 May 2017. This is part 1 of the nine-part interview, and mjw010 is the full recording.",
+  "primaryDescLang": "en",
+  "year": "2017",
+  "date": "2017-05-21",
+  "projectName": "Karbi",
+  "language": "Karbi",
+  "languageISO": "mjw",
+  "recordingPlace": "Karbi Anglong district, Assam, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "role": "Speaker, Interviewee"
+    }
+  ],
+  "people": [
+    {
+      "name": "Dharamsing Teron",
+      "wikidataQid": "Q111274086",
+      "roles": [
+        "speaker",
+        "interviewee"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "interviewer",
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "onCommons": true,
+  "sequenceNumber": "1",
+  "identifiers": [],
+  "firstPublishedBy": "OpenSpeaks Archives",
+  "firstPublishedByUrl": "https://theofdn.org/openspeaks/"
+}

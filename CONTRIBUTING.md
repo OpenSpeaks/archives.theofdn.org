@@ -18,6 +18,23 @@ A check runs on the pull request. It says what's wrong if a field is missing, a 
 
 Keep the Tome file as Tome saved it. The site reads it as it is and offers the same file for download.
 
+## Add a recording from the terminal
+
+The archive publishes a recording first. The Internet Archive, Commons and Wikidata copies then cite it. Media files wait in `incoming/`, a folder next to the repo. They don't go into the repo.
+
+1. Run `npm run new kip` for a new session, or `npm run new kip r1` to add to session r1. It prints the item's ID and its folder.
+2. Put the recording and subtitles in that folder, named `kip002.mov` and `kip002.ne.srt`. Save the Tome record there as `kip002.json`.
+3. Run `npm run ia kip002` to see what goes to the Internet Archive. Run `npm run ia kip002 go` to upload it as `osa-kip002`.
+4. Run `npm run stage kip002`. It copies the record and subtitles into `data/`, adds the Internet Archive link and builds the site.
+5. Run `npm run serve` to look at it, then `npm run push "add kip002"`.
+6. Run `npm run webm kip002` to make the Commons copy. Open `data/kip/r2/kip002.json` in Tome and upload to Commons and Wikidata.
+7. Save the record from Tome. Run `npm run update kip002` with the saved file's path, then `npm run push "kip002 updated"`.
+8. Run `npm run ia kip002 update go` so the Internet Archive item lists the Commons and Wikidata links.
+
+`npm run update` takes only the Commons file name, subtitle pages and Wikidata links from Tome's file. Add `all` to replace the whole record. Run it with no file later to pick up the Internet Archive's playable copy.
+
+A new language code makes `data/<code>/collection.json` with the name from Wikidata. Fill in its place and map position.
+
 ## Identifiers
 
 The file names set the identifiers, so don't rename or renumber anything once it's published.

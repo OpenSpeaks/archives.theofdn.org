@@ -1,0 +1,70 @@
+{
+  "_version": "1.7",
+  "fileName": "Oral history of Odisha - Storytelling.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Oral_history_of_Odisha_-_Storytelling.webm",
+  "format": "WebM",
+  "duration": "129",
+  "title": "Storytelling",
+  "description": "The late Musamoni Panigrahi tells a bedtime story in the Baleswari dialect of Odia. Set in the British Raj, it is about a newly widowed woman who isn't allowed to say her husband's name, and who twists her words to tell the judge about her family before she cremates him. Subhashish Panigrahi recorded her in Balasore (Baleshwar), Odisha, India, on 20 January 2014, while making his 2022 documentary Nani Ma, and published it on Wikimedia Commons the same day. Odia and English subtitles are on Commons.",
+  "primaryDescLang": "en",
+  "year": "2014",
+  "date": "2014-01-20",
+  "projectName": "Nani Ma",
+  "language": "Odia",
+  "languageISO": "ory",
+  "dialect": "Baleswari",
+  "recordingPlace": "Balasore (Baleshwar), Odisha, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Musamoni Panigrahi",
+      "wikidataQid": "Q116919174",
+      "role": "Speaker, Singer"
+    }
+  ],
+  "people": [
+    {
+      "name": "Musamoni Panigrahi",
+      "wikidataQid": "Q116919174",
+      "roles": [
+        "speaker",
+        "singer"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-3.0",
+  "onCommons": true,
+  "sequenceNumber": "1",
+  "identifiers": [],
+  "subtitleLanguage": "or",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOral_history_of_Odisha_-_Storytelling.webm.or.srt",
+  "additionalSubtitles": [
+    {
+      "language": "en",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOral_history_of_Odisha_-_Storytelling.webm.en.srt",
+      "creators": "",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "",
+  "firstPublishedBy": "Wikimedia Commons",
+  "firstPublishedByUrl": "https://commons.wikimedia.org/wiki/File:Oral_history_of_Odisha_-_Storytelling.webm"
+}

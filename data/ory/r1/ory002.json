@@ -1,0 +1,70 @@
+{
+  "_version": "1.7",
+  "fileName": "Oral history of Odisha - Bahuna gita.webm",
+  "fileType": "video",
+  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Oral_history_of_Odisha_-_Bahuna_gita.webm",
+  "format": "WebM",
+  "duration": "97",
+  "title": "Bahuna gita",
+  "description": "The late Musamoni Panigrahi sings bahuna, songs that the bride and other women of the family sang as she left for her in-laws' home after the wedding, in the Baleswari dialect of Odia. Subhashish Panigrahi recorded her in Balasore (Baleshwar), Odisha, India, on 12 January 2014, while making his 2022 documentary Nani Ma, and published this shorter edit on Wikimedia Commons the same day. Odia and English subtitles are on Commons.",
+  "primaryDescLang": "en",
+  "year": "2014",
+  "date": "2014-01-12",
+  "projectName": "Nani Ma",
+  "language": "Odia",
+  "languageISO": "ory",
+  "dialect": "Baleswari",
+  "recordingPlace": "Balasore (Baleshwar), Odisha, India",
+  "country": "India",
+  "recordist": "Subhashish Panigrahi",
+  "interviewees": [
+    {
+      "fullName": "Musamoni Panigrahi",
+      "wikidataQid": "Q116919174",
+      "role": "Speaker, Singer"
+    }
+  ],
+  "people": [
+    {
+      "name": "Musamoni Panigrahi",
+      "wikidataQid": "Q116919174",
+      "roles": [
+        "speaker",
+        "singer"
+      ]
+    },
+    {
+      "name": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "roles": [
+        "recordist",
+        "copyright holder"
+      ]
+    }
+  ],
+  "copyrightHolders": [
+    {
+      "displayName": "Subhashish Panigrahi",
+      "creatorName": "Subhashish Panigrahi",
+      "wikidataQid": "Q28469412",
+      "username": ""
+    }
+  ],
+  "license": "cc-by-sa-3.0",
+  "onCommons": true,
+  "sequenceNumber": "2",
+  "identifiers": [],
+  "subtitleLanguage": "or",
+  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOral_history_of_Odisha_-_Bahuna_gita.webm.or.srt",
+  "additionalSubtitles": [
+    {
+      "language": "en",
+      "pageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOral_history_of_Odisha_-_Bahuna_gita.webm.en.srt",
+      "creators": "",
+      "editorsReviewers": ""
+    }
+  ],
+  "subtitleCreators": "",
+  "firstPublishedBy": "Wikimedia Commons",
+  "firstPublishedByUrl": "https://commons.wikimedia.org/wiki/File:Oral_history_of_Odisha_-_Bahuna_gita.webm"
+}

@@ -1,41 +1,68 @@
 {
-  "_version": "1.7",
-  "fileName": "OpenSpeaks-Ory-Balesoria-Musamoni Panigrahi-Matha Khanka Gita.webm",
-  "fileType": "video",
-  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/OpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm",
-  "format": "WebM",
-  "duration": "100",
-  "title": "Matha Khanka Gita",
-  "description": "The late Musamoni Panigrahi sings \"Mathā Khaṅkā Bāhunā\" (\"ମଥା ଖଙ୍କା ବାହୁନା\"), a bahuna wedding song in the Baleswari dialect of Odia. Subhashish Panigrahi recorded her in Balasore, Odisha, India, in 2014, while making his 2022 documentary Nani Ma. The footage wasn't used in the film, and it was edited and published under the ବାଲେସରିଆ (Balesoria) project in 2024–2025. Odia and English subtitles are by Subhashish Panigrahi.",
-  "year": "2014",
-  "date": "",
-  "projectName": "Balesoria",
-  "language": "Odia",
-  "languageISO": "ory",
-  "dialect": "Baleswari",
-  "recordingPlace": "Balasore district, Odisha, India",
-  "country": "India",
-  "recordist": "Subhashish Panigrahi",
-  "interviewees": [
-    {
-      "fullName": "Musamoni Panigrahi",
-      "role": "Speaker"
-    }
-  ],
-  "license": "cc-by-sa-4.0",
-  "onCommons": true,
-  "identifiers": [],
-  "firstPublishedTitle": "Matha Khanka Gita",
-  "firstPublishedBy": "OpenSpeaks Archives",
-  "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
-  "extra": {
-    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/OpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm/500px-OpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm.jpg"
-  },
-  "subtitleLanguage": "or",
-  "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm.or.srt",
-  "additionalSubtitles": [],
-  "subtitleCreators": "",
-  "timedTextAuthors": {
-    "TimedText:OpenSpeaks-Ory-Balesoria-Musamoni Panigrahi-Matha Khanka Gita.webm.or.srt": "Psubhashish"
+ "_version": "1.7",
+ "fileName": "OpenSpeaks-Ory-Balesoria-Musamoni Panigrahi-Matha Khanka Gita.webm",
+ "fileType": "video",
+ "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/OpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm",
+ "format": "WebM",
+ "duration": "100",
+ "title": "Matha Khanka Gita",
+ "description": "The late Musamoni Panigrahi sings \"Mathā Khaṅkā Bāhunā\" (\"ମଥା ଖଙ୍କା ବାହୁନା\"), a bahuna wedding song in the Baleswari dialect of Odia. Subhashish Panigrahi recorded her in Balasore, Odisha, India, in 2014, while making his 2022 documentary Nani Ma. The footage wasn't used in the film, and it was edited and published under the ବାଲେସରିଆ (Balesoria) project in 2024–2025. Odia and English subtitles are by Subhashish Panigrahi.",
+ "year": "2014",
+ "date": "2014-01-12",
+ "projectName": "Balesoria",
+ "language": "Odia",
+ "languageISO": "ory",
+ "dialect": "Baleswari",
+ "recordingPlace": "Balasore (Baleshwar), Odisha, India",
+ "country": "India",
+ "recordist": "Subhashish Panigrahi",
+ "interviewees": [
+  {
+   "fullName": "Musamoni Panigrahi",
+   "wikidataQid": "Q116919174",
+   "role": "Speaker, Singer"
   }
+ ],
+ "license": "cc-by-sa-4.0",
+ "onCommons": true,
+ "identifiers": [],
+ "firstPublishedTitle": "Matha Khanka Gita",
+ "firstPublishedBy": "OpenSpeaks Archives",
+ "firstPublishedByUrl": "https://theofdn.org/openspeaks/",
+ "extra": {
+  "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/OpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm/500px-OpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm.jpg"
+ },
+ "subtitleLanguage": "or",
+ "subtitlePageUrl": "https://commons.wikimedia.org/wiki/TimedText%3AOpenSpeaks-Ory-Balesoria-Musamoni_Panigrahi-Matha_Khanka_Gita.webm.or.srt",
+ "additionalSubtitles": [],
+ "subtitleCreators": "",
+ "timedTextAuthors": {
+  "TimedText:OpenSpeaks-Ory-Balesoria-Musamoni Panigrahi-Matha Khanka Gita.webm.or.srt": "Psubhashish"
+ },
+ "people": [
+  {
+   "name": "Musamoni Panigrahi",
+   "wikidataQid": "Q116919174",
+   "roles": [
+    "speaker",
+    "singer"
+   ]
+  },
+  {
+   "name": "Subhashish Panigrahi",
+   "wikidataQid": "Q28469412",
+   "roles": [
+    "recordist",
+    "copyright holder"
+   ]
+  }
+ ],
+ "copyrightHolders": [
+  {
+   "displayName": "Subhashish Panigrahi",
+   "creatorName": "Subhashish Panigrahi",
+   "wikidataQid": "Q28469412",
+   "username": ""
+  }
+ ]
 }

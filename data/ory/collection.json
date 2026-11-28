@@ -2,12 +2,23 @@
   "languageISO": "ory",
   "language": "Odia",
   "wikidata": "Q33810",
-  "place": "Balasore district, Odisha, India",
+  "place": "Balasore (Baleshwar), Odisha, India",
   "map": [
     21.49,
     86.93
   ],
   "cover": null,
-  "deposits": [],
-  "extras": []
+  "deposits": [
+    {
+      "label": "Nani Ma (2022 film), Library of Congress",
+      "url": "https://lccn.loc.gov/2023336704"
+    }
+  ],
+  "extras": [
+    {
+      "title": "Musamoni speaking Baleswari Odia (Wikitongues, 2017): the bahuna and the story in one video",
+      "fileName": "WIKITONGUES- Musamoni speaking Baleswari Odia.webm",
+      "url": "https://commons.wikimedia.org/wiki/File:WIKITONGUES-_Musamoni_speaking_Baleswari_Odia.webm"
+    }
+  ]
 }

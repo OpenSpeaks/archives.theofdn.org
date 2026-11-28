@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch: {}
+  # new year in the footer
+  schedule:
+    - cron: "17 0 1 1 *"
 
 permissions:
   contents: read

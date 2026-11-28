@@ -1,6 +1,6 @@
 // Dublin Core (oai_dc) for one item, from its Tome record
 import { arkUrl, SITE_NAME } from "./config.js";
-import { isoOf, peopleOf, plain } from "./records.js";
+import { isoOf, peopleOf, plain, projectsOf, PROJECTS } from "./records.js";
 
 const x = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[c]);
 
@@ -37,6 +37,7 @@ export function dcFields(item) {
   for (const s of item.subtitles) add("relation", arkUrl(`${item.id}/${s.language}/srt`));
   add("coverage", t.recordingPlace);
   add("relation", arkUrl(item.session.id));
+  for (const p of projectsOf(t)) if (PROJECTS[p]?.lccn) add("relation", `https://lccn.loc.gov/${PROJECTS[p].lccn}`);
   add("rights", LICENCES[t.license] || t.license);
   return out;
 }

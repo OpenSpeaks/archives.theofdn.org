@@ -1,4 +1,4 @@
-import { plain, peopleOf } from "./records.js";
+import { plain, peopleOf, projectsOf } from "./records.js";
 
 // Names and record text a translator can work on, written to strings/data/en.json.
 // Keys holding a Wikidata id (person.Q123, language.Q456) can be filled from Wikidata labels.
@@ -24,7 +24,7 @@ export function dataStrings(collections) {
         for (const p of peopleOf(t)) put(personKey(p), p.name);
         put(`place.${t.recordingPlace}`, t.recordingPlace);
         put(`variety.${t.dialect}`, t.dialect);
-        put(`project.${t.projectName}`, t.projectName);
+        for (const p of projectsOf(t)) put(`project.${p}`, p);
       }
     }
   }

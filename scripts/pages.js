@@ -1,7 +1,7 @@
 import { BASE, arkName, arkUrl } from "./config.js";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { isoOf, plain, mediaUrl, posterUrl, peopleOf, QIDS } from "./records.js";
+import { isoOf, plain, mediaUrl, posterUrl, peopleOf, QIDS, PROJECTS } from "./records.js";
 import { personKey, languageKey } from "./data-strings.js";
 import { ROOT } from "./config.js";
 import { t, raw, lookup, page, getLang, LANGS, STRINGS, DATA, CLIENT } from "./strings.js";
@@ -20,6 +20,12 @@ const placeOf = (p) => dt(`place.${p}`, p);
 const who = (name) => dt(personKey({ name, qid: QIDS.get(name) }), name);
 const varietyOf = (v) => dt(`variety.${v}`, v);
 const projectOf = (p) => dt(`project.${p}`, p);
+function projectLink(p) {
+  const x = PROJECTS[p];
+  if (!x) return esc(projectOf(p));
+  const name = x.wikidata ? `<a href="https://www.wikidata.org/wiki/${x.wikidata}">${esc(projectOf(p))}</a>` : esc(projectOf(p));
+  return x.lccn ? `${name} (<a href="https://lccn.loc.gov/${x.lccn}">LCCN ${x.lccn}</a>)` : name;
+}
 // Tome's own text in the page language comes first
 const inLang = (list) => (list || []).find((x) => x.langCode === getLang() && x.text)?.text;
 const titleOf = (it) => plain((getLang() !== "en" && inLang(it.tome.extraTitles)) || dt(`${it.id}.title`, it.tome.title));
@@ -221,7 +227,7 @@ export function collectionPage(c, collections) {
     if (!groups.has(s.variety)) groups.set(s.variety, []);
     groups.get(s.variety).push(s);
   }
-  const projects = [...new Set(c.sessions.map((s) => s.project).filter(Boolean))];
+  const projects = [...new Set(c.sessions.flatMap((s) => s.projects))];
   const varieties = [...groups.keys()].filter(Boolean);
   const people = [...new Set(c.sessions.flatMap((s) => s.people.map((p) => p.name)))];
   const recordists = [...new Set(c.sessions.flatMap((s) => s.recordists))];
@@ -235,7 +241,7 @@ export function collectionPage(c, collections) {
 ${fields([
   ["fieldLanguage", `${esc(langOf(c))} (${c.iso})`],
   ["fieldVarieties", esc(varieties.map(varietyOf).join(", "))],
-  ["fieldProjects", esc(projects.map(projectOf).join(", "))],
+  ["fieldProjects", projects.map(projectLink).join("<br>")],
   ["fieldPlace", esc(placeOf(c.place))],
   ["fieldSessions", String(c.sessions.length)],
   ["fieldItems", String(count(c))],
@@ -335,7 +341,7 @@ export function sessionPage(s, collections) {
   const session = t("session", { n: s.n });
   const body = `<div class="wrap collection">
 <p class="crumbs"><a href="${page("")}#languages">${t("navLanguages")}</a> / <a href="${page(c.iso + "/")}">${esc(langOf(c))}</a>${s.variety ? ` / ${esc(varietyOf(s.variety))}` : ""} / ${session}</p>
-<div class="chead"><div><h1 class="display small">${esc(names(people.map(who)))}</h1><p class="project">${esc([projectOf(s.project), s.variety ? varietyOf(s.variety) : langOf(c)].filter(Boolean).join(", "))}</p>${pid(s.id)}</div>${s.portrait ? `<img src="${esc(s.portrait.src)}" alt="${esc(who(people[0]))}">` : ""}</div>
+<div class="chead"><div><h1 class="display small">${esc(names(people.map(who)))}</h1><p class="project">${esc([...s.projects.map(projectOf), s.variety ? varietyOf(s.variety) : langOf(c)].filter(Boolean).join(", "))}</p>${pid(s.id)}</div>${s.portrait ? `<img src="${esc(s.portrait.src)}" alt="${esc(who(people[0]))}">` : ""}</div>
 ${fields([
   ["fieldLanguage", `<a href="${page(c.iso + "/")}">${esc(langOf(c))}</a> (${c.iso})`],
   ["fieldVariety", esc(s.variety && varietyOf(s.variety))],
@@ -343,7 +349,7 @@ ${fields([
   ["fieldPlace", (s.places.length ? s.places : [s.place]).map((p) => esc(placeOf(p))).join("<br>")],
   ["fieldRecorded", esc(s.date)],
   ["fieldRecordedBy", esc(s.recordists.map(who).join(", "))],
-  ["fieldProject", esc(s.project && projectOf(s.project))],
+  [s.projects.length > 1 ? "fieldProjects" : "fieldProject", s.projects.map(projectLink).join("<br>")],
   ["fieldItems", String(s.items.length)],
 ])}
 <h2 class="sub">${t("items")}</h2>

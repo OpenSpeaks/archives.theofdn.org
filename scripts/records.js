@@ -58,11 +58,17 @@ export function peopleOf(t) {
 // person name -> Wikidata id, from every record that has one
 export const QIDS = new Map();
 
+// a record can be part of more than one project, comma separated as in Tome
+export const projectsOf = (t) => plain(t.projectName).split(",").map((p) => p.trim()).filter(Boolean);
+// project name -> its Wikidata item and LCCN, from data/projects.json
+export const PROJECTS = {};
+
 // collections > sessions > items, read from data/<iso>/collection.json and data/<iso>/r<n>/
 export function load(dataDir) {
   const errors = [];
   const collections = [];
   const items = [];
+  if (existsSync(join(dataDir, "projects.json"))) Object.assign(PROJECTS, read(join(dataDir, "projects.json"), errors));
   for (const iso of dirs(dataDir)) {
     const base = join(dataDir, iso);
     if (!existsSync(join(base, "collection.json"))) {
@@ -106,7 +112,7 @@ export function load(dataDir) {
       // every value the items hold, in item order
       const all = (f) => [...new Set(session.items.map((it) => f(it.tome)).filter(Boolean))];
       session.variety = all((t) => t.dialect).join(", ");
-      session.project = all((t) => t.projectName).join(", ");
+      session.projects = [...new Set(session.items.flatMap((it) => projectsOf(it.tome)))];
       session.places = all((t) => t.recordingPlace);
       session.place = session.places.join("; ") || col.place;
       session.dates = all((t) => t.date || t.year).sort();

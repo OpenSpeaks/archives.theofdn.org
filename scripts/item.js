@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, copyFi
 import { join, basename, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 import { DATA_DIR, ROOT, arkUrl, ARK_NAAN, ARK_SHOULDER } from "./config.js";
-import { ITEM_ID, SESSION_DIR, isoOf, peopleOf, plain } from "./records.js";
+import { ITEM_ID, SESSION_DIR, isoOf, peopleOf, plain, projectsOf } from "./records.js";
 
 // media and drafts wait here, outside the repo
 const INCOMING = resolve(process.env.OSA_INCOMING || join(ROOT, "..", "incoming"));
@@ -128,7 +128,7 @@ function iaMetadata(t, id) {
     description: [plain(t.description), `Published by OpenSpeaks Archives: ${arkUrl(id)}.${licence ? ` Licence: ${licence}.` : ""}`].filter(Boolean).join("\n\n"),
     date: t.date || t.year,
     language: t.language,
-    subject: [...new Set([t.language, t.dialect, t.projectName, "OpenSpeaks Archives", ...(t.keywords || [])].filter(Boolean))],
+    subject: [...new Set([t.language, t.dialect, ...projectsOf(t), "OpenSpeaks Archives", ...(t.keywords || [])].filter(Boolean))],
     coverage: [t.recordingPlace, t.country].filter(Boolean).join(", "),
     creator: creators,
     contributor: contributors,

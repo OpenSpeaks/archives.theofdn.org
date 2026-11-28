@@ -1,10 +1,11 @@
-import { plain, peopleOf, projectsOf } from "./records.js";
+import { plain, peopleOf, projectsOf, QIDS } from "./records.js";
 
 const placeParts = (p) => String(p || "").split(", ").filter(Boolean);
 
 // Names and record text a translator can work on, written to strings/data/en.json.
 // Keys holding a Wikidata id (person.Q123, language.Q456) can be filled from Wikidata labels.
-export const personKey = (p) => "person." + (p.qid || p.name);
+// one key per person: their Wikidata id when any record has it
+export const personKey = (p) => "person." + (p.qid || QIDS.get(p.name) || p.name);
 export const languageKey = (c) => "language." + (c.wikidata || c.iso);
 
 export function dataStrings(collections) {
@@ -16,7 +17,7 @@ export function dataStrings(collections) {
     for (const w of c.wordlists) {
       put(`${w.id}.title`, w.title);
       put(`${w.id}.description`, w.description);
-      put(`person.${w.speaker}`, w.speaker);
+      put(personKey({ name: w.speaker }), w.speaker);
     }
     for (const s of c.sessions) {
       for (const it of s.items) {

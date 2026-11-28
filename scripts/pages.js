@@ -18,8 +18,7 @@ const dt = (key, fallback) => (getLang() !== "en" && DATA[getLang()][key]) || fa
 export const langOf = (c) => dt(languageKey(c), c.language);
 // each part of a place (village, district, state, country) is translated once
 const placeOf = (p) => String(p || "").split(", ").map((x) => dt(`place.${x}`, x)).join(", ");
-// a translation can sit under the Wikidata id or under the name
-const who = (name) => dt(personKey({ name, qid: QIDS.get(name) }), dt(personKey({ name }), name));
+const who = (name) => dt(personKey({ name }), name);
 const varietyOf = (v) => dt(`variety.${v}`, v);
 const projectOf = (p) => dt(`project.${p}`, p);
 function projectLink(p) {

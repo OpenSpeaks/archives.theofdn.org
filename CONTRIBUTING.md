@@ -45,6 +45,16 @@ The file names set the identifiers, so don't rename or renumber anything once it
 - File: `osa-juy002.webm`, `osa-juy002.en.srt`
 - Other collection files: `osa-srb-x01`, in the order listed under `extras` in `collection.json`
 
+## People and languages
+
+Each person, language, variety and register gets a record in `authority/`. The ID is a type letter, five digits and a check character: `osa-p00001v` for a person, `osa-v00001k` for a language, variety or register.
+
+1. Run `npm run mint p Q123` for a person or `npm run mint v Q123` for a language, with its Wikidata ID.
+2. Open the new file in `authority/` and check every field. For a language, fill `level` (language, variety or register), `iso` and `glottolog`. For a variety or register, put its language's ID in `parent`.
+3. Write the person's name as they write it themselves.
+
+A record never gets a new ID, and a published ID is never reused.
+
 ## A new language
 
 Add a folder named by the language code with a `collection.json`. Copy one from another collection and change the name, place and map position (`[latitude, longitude]`).

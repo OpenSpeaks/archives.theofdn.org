@@ -8,7 +8,8 @@ import { load } from "./records.js";
 import { dublinCore } from "./dublin-core.js";
 import { createHash } from "node:crypto";
 import { LANGS, setLang, prefix } from "./strings.js";
-import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, publicationsPage, postPage, feed, csvRows, langOf, PUB_SECTIONS } from "./pages.js";
+import { loadAuthorities, linkRecords } from "./authority.js";
+import { setPersonOf, personPage, languagePage, home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, publicationsPage, postPage, feed, csvRows, langOf, PUB_SECTIONS } from "./pages.js";
 import { loadPosts } from "./posts.js";
 import { loadBib } from "./bibtex.js";
 import { dataStrings } from "./data-strings.js";
@@ -32,9 +33,15 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
+const auth = loadAuthorities();
+if (auth.errors.length) {
+  console.error(auth.errors.join("\n"));
+  process.exit(1);
+}
 const posts = loadPosts();
 const publications = PUB_SECTIONS.map(([id, key, file]) => [id, key, loadBib(file)]);
 const collections = all.filter((c) => c.sessions.length).sort((a, b) => a.language.localeCompare(b.language));
+setPersonOf(linkRecords(collections, auth));
 
 rmSync(OUT_DIR, { recursive: true, force: true });
 for (const name of readdirSync(STATIC_DIR)) write(name, readFileSync(join(STATIC_DIR, name)));
@@ -58,6 +65,8 @@ for (const lang of LANGS) {
   write(at + "about/index.html", aboutPage(collections));
   write(at + "data/index.html", dataPage(collections, items.length));
   write(at + "publications/index.html", publicationsPage(publications, posts, collections));
+  for (const a of auth.people) write(`${at}${a.id}/index.html`, personPage(a, collections));
+  for (const v of auth.languages) write(`${at}${v.id}/index.html`, languagePage(v, auth.languages, collections));
   for (const c of collections) {
     write(`${at}${c.iso}/index.html`, collectionPage(c, collections));
     for (const w of c.wordlists) write(`${at}${w.id}/index.html`, wordlistPage(w, collections));
@@ -65,6 +74,8 @@ for (const lang of LANGS) {
   }
 }
 setLang("en");
+for (const a of [...auth.people, ...auth.languages]) write(`${a.id}/${a.id}.json`, readFileSync(join(ROOT, "authority", a.id + ".json")));
+write("data/authority.json", JSON.stringify(Object.fromEntries([...auth.people, ...auth.languages].map(({ items, wordlists, ...a }) => [a.id, a])), null, 2) + "\n");
 write("ark/index.html", arkPage(collections));
 for (const p of posts) write(`blog/${p.slug}/index.html`, postPage(p, collections));
 if (posts.length) write("blog/feed.xml", feed(posts));
@@ -89,6 +100,10 @@ for (const c of collections) {
 // every id and where it leads; theofdn.org reads this to forward ark:15056/osa-*
 const ark = {};
 const at = (path) => SITE_URL + path;
+for (const a of [...auth.people, ...auth.languages]) {
+  ark[a.id] = at(`${a.id}/`);
+  ark[`${a.id}/json`] = at(`${a.id}/${a.id}.json`);
+}
 for (const c of collections) {
   ark[c.iso] = at(`${c.iso}/`);
   for (const x of c.extras) ark[x.id] = x.url;

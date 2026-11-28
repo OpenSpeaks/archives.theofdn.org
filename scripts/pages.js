@@ -21,6 +21,14 @@ export const langOf = (c) => dt(languageKey(c), c.language);
 const placeOf = (p) => String(p || "").split(", ").map((x) => dt(`place.${x}`, x)).join(", ");
 const who = (name) => dt(personKey({ name }), name);
 const varietyOf = (v) => dt(`variety.${v}`, v);
+// authority records, set by the build
+let personOf = () => null;
+export const setPersonOf = (f) => (personOf = f);
+const personLink = (name) => {
+  const a = personOf(name);
+  return a ? `<a href="${page(a.id + "/")}">${esc(who(name))}</a>` : esc(who(name));
+};
+const lectLink = (v, text) => (v ? `<a href="${page(v.id + "/")}">${esc(text)}</a>` : esc(text));
 const projectOf = (p) => dt(`project.${p}`, p);
 function projectLink(p) {
   const x = PROJECTS[p];
@@ -265,8 +273,8 @@ export function collectionPage(c, collections) {
 <div class="chead"><div><h1 class="display">${esc(langOf(c))}</h1><p class="project">${esc(projects.map(projectOf).join(", "))}</p>${pid(c.iso)}</div>${c.cover ? `<img src="${esc(c.cover.src)}" alt="">` : ""}</div>
 <div class="two">
 ${fields([
-  ["fieldLanguage", `${esc(langOf(c))} (${c.iso})`],
-  ["fieldVarieties", esc(varieties.map(varietyOf).join(", "))],
+  ["fieldLanguage", `${lectLink(c.lect, langOf(c))} (${c.iso})`],
+  ["fieldVarieties", varieties.map((v) => lectLink(varietyLect(c, v), varietyOf(v))).join(", ")],
   ["fieldProjects", projects.map(projectLink).join("<br>")],
   ["fieldPlace", esc(placeOf(c.place))],
   ["fieldSessions", String(c.sessions.length)],
@@ -281,6 +289,72 @@ ${extras}
 ${credits([...people, ...c.wordlists.map((w) => w.speaker)].filter((p, i, a) => a.indexOf(p) === i), recordists, photos)}
 </div>`;
   return shell({ title: title(langOf(c)), path: c.iso + "/", body, collections, active: c.iso });
+}
+
+const varietyLect = (c, v) => c.sessions.flatMap((s) => s.items).find((it) => it.tome.dialect === v && it.lect !== c.lect)?.lect;
+
+const SPEAKING = /speaker|interviewee|singer|performer|participant/i;
+
+function itemRows(list) {
+  return `<ol class="recs">${list.map(({ it, roles: r }) => `<li><a href="${page(it.session.id + "/")}#${it.id}">${it.session.portrait ? `<img src="${esc(it.session.portrait.src)}" alt="">` : '<span class="noimg"></span>'}<span><span class="lname">${esc(titleOf(it))}</span><span class="lplace">${esc(it.lect ? lectName(it.lect) : langOf(it.session.collection))}${r?.length ? ` · ${esc(roles(r.filter((x) => x.toLowerCase() !== "participant")))}` : ""}</span></span><span class="num">${esc(it.id)}</span></a></li>`).join("")}</ol>`;
+}
+
+function wordlistRows(list) {
+  return list.length ? `<h2 class="sub">${t("wordLists")}</h2>\n<ol class="recs">${list.map((w) => `<li><a href="${page(w.id + "/")}"><span class="noimg"></span><span><span class="lname">${esc(dt(`${w.id}.title`, w.title))}</span><span class="lplace">${esc(who(w.speaker))}${w.lect ? `, ${esc(lectName(w.lect))}` : ""}</span></span><span class="num">${t("wordCount", { n: w.words.length.toLocaleString("en-IN") })}</span></a></li>`).join("")}</ol>` : "";
+}
+
+function lectName(v) {
+  const c = v.items[0]?.session.collection;
+  if (v.level === "language" && c) return langOf(c);
+  return v.name;
+}
+
+export function personPage(a, collections) {
+  const lects = [...new Set([...a.items.filter((x) => x.roles.some((r) => SPEAKING.test(r)) || !x.roles.length).map((x) => x.it.lect), ...a.wordlists.map((w) => w.lect)].filter(Boolean))];
+  const name = who(a.name);
+  const body = `<div class="wrap collection">
+<p class="crumbs"><a href="${page("")}">${esc(site())}</a> / ${esc(name)}</p>
+<div class="chead"><div><h1 class="display small">${esc(name)}</h1>${a.description ? `<p class="project">${esc(a.description)}</p>` : ""}${pid(a.id)}</div>${a.image ? `<img src="https://commons.wikimedia.org/wiki/Special:FilePath/${esc(encodeURIComponent(a.image))}?width=500" alt="${esc(name)}">` : ""}</div>
+${fields([
+  ["fieldOtherNames", esc([a.name !== name && a.name, ...(a.otherNames || [])].filter(Boolean).join(", "))],
+  ["fieldBorn", a.born && when(a.born)],
+  ["fieldDied", a.died && when(a.died)],
+  ["fieldSpeaks", [...lects.map((v) => lectLink(v, lectName(v))), ...(a.languagesSpoken || []).filter((l) => !lects.some((v) => v.wikidata === l.wikidata)).map((l) => esc(l.name))].join(", ")],
+  ["fieldWork", esc((a.occupations || []).map((o) => o.name).join(", "))],
+  ["fieldWikidata", a.wikidata && `<a href="https://www.wikidata.org/wiki/${esc(a.wikidata)}">${esc(a.wikidata)}</a>`],
+  ["fieldPhoto", a.image && `<a href="https://commons.wikimedia.org/wiki/File:${esc(encodeURIComponent(a.image.replaceAll(" ", "_")))}">${esc([a.imageBy, a.imageLicence].filter(Boolean).join(", ") || a.image)}</a>`],
+  ["fieldMetadata", `<a href="${u(`${a.id}/${a.id}.json`)}">JSON</a>`],
+])}
+${a.items.length ? `<h2 class="sub">${t("items")}</h2>\n${itemRows(a.items)}` : ""}
+${wordlistRows(a.wordlists)}
+</div>`;
+  return shell({ title: title(name), path: a.id + "/", body, collections });
+}
+
+export function languagePage(v, languages, collections) {
+  const name = lectName(v);
+  const parent = languages.find((x) => x.id === v.parent);
+  const children = languages.filter((x) => x.parent === v.id);
+  const items = [...v.items, ...children.flatMap((x) => x.items)];
+  const lists = [...v.wordlists, ...children.flatMap((x) => x.wordlists)];
+  const speakers = [...new Set([...items.flatMap((it) => peopleOf(it.tome).filter((p) => p.roles.some((r) => SPEAKING.test(r)) || !p.roles.length).map((p) => p.name)), ...lists.map((w) => w.speaker)])];
+  // what the archive holds is on the collection page; this page is about the language itself
+  const cols = [...new Set([...items.map((it) => it.session.collection), ...lists.map((w) => w.collection)])];
+  const held = (c) => [items.filter((it) => it.session.collection === c).length && itemCount(items.filter((it) => it.session.collection === c).length), lists.filter((w) => w.collection === c).length && t("wordListCount", { n: lists.filter((w) => w.collection === c).length })].filter(Boolean).join(", ");
+  const body = `<div class="wrap collection">
+<p class="crumbs"><a href="${page("")}#languages">${t("navLanguages")}</a>${parent ? ` / ${lectLink(parent, lectName(parent))}` : ""} / ${esc(name)}</p>
+<div class="chead"><div><h1 class="display small">${esc(name)}</h1><p class="project">${t("level" + v.level.charAt(0).toUpperCase() + v.level.slice(1))}</p>${pid(v.id)}</div></div>
+${fields([
+  ["fieldOtherNames", esc([v.name !== name && v.name, ...(v.otherNames || [])].filter(Boolean).join(", "))],
+  ["fieldVarietyOf", parent && lectLink(parent, lectName(parent))],
+  ["fieldVarieties", children.map((x) => lectLink(x, lectName(x))).join(", ")],
+  ["fieldSpeakers", speakers.map(personLink).join(", ")],
+  ["fieldInArchive", cols.map((c) => `<a href="${page(c.iso + "/")}">${esc(langOf(c))}</a> (${held(c)})`).join("<br>")],
+  ["fieldCodes", [v.iso && `ISO 639-3 ${esc(v.iso)}`, v.glottolog && `<a href="https://glottolog.org/resource/languoid/id/${esc(v.glottolog)}">Glottolog ${esc(v.glottolog)}</a>`, v.wikidata && `<a href="https://www.wikidata.org/wiki/${esc(v.wikidata)}">Wikidata ${esc(v.wikidata)}</a>`].filter(Boolean).join("<br>")],
+  ["fieldMetadata", `<a href="${u(`${v.id}/${v.id}.json`)}">JSON</a>`],
+])}
+</div>`;
+  return shell({ title: title(name), path: v.id + "/", body, collections });
 }
 
 function player(it) {
@@ -299,7 +373,7 @@ function player(it) {
 
 const withRoles = (list) => list.map((p) => {
   const shown = p.roles.filter((r) => r.toLowerCase() !== "participant");
-  return `${esc(who(p.name))}${shown.length ? ` (${esc(roles(shown))})` : ""}`;
+  return `${personLink(p.name)}${shown.length ? ` (${esc(roles(shown))})` : ""}`;
 }).join("<br>");
 
 // who made a subtitle track, from the Tome record; Tome may store the track language as a code or a name
@@ -374,7 +448,7 @@ export function sessionPage(s, collections) {
 <div class="chead"><div><h1 class="display small">${esc(names(people.map(who)))}</h1><p class="project">${esc([...s.projects.map(projectOf), s.variety ? varietyOf(s.variety) : langOf(c)].filter(Boolean).join(", "))}</p>${pid(s.id)}</div>${s.portrait ? `<img src="${esc(s.portrait.src)}" alt="${esc(who(people[0]))}">` : ""}</div>
 ${fields([
   ["fieldLanguage", `<a href="${page(c.iso + "/")}">${esc(langOf(c))}</a> (${c.iso})`],
-  ["fieldVariety", esc(s.variety && varietyOf(s.variety))],
+  ["fieldVariety", s.variety && s.variety.split(", ").map((v) => lectLink(varietyLect(c, v), varietyOf(v))).join(", ")],
   ["fieldPeople", withRoles(s.people)],
   ["fieldPlace", (s.places.length ? s.places : [s.place]).map((p) => esc(placeOf(p))).join("<br>")],
   ["fieldRecorded", esc(s.date)],
@@ -476,6 +550,7 @@ ${fields([
   ["dataTome", `<a href="${u("data/records.json")}">records.json</a>`],
   ["dataDublinCore", `<a href="${u("data/dublin-core.xml")}">dublin-core.xml</a>`],
   ["dataSpreadsheet", `<a href="${u("data/records.csv")}">records.csv</a>`],
+  ["dataAuthority", `<a href="${u("data/authority.json")}">authority.json</a>`],
 ])}
 <p>${t("dataEach")}</p>
 </div>`;

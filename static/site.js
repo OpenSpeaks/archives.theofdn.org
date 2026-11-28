@@ -51,8 +51,7 @@ function drawMap() {
   var map = L.map("atlas", { maxZoom: 12, zoomSnap: .25, maxBounds: asia, maxBoundsViscosity: 1, scrollWheelZoom: false });
   map.fitBounds(asia, { animate: false });
   map.setMinZoom(map.getBoundsZoom(asia));
-  // room for every collection on the first view
-  map.fitBounds([[5.9, 68], [37.1, 94]], { animate: false });
+  map.setView([22, 81], Math.min(map.getBoundsZoom(asia, true), map.getMinZoom() + 1), { animate: false });
   map.on("zoomend", function () { map.getContainer().classList.toggle("near", map.getZoom() >= 6); });
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

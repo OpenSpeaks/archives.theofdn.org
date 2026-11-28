@@ -113,6 +113,7 @@ function deposits(item) {
   const out = [];
   for (const i of (tm.identifiers || []).filter((x) => x.value?.trim())) {
     if (i.prop === "P1184") out.push(`<a href="https://hdl.handle.net/${esc(i.value)}">${handleArchive(i.value)}</a>`);
+    if (i.prop === "P724") out.push(`<a href="https://archive.org/details/${esc(encodeURIComponent(i.value.trim()))}">Internet Archive</a>`);
   }
   if (tm.onCommons && tm.fileName) out.push(`<a href="https://commons.wikimedia.org/wiki/File:${esc(encodeURIComponent(tm.fileName.replaceAll(" ", "_")))}">Wikimedia Commons</a>`);
   return out.join("<br>");

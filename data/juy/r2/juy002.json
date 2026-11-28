@@ -9,7 +9,7 @@
   "description": "Dinabandhu Gamango, a Juray speaker from Rayagada district, Odisha, India, talks in Juray about how Aadhaar has affected his village. Opino Gomango and Subhashish Panigrahi interviewed him in 2019 for Panigrahi's 2021 documentary MarginalizedAadhaar. Panigrahi edited unused or trimmed footage from the film and published it under the OpenSpeaks Archives project in 2026. Odia subtitles are by Dinabandhu Gamango, and the English translation is by Panigrahi.",
   "year": "",
   "date": "",
-  "projectName": "Juray, MarginalizedAadhaar",
+  "projectName": "MarginalizedAadhaar",
   "language": "Juray",
   "languageISO": "juy",
   "dialect": "",
@@ -28,7 +28,14 @@
   ],
   "license": "cc-by-sa-4.0",
   "onCommons": true,
-  "identifiers": [],
+  "identifiers": [
+    {
+      "prop": "P1184",
+      "label": "Handle ID",
+      "url": "https://hdl.handle.net/$1",
+      "value": "2196/bkq3a00y-hkhf-belu-q4p4-wpwen833lcvb"
+    }
+  ],
   "firstPublishedTitle": "Social Impact of Aadhaar",
   "firstPublishedBy": "OpenSpeaks Archives",
   "firstPublishedByUrl": "https://theofdn.org/openspeaks/",

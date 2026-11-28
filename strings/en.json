@@ -13,7 +13,7 @@
   "footTools": "Tools",
   "guideFramework": "Oral Knowledge Framework",
   "guideStyle": "Text Style Guide",
-  "footNote": "Recordings are published by {site} and deposited with partner archives. Website hosted by {host}.",
+  "footNote": "© {year} {site}. Website by {host}.",
   "hostName": "O Foundation",
 
   "homeTitle": "voices in {n} languages, from the people who speak them.",

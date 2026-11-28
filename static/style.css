@@ -255,7 +255,7 @@ footer .bar { position: relative; }
 footer .bar a { color: var(--orange-ink); text-decoration: none; }
 footer .bar a:hover { text-decoration: underline; }
 .credits { padding-block: 0 2rem; font-size: .85rem; }
-.credits p { margin: 0 0 .4rem; max-width: 70ch; }
+.credits p { margin: 0 0 .4rem; }
 
 @media (max-width: 720px) {
   .two, .item { grid-template-columns: 1fr; }

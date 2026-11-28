@@ -96,6 +96,27 @@ Each item lists its Tome record and subtitle files for download. To describe the
 
 Pronunciation recordings are kept as word lists in a collection's `words` folder, such as `data/ory/words/`. Each list has a JSON file describing it (`w1.json`) and a CSV of its words (`w1.csv`) with three columns: `n`, `word` and `file`. Add new words at the end with the next number, and never renumber, because each word's identifier is built from its number, such as `osa-ory-w1-00001`.
 
+## Add a paper, talk or article
+
+Entries live in four BibTeX files in `publications/`: `books-and-papers.bib`, `talks.bib`, `writing.bib` and `coverage.bib`. Use `writing.bib` for our pieces published elsewhere and `coverage.bib` for pieces by others. An export from Zenodo, Zotero or Google Scholar can be pasted in as it is. The build sorts entries and groups them by year, so their order in the file doesn't matter.
+
+Give each entry a `title`, the authors in `author` (or `editor` for an edited book), and a `date` as `YYYY-MM-DD`. When only the year or month is known, `year` and `month` work too. The title links to the `doi` if there is one, otherwise to the `url`. Venues come from `eventtitle`, `journal`, `booktitle`, `howpublished` or `publisher`, in that order. Recordings and files go in `video`, `slides` and `pdf`. Any other link goes in `links` as `Label | address`, with a semicolon between two links. Write the names of organisations in double braces, such as `{{Global Voices}}`, so they aren't read as surnames.
+
+## Write a blog post
+
+Add a Markdown file to `posts/`. The file name becomes the address, so `posts/field-notes-juray.md` is published at `/blog/field-notes-juray/`. Start the file like this:
+
+```
+---
+title: Field notes from the Juray recordings
+date: 2026-12-01
+authors: First1 Last1, First2 Last2
+summary: One line for the list and the feed.
+---
+```
+
+Write the post below it. Headings start with `##`, lists with `-`, quotes with `>`. Links and images use the usual Markdown form. Posts are listed first on the Publications page and in `/blog/feed.xml`.
+
 ## Publish from the terminal
 
 From the repository's folder, run `npm run push "about page"` with your own short message in the quotes. It checks the records, builds the site, commits every change, brings in any changes made on GitHub and pushes. If the check fails, nothing is committed.

@@ -9,6 +9,7 @@
   "navLanguages": "Languages",
   "navData": "Data",
   "navAbout": "About",
+  "navPublications": "Publications",
   "footArchive": "Archive",
   "footGuides": "Guides",
   "footTools": "Tools",
@@ -109,7 +110,7 @@
   "wordsLoading": "Loading the word list…",
   "wordsShown": "{from} to {to} of {n} words",
   "wordsNone": "No words match.",
-  "wordsFailed": "The word list didn't load. Download the CSV above instead.",
+  "wordsFailed": "The word list didn't load, but you can download the CSV above instead.",
   "previous": "Previous",
   "next": "Next",
 
@@ -139,5 +140,16 @@
   "arkTitle": "finding a record",
   "arkHeading": "Finding a record",
   "arkLooking": "Looking up the identifier…",
-  "arkMissing": "There's no record with the identifier {id}."
+  "arkMissing": "There's no record with the identifier {id}.",
+  "pubTitle": "publications",
+  "pubIntro": "Books, papers, talks and writing authored by people involved with OpenSpeaks Archives, and what others have written about the work.",
+  "pubJump": "Sections",
+  "pubBlog": "Blog",
+  "pubBooks": "Books and papers",
+  "pubTalks": "Talks",
+  "pubWriting": "Writing elsewhere",
+  "pubCoverage": "Coverage",
+  "pubEdited": "Edited by {names}",
+  "pubFeed": "Atom feed",
+  "postBy": "By {names}"
 }

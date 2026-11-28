@@ -8,7 +8,9 @@ import { load } from "./records.js";
 import { dublinCore } from "./dublin-core.js";
 import { createHash } from "node:crypto";
 import { LANGS, setLang, prefix } from "./strings.js";
-import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows, langOf } from "./pages.js";
+import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, publicationsPage, postPage, feed, csvRows, langOf, PUB_SECTIONS } from "./pages.js";
+import { loadPosts } from "./posts.js";
+import { loadBib } from "./bibtex.js";
 import { dataStrings } from "./data-strings.js";
 import { syncStrings } from "./sync-strings.js";
 import { applyEnEdits } from "./en-edits.js";
@@ -30,6 +32,8 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
+const posts = loadPosts();
+const publications = PUB_SECTIONS.map(([id, key, file]) => [id, key, loadBib(file)]);
 const collections = all.filter((c) => c.sessions.length).sort((a, b) => a.language.localeCompare(b.language));
 
 rmSync(OUT_DIR, { recursive: true, force: true });
@@ -53,6 +57,7 @@ for (const lang of LANGS) {
   write(at + "index.html", home(collections, places));
   write(at + "about/index.html", aboutPage(collections));
   write(at + "data/index.html", dataPage(collections, items.length));
+  write(at + "publications/index.html", publicationsPage(publications, posts, collections));
   for (const c of collections) {
     write(`${at}${c.iso}/index.html`, collectionPage(c, collections));
     for (const w of c.wordlists) write(`${at}${w.id}/index.html`, wordlistPage(w, collections));
@@ -61,6 +66,8 @@ for (const lang of LANGS) {
 }
 setLang("en");
 write("ark/index.html", arkPage(collections));
+for (const p of posts) write(`blog/${p.slug}/index.html`, postPage(p, collections));
+if (posts.length) write("blog/feed.xml", feed(posts));
 
 for (const c of collections) {
   for (const w of c.wordlists) {

@@ -1,9 +1,10 @@
-import { BASE, arkName, arkUrl } from "./config.js";
+import { BASE, SITE_URL, arkName, arkUrl } from "./config.js";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { isoOf, plain, mediaUrl, posterUrl, peopleOf, QIDS, PROJECTS } from "./records.js";
 import { personKey, languageKey } from "./data-strings.js";
 import { ROOT } from "./config.js";
+import { people, dateOf } from "./bibtex.js";
 import { t, raw, lookup, page, getLang, LANGS, STRINGS, DATA, CLIENT } from "./strings.js";
 
 const LOGO = readFileSync(join(ROOT, "assets", "logo.svg"), "utf8").trim();
@@ -186,6 +187,7 @@ ${head}</head>
     <nav aria-label="${t("navMain")}">
       <a href="${page("")}#languages">${t("navLanguages")}</a>
       <a href="${page("data/")}">${t("navData")}</a>
+      <a href="${page("publications/")}">${t("navPublications")}</a>
       <a href="${page("about/")}">${t("navAbout")}</a>
       ${switcher(path)}
     </nav>
@@ -198,7 +200,7 @@ ${body}
 <footer class="paper">
   <div class="wrap"><div class="ticks" aria-hidden="true">${collections.map((c) => `<span class="${c.iso === active ? "on" : ""}"></span>`).join("")}</div></div>
   <div class="wrap footcols">
-    <nav aria-label="${t("footArchive")}"><h2>${t("footArchive")}</h2><ul><li><a href="${page("about/")}">${t("navAbout")}</a></li><li><a href="${page("")}#languages">${t("navLanguages")}</a></li><li><a href="${page("data/")}">${t("navData")}</a></li></ul></nav>
+    <nav aria-label="${t("footArchive")}"><h2>${t("footArchive")}</h2><ul><li><a href="${page("about/")}">${t("navAbout")}</a></li><li><a href="${page("")}#languages">${t("navLanguages")}</a></li><li><a href="${page("data/")}">${t("navData")}</a></li><li><a href="${page("publications/")}">${t("navPublications")}</a></li></ul></nav>
     <nav aria-label="${t("footGuides")}"><h2>${t("footGuides")}</h2><ul><li><a href="https://archivingthepresent.cc/manual/appendix-b/">${t("guideFramework")}</a></li><li><a href="https://archivingthepresent.cc/manual/appendix-a/">${t("guideStyle")}</a></li></ul></nav>
     <nav aria-label="${t("footTools")}"><h2>${t("footTools")}</h2><ul><li><a href="https://tome.toolforge.org/">Tome</a></li><li><a href="https://subtitler.toolforge.org/">Subtitler</a></li><li><a href="https://bento.toolforge.org/">Bento</a></li></ul></nav>
   </div>
@@ -487,4 +489,80 @@ export function csvRows(items) {
     return [it.id, arkName(it.id), it.session.id, plain(tm.title), tm.language, isoOf(tm), tm.dialect, names((tm.interviewees || []).map((p) => p.fullName)), tm.recordingPlace, tm.date || tm.year, tm.recordist, tm.fileType, tm.duration, tm.license, it.subtitles.map((s) => s.language).join(" ")].map(q).join(",");
   });
   return [cols.join(","), ...rows].join("\n") + "\n";
+}
+
+// full date in words; a month or year alone stays a month or year
+function longDate(d) {
+  const [y, m, day] = d.split("-").map(Number);
+  const opts = { year: "numeric", ...(m && { month: "long" }), ...(day && { day: "numeric" }), timeZone: "UTC" };
+  return new Date(Date.UTC(y, (m || 1) - 1, day || 1)).toLocaleDateString("en-GB", opts);
+}
+const when = (d) => `<time datetime="${esc(d)}">${longDate(d)}</time>`;
+
+const dayMonth = (d) => (d.length > 4 ? longDate(d).replace(/ \d{4}$/, "") : "");
+
+// a BibTeX entry, or a post made to look like one
+function pubRow(e) {
+  const authors = people(e.author);
+  const editors = people(e.editor);
+  const who = authors.length ? esc(names(authors)) : editors.length ? t("pubEdited", { names: esc(names(editors)) }) : "";
+  const venue = [e.eventtitle || e.journal || e.booktitle || e.howpublished || e.publisher, e.number && `no. ${e.number}`].filter(Boolean).join(", ");
+  const href = e.doi ? `https://doi.org/${e.doi}` : e.url;
+  const extra = (e.links || "").split(";").map((l) => l.split("|").map((x) => x.trim())).filter((l) => l[1]);
+  const links = [["PDF", e.pdf], ["Video", e.video], ["Slides", e.slides], ...extra].filter((l) => l[1]).map(([label, url]) => `<a href="${esc(url)}">${esc(label)}</a>`).join("");
+  const d = dateOf(e);
+  return `<li><time datetime="${esc(d)}">${dayMonth(d)}</time><div><a class="ptitle" href="${esc(href)}">${esc(e.title)}</a>
+<p class="pmeta">${[esc(venue), who].filter(Boolean).join(" · ")}</p>${e.note ? `<p class="pnote">${esc(e.note)}</p>` : ""}${links ? `<p class="plinks">${links}</p>` : ""}</div></li>`;
+}
+
+// newest year first, newest entry first inside it
+function byYear(entries) {
+  const sorted = [...entries].sort((a, b) => dateOf(b).localeCompare(dateOf(a)));
+  const years = [...new Set(sorted.map((e) => dateOf(e).slice(0, 4)))];
+  return years.map((y) => `<h3 class="year">${y}</h3>\n<ol class="publist">${sorted.filter((e) => dateOf(e).startsWith(y)).map(pubRow).join("\n")}</ol>`).join("\n");
+}
+
+export const PUB_SECTIONS = [["books", "pubBooks", "books-and-papers"], ["talks", "pubTalks", "talks"], ["writing", "pubWriting", "writing"], ["coverage", "pubCoverage", "coverage"]];
+
+export function publicationsPage(sections, posts, collections) {
+  const en = getLang() === "en" ? "" : ' lang="en"';
+  const blog = posts.map((p) => ({ title: p.title, date: p.date, url: u(`blog/${p.slug}/`), author: p.authors.map((a) => `{${a}}`).join(" and "), note: p.summary }));
+  const all = [...(blog.length ? [["blog", "pubBlog", blog]] : []), ...sections.filter((s) => s[2].length)];
+  const body = `<div class="wrap pubs">
+<h1 class="display small">${t("pubTitle")}</h1>
+<p class="lede">${t("pubIntro")}</p>
+<nav class="pubjump" aria-label="${t("pubJump")}">${all.map(([id, key]) => `<a href="#${id}">${t(key)}</a>`).join("")}</nav>
+${all.map(([id, key, list]) => `<section id="${id}" aria-labelledby="${id}-h"><h2 class="sub" id="${id}-h">${t(key)}</h2>${id === "blog" ? `<p class="feed"><a href="${u("blog/feed.xml")}">${t("pubFeed")}</a></p>` : ""}
+<div${en}>${byYear(list)}</div></section>`).join("\n")}
+</div>`;
+  return shell({ title: title(raw("navPublications")), path: "publications/", body, collections });
+}
+
+export function postPage(p, collections) {
+  const url = u(`blog/${p.slug}/`);
+  const cite = `${names(p.authors)}. ${longDate(p.date)}. "${p.title}". ${site()}. ${new URL(url, SITE_URL).href}`;
+  const body = `<div class="wrap prose post">
+<p class="crumbs"><a href="${page("publications/")}">${t("navPublications")}</a> / <a href="${page("publications/")}#blog">${t("pubBlog")}</a></p>
+<article>
+<h1 class="display small">${esc(p.title)}</h1>
+<p class="byline">${p.authors.length ? t("postBy", { names: esc(names(p.authors)) }) + " · " : ""}${when(p.date)}</p>
+${p.html}
+</article>
+${citeBox(cite)}
+</div>`;
+  return shell({ title: title(p.title), path: null, body, collections });
+}
+
+export function feed(posts) {
+  const x = (s) => esc(s).replace(/'/g, "&apos;");
+  const at = (p) => new URL(u(`blog/${p.slug}/`), SITE_URL).href;
+  return `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>${x(site())}</title>
+<id>${new URL(u("blog/"), SITE_URL).href}</id>
+<link href="${new URL(u("publications/"), SITE_URL).href}"/>
+<updated>${posts[0] ? posts[0].date + "T00:00:00Z" : ""}</updated>
+${posts.map((p) => `<entry><title>${x(p.title)}</title><id>${at(p)}</id><link href="${at(p)}"/><updated>${p.date}T00:00:00Z</updated>${p.authors.map((a) => `<author><name>${x(a)}</name></author>`).join("")}<summary>${x(p.summary)}</summary><content type="html">${x(p.html)}</content></entry>`).join("\n")}
+</feed>
+`;
 }

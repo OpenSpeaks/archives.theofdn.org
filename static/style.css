@@ -256,6 +256,31 @@ footer .bar a:hover { text-decoration: underline; }
 .credits { padding-block: 0 2rem; font-size: .85rem; }
 .credits p { margin: 0 0 .4rem; }
 
+/* Publications */
+.pubs { padding-block: 3rem; }
+.pubs .lede { max-width: 68ch; font-size: 1.1rem; }
+.pubjump { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin: 1.5rem 0 0; font-weight: 700; }
+.pubjump a { padding: .25rem 0; }
+.publist { list-style: none; margin: 0; padding: 0; }
+.pubs .year { font: 800 1.1rem/1.2 var(--text); color: var(--orange-ink); margin: 1.6rem 0 0; padding-bottom: .4rem; border-bottom: 2px solid var(--line); }
+.publist li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1.5rem; padding: 1rem 0; border-bottom: 2px solid var(--line); }
+.publist time { font-weight: 700; font-size: .9rem; font-variant-numeric: tabular-nums; padding-top: .15rem; }
+.ptitle { font-weight: 800; font-size: 1.1rem; line-height: 1.35; }
+.publist p { margin: .3rem 0 0; max-width: 68ch; }
+.pmeta { font-size: .95rem; }
+.pnote { font-size: .9rem; }
+.plinks { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; font-size: .9rem; font-weight: 700; }
+.plinks a { color: var(--orange-ink); padding: .15rem 0; }
+.feed { margin: .6rem 0 0; font-size: .9rem; font-weight: 700; }
+.post article { max-width: 68ch; }
+.post .byline { font-weight: 700; margin: 0 0 2rem; }
+.post h2 { font: 800 1.3rem/1.2 var(--text); margin: 2.2rem 0 .5rem; }
+.post h3 { font: 800 1.1rem/1.2 var(--text); margin: 1.8rem 0 .4rem; }
+.post li { font-size: 1.1rem; margin-bottom: .3rem; }
+.post blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 4px solid var(--line); }
+.post figure { margin: 1.5rem 0; }
+.post .cite { max-width: 68ch; margin-top: 3rem; }
+
 @media (max-width: 720px) {
   .two, .item { grid-template-columns: 1fr; }
   .fields div { grid-template-columns: 7rem minmax(0, 1fr); }
@@ -264,6 +289,7 @@ footer .bar a:hover { text-decoration: underline; }
 .chead img { max-width: 20rem; }
   .bar { flex-wrap: wrap; }
   #atlas { height: 60vh; }
+  .publist li { grid-template-columns: 1fr; gap: .25rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }

@@ -124,6 +124,7 @@ footer .ticks { padding-block: 1rem .2rem; }
   font: 700 .75rem/1.4 var(--text);
   display: none;
 }
+.pin-label.left { left: auto; right: 100%; margin: 0 4px 0 0; }
 .near .pin-label, .pin.on .pin-label, .leaflet-marker-icon:hover .pin-label, .leaflet-marker-icon:focus .pin-label { display: block; }
 .leaflet-marker-icon:hover, .leaflet-marker-icon:focus { z-index: 1000 !important; }
 
@@ -160,11 +161,6 @@ footer .ticks { padding-block: 1rem .2rem; }
   font: 800 .9rem/1 var(--text); padding: .55rem .8rem; cursor: pointer;
 }
 .play:hover { background: #000; color: #fff; }
-.away {
-  position: absolute; left: 0; bottom: 0; background: #fff; color: #000;
-  border-top: 2px solid #000; border-right: 2px solid #000; padding: .45rem .7rem;
-  font: 700 .82rem/1.2 var(--text);
-}
 .sound { border: 2px solid var(--line); padding: .7rem; display: grid; gap: .5rem; }
 .sound audio { width: 100%; }
 

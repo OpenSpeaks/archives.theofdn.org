@@ -47,19 +47,23 @@ function texture() {
 }
 
 function drawMap() {
-  var asia = L.latLngBounds([[5, 61], [37.5, 98]]);
+  // South Asia, Afghanistan to Sri Lanka
+  var asia = L.latLngBounds([[5.8, 60.5], [38.5, 97.5]]);
   var map = L.map("atlas", { maxZoom: 12, zoomSnap: .25, maxBounds: asia, maxBoundsViscosity: 1, scrollWheelZoom: false });
   map.fitBounds(asia, { animate: false });
   map.setMinZoom(map.getBoundsZoom(asia));
-  map.setView([22, 81], Math.min(map.getBoundsZoom(asia, true), map.getMinZoom() + 1), { animate: false });
-  map.on("zoomend", function () { map.getContainer().classList.toggle("near", map.getZoom() >= 6); });
+  var start = map.getZoom();
+  map.on("zoomend", function () { map.getContainer().classList.toggle("near", map.getZoom() >= start); });
+  map.getContainer().classList.add("near");
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   places.forEach(function (p) {
     var size = 26 + Math.min(p.items, 8) * 2;
     var label = document.createElement("span");
-    label.className = "pin-label";
+    // label on the left when another language sits just to the east
+    var crowded = places.some(function (q) { return q !== p && q.at[1] > p.at[1] && q.at[1] - p.at[1] < 4 && Math.abs(q.at[0] - p.at[0]) < 1.2; });
+    label.className = "pin-label" + (crowded ? " left" : "");
     label.textContent = p.name;
     var icon = L.divIcon({
       className: "", iconSize: [size, size],

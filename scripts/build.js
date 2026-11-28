@@ -10,6 +10,7 @@ import { createHash } from "node:crypto";
 import { LANGS, setLang, prefix } from "./strings.js";
 import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows, langOf } from "./pages.js";
 import { dataStrings } from "./data-strings.js";
+import { syncStrings } from "./sync-strings.js";
 
 function write(rel, content) {
   const full = join(OUT_DIR, rel);
@@ -33,7 +34,11 @@ rmSync(OUT_DIR, { recursive: true, force: true });
 for (const name of readdirSync(STATIC_DIR)) write(name, readFileSync(join(STATIC_DIR, name)));
 
 // the English names and record text, for translating with Localise
-writeFileSync(join(ROOT, "strings", "data", "en.json"), JSON.stringify(dataStrings(collections), null, 2) + "\n");
+const dataDir = join(ROOT, "strings", "data");
+const oldEn = JSON.parse(readFileSync(join(dataDir, "en.json"), "utf8"));
+const en = dataStrings(collections);
+writeFileSync(join(dataDir, "en.json"), JSON.stringify(en, null, 2) + "\n");
+await syncStrings(dataDir, oldEn, en);
 
 
 // the two-letter folder Commons keeps a file in, from the md5 of its name

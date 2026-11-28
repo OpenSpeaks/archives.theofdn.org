@@ -44,7 +44,7 @@ for (const [lang, strings] of Object.entries(STRINGS)) {
 for (const [lang, names] of Object.entries(DATA)) {
   if (lang === "en") continue;
   const known = DATA.en;
-  for (const key of Object.keys(names)) if (!(key in known)) warnings.push(`strings/data/${lang}.json: "${key}" is no longer in the archive`);
+  for (const key of Object.keys(names)) if (!key.startsWith("@") && !(key in known)) warnings.push(`strings/data/${lang}.json: "${key}" is no longer in the archive`);
 }
 
 const unique = [...new Set(errors)];

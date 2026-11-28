@@ -16,8 +16,10 @@ const site = () => raw("siteName");
 // names and record text in the page language, from strings/data/<code>.json
 const dt = (key, fallback) => (getLang() !== "en" && DATA[getLang()][key]) || fallback;
 export const langOf = (c) => dt(languageKey(c), c.language);
-const placeOf = (p) => dt(`place.${p}`, p);
-const who = (name) => dt(personKey({ name, qid: QIDS.get(name) }), name);
+// each part of a place (village, district, state, country) is translated once
+const placeOf = (p) => String(p || "").split(", ").map((x) => dt(`place.${x}`, x)).join(", ");
+// a translation can sit under the Wikidata id or under the name
+const who = (name) => dt(personKey({ name, qid: QIDS.get(name) }), dt(personKey({ name }), name));
 const varietyOf = (v) => dt(`variety.${v}`, v);
 const projectOf = (p) => dt(`project.${p}`, p);
 function projectLink(p) {
@@ -263,9 +265,8 @@ function player(it) {
   const src = mediaUrl(tm);
   const tracks = it.subtitles.map((s) => ({ src: u(`${it.session.id}/${it.id}.${s.language}.vtt`), lang: s.language.split("-")[0], label: trackLabel(s.language, c) }));
   if (!src) {
-    const handle = (tm.identifiers || []).find((i) => i.prop === "P1184" && i.value?.trim());
     const poster = posterUrl(tm);
-    return `<div class="frame">${poster ? `<img src="${esc(poster)}" alt="" loading="lazy">` : ""}${handle ? `<a class="away" href="https://hdl.handle.net/${esc(handle.value)}">${t("watchAt", { archive: handleArchive(handle.value) })} &rarr;</a>` : ""}</div>`;
+    return `<div class="frame">${poster ? `<img src="${esc(poster)}" alt="" loading="lazy">` : ""}</div>`;
   }
   if (tm.fileType === "audio") return `<div class="sound"><audio controls preload="none" src="${esc(src)}"></audio></div>`;
   return `<div class="frame"><img src="${esc(posterUrl(tm))}" alt="" loading="lazy"><button type="button" class="play" data-src="${esc(src)}" data-tracks="${esc(JSON.stringify(tracks))}">${t("play")}${mins(tm.duration) ? " " + mins(tm.duration) : ""}</button></div>

@@ -1,5 +1,7 @@
 import { plain, peopleOf, projectsOf } from "./records.js";
 
+const placeParts = (p) => String(p || "").split(", ").filter(Boolean);
+
 // Names and record text a translator can work on, written to strings/data/en.json.
 // Keys holding a Wikidata id (person.Q123, language.Q456) can be filled from Wikidata labels.
 export const personKey = (p) => "person." + (p.qid || p.name);
@@ -10,7 +12,7 @@ export function dataStrings(collections) {
   const put = (key, value) => { if (value && !(key in out)) out[key] = String(value); };
   for (const c of collections) {
     put(languageKey(c), c.language);
-    put(`place.${c.place}`, c.place);
+    for (const x of placeParts(c.place)) put(`place.${x}`, x);
     for (const w of c.wordlists) {
       put(`${w.id}.title`, w.title);
       put(`${w.id}.description`, w.description);
@@ -22,7 +24,7 @@ export function dataStrings(collections) {
         put(`${it.id}.title`, plain(t.title));
         put(`${it.id}.description`, plain(t.description));
         for (const p of peopleOf(t)) put(personKey(p), p.name);
-        put(`place.${t.recordingPlace}`, t.recordingPlace);
+        for (const x of placeParts(t.recordingPlace)) put(`place.${x}`, x);
         put(`variety.${t.dialect}`, t.dialect);
         for (const p of projectsOf(t)) put(`project.${p}`, p);
       }

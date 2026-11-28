@@ -104,6 +104,14 @@ const LICENCES = {
 
 const iaIdOf = (t, id) => (t.identifiers || []).find((i) => i.prop === "P724" && i.value?.trim())?.value.trim() || ARK_SHOULDER + id;
 
+// Johari Kumaoni, but Lanjia Sora and Van Gujjari (Gujari) stand alone
+function languageName(t) {
+  const [v, l] = [t.dialect || "", t.language || ""];
+  const flat = (s) => s.toLowerCase().replace(/(.)\1/g, "$1");
+  if (!v || flat(l).includes(flat(v))) return l;
+  return flat(v).endsWith(flat(l)) ? v : `${v} ${l}`;
+}
+
 // IA wants YYYY-MM-DD, records sometimes spell the month out
 function isoDate(s) {
   const d = new Date(s + " UTC");
@@ -132,10 +140,10 @@ function iaMetadata(t, id) {
     mediatype: video ? "movies" : "audio",
     collection: video ? "opensource_movies" : "opensource_audio",
     // OpenSpeaks Archives: Juang (jun) First1 Last1 - Short introduction
-    title: `OpenSpeaks Archives: ${t.language} (${isoOf(t) || id.slice(0, 3)}) ${speakers.join(", ")}${speakers.length ? " - " : ""}${t.title}`,
+    title: `OpenSpeaks Archives: ${languageName(t)} (${isoOf(t) || id.slice(0, 3)}) ${speakers.join(", ")}${speakers.length ? " - " : ""}${t.title}`,
     description: [plain(t.description), `Published by OpenSpeaks Archives: ${arkUrl(id)}.${licence ? ` Licence: ${licence}.` : ""}`].filter(Boolean).join("\n\n"),
     date: isoDate(t.date) || t.year,
-    language: t.language,
+    language: [t.language, t.dialect].filter(Boolean),
     subject: [...new Set([t.language, t.dialect, ...projectsOf(t), "OpenSpeaks Archives", ...(t.keywords || [])].filter(Boolean))],
     coverage: t.country && !(t.recordingPlace || "").endsWith(t.country) ? [t.recordingPlace, t.country].filter(Boolean).join(", ") : t.recordingPlace,
     creator: creators,

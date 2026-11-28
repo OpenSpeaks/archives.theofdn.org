@@ -111,8 +111,8 @@ function credits(people, recordists, photos, subtitlersList = []) {
   return `<section class="credits-page"><h2>${t("creditsTitle")}</h2>
 <p>${t("creditsPeople", { names: esc(names(people.map(who))) })}</p>
 ${recordists.length ? `<p>${t("creditsRecorded", { names: esc(names(recordists.map(who))) })}</p>` : ""}
-${subtitlersList.length ? `<p>${t("creditsSubtitles", { names: esc(names(subtitlersList)) })}</p>` : ""}
-${pics.length ? `<p>${t("creditsPhotos", { list: pics.map((p) => t("creditsPhoto", { of: esc(p.of), by: esc(p.by) })).join("; ") })}</p>` : ""}
+${subtitlersList.length ? `<p>${t("creditsSubtitles", { names: esc(names(subtitlersList.map(who))) })}</p>` : ""}
+${pics.length ? `<p>${t("creditsPhotos", { list: pics.map((p) => t("creditsPhoto", { of: esc(p.of), by: esc(p.by.split(" / ").map(who).join(" / ")) })).join("; ") })}</p>` : ""}
 </section>`;
 }
 

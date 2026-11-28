@@ -17,14 +17,16 @@ export function dataStrings(collections) {
     for (const w of c.wordlists) {
       put(`${w.id}.title`, w.title);
       put(`${w.id}.description`, w.description);
-      put(personKey({ name: w.speaker }), w.speaker);
+      for (const name of [w.speaker, w.recordist].filter(Boolean)) put(personKey({ name }), name);
     }
+    for (const p of [c.cover, ...c.sessions.map((s) => s.portrait)]) for (const name of String(p?.by || "").split(" / ").filter(Boolean)) put(personKey({ name }), name);
     for (const s of c.sessions) {
       for (const it of s.items) {
         const t = it.tome;
         put(`${it.id}.title`, plain(t.title));
         put(`${it.id}.description`, plain(t.description));
         for (const p of peopleOf(t)) put(personKey(p), p.name);
+        for (const name of [t.recordist, t.editor].filter(Boolean)) put(personKey({ name }), name);
         for (const x of placeParts(t.recordingPlace)) put(`place.${x}`, x);
         put(`variety.${t.dialect}`, t.dialect);
         for (const p of projectsOf(t)) put(`project.${p}`, p);

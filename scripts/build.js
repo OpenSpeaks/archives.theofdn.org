@@ -11,6 +11,7 @@ import { LANGS, setLang, prefix } from "./strings.js";
 import { home, collectionPage, sessionPage, wordlistPage, aboutPage, dataPage, arkPage, csvRows, langOf } from "./pages.js";
 import { dataStrings } from "./data-strings.js";
 import { syncStrings } from "./sync-strings.js";
+import { applyEnEdits } from "./en-edits.js";
 
 function write(rel, content) {
   const full = join(OUT_DIR, rel);
@@ -23,6 +24,7 @@ function toVtt(srt) {
   return "WEBVTT\n\n" + srt.replace(/\r/g, "").replace(/(\d\d:\d\d:\d\d),(\d\d\d)/g, "$1.$2");
 }
 
+const oldEn = applyEnEdits(ROOT, DATA_DIR);
 const { collections: all, items, errors } = load(DATA_DIR);
 if (errors.length) {
   console.error(errors.join("\n"));
@@ -35,7 +37,6 @@ for (const name of readdirSync(STATIC_DIR)) write(name, readFileSync(join(STATIC
 
 // the English names and record text, for translating with Localise
 const dataDir = join(ROOT, "strings", "data");
-const oldEn = JSON.parse(readFileSync(join(dataDir, "en.json"), "utf8"));
 const en = dataStrings(collections);
 writeFileSync(join(dataDir, "en.json"), JSON.stringify(en, null, 2) + "\n");
 await syncStrings(dataDir, oldEn, en);

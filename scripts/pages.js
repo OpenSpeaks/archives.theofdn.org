@@ -32,6 +32,28 @@ const inLang = (list) => (list || []).find((x) => x.langCode === getLang() && x.
 const titleOf = (it) => plain((getLang() !== "en" && inLang(it.tome.extraTitles)) || dt(`${it.id}.title`, it.tome.title));
 const descOf = (it) => plain((getLang() !== "en" && inLang(it.tome.extraDescriptions)) || dt(`${it.id}.description`, it.tome.description));
 
+// every language the item's title or description is written in, English first
+function versions(it) {
+  const tm = it.tome;
+  const own = (list, code) => (list || []).find((x) => x.langCode === code && x.text)?.text;
+  const data = (code, f) => code !== "en" && DATA[code]?.[`${it.id}.${f}`];
+  const codes = new Set(["en", ...[...(tm.extraTitles || []), ...(tm.extraDescriptions || [])].filter((x) => x.text).map((x) => x.langCode)]);
+  for (const l of LANGS) if (data(l, "title") || data(l, "description")) codes.add(l);
+  const rank = (code) => (code === "en" ? 0 : code === it.session.collection.iso ? 1 : 2);
+  return [...codes].sort((a, b) => rank(a) - rank(b)).map((code) => {
+    const title = own(tm.extraTitles, code) || data(code, "title");
+    const desc = own(tm.extraDescriptions, code) || data(code, "description");
+    return { code, title: plain(title || tm.title), titleLang: title ? code : "en", desc: plain(desc || tm.description || ""), descLang: desc ? code : "en" };
+  });
+}
+
+function versionName(code, c) {
+  const name = code === c.iso ? dt(languageKey(c), c.language) : displayName("language", code) || code;
+  let self;
+  try { self = new Intl.DisplayNames([code], { type: "language", fallback: "none" }).of(code); } catch {}
+  return self && self !== name ? `${name} (${self})` : name;
+}
+
 const displayNames = {};
 function displayName(type, code) {
   const key = getLang() + type;
@@ -307,8 +329,13 @@ function itemSection(it) {
     ...(mediaUrl(tm) ? [{ id: `${it.id}/${ext}`, name: `${it.id}.${ext}`, what: t(tm.fileType === "audio" ? "sound" : "video"), href: mediaUrl(tm) }] : []),
     ...it.subtitles.map((x) => ({ id: `${it.id}/${x.language}/srt`, name: `${it.id}.${x.language}.srt`, what: subtitleWhat(x), href: u(`${s.id}/${it.id}.${x.language}.srt`) })),
   ];
+  const vs = versions(it);
+  const now = vs.some((v) => v.code === getLang() && (v.titleLang === v.code || v.descLang === v.code)) ? getLang() : "en";
+  const each = (field, lang) => vs.map((v) => `<span lang="${v[lang]}" data-v="${v.code}"${v.code === now ? "" : " hidden"}>${esc(v[field])}</span>`).join("");
+  const picker = vs.length > 1 ? `<label class="textlang" hidden>${t("textIn")} <select>${vs.map((v) => `<option value="${v.code}"${v.code === now ? " selected" : ""}>${esc(versionName(v.code, c))}</option>`).join("")}</select></label>` : "";
   return `<article class="item" id="${it.id}"><div class="item-play">${player(it)}</div>
-<div class="item-meta"><h3>${esc(titleOf(it))}</h3>
+<div class="item-meta"><h3>${vs.length > 1 ? each("title", "titleLang") : esc(titleOf(it))}</h3>
+${picker}
 ${pid(it.id)}
 ${fields([
   ["fieldPartOf", `${t("session", { n: s.n })}, <code>${esc(arkName(s.id))}</code>`],
@@ -327,7 +354,7 @@ ${fields([
   ["fieldDeposited", deposits(it)],
   ["fieldMetadata", `<a href="${u(`${s.id}/${it.id}.json`)}">${t("tomeRecord")}</a><br><a href="${u(`${s.id}/${it.id}.dc.xml`)}">${t("dublinCore")}</a>`],
 ])}
-${tm.description ? `<p class="desc">${esc(descOf(it))}</p>` : ""}
+${tm.description ? `<p class="desc">${vs.length > 1 ? each("desc", "descLang") : esc(descOf(it))}</p>` : ""}
 <h4>${t("files")}</h4>
 <ul class="filelist">${files.map((f) => `<li><span class="fname">${esc(f.name)}</span><span class="fmeta">${f.what}</span>${pid(f.id)}<a class="get" href="${esc(f.href)}">${t("download")}</a></li>`).join("")}</ul>
 ${citeBox(cite)}

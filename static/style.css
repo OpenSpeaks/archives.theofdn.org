@@ -190,6 +190,9 @@ footer .ticks { padding-block: 1rem .2rem; }
 .item-meta .fields { margin: 0; }
 .item h3 { font: 800 1.4rem/1.15 var(--display); letter-spacing: -.02em; margin: 0; }
 .desc { margin: 0; max-width: 68ch; }
+.textlang { font: 600 .9rem/1.2 var(--text); gap: .5rem; display: flex; align-items: center; }
+.textlang[hidden] { display: none; }
+.textlang select { font: inherit; color: var(--ink); background: var(--page); border: 2px solid var(--line); padding: .3rem .5rem; min-height: 32px; }
 .credits-page { margin-top: 3rem; padding-top: 1rem; border-top: 4px solid var(--line); font-size: .9rem; }
 .credits-page h2 { font: 800 1.1rem/1.2 var(--text); margin: 0 0 .5rem; }
 .prose h2 { font: 800 1.1rem/1.2 var(--text); margin: 2rem 0 .5rem; }

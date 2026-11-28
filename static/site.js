@@ -238,6 +238,16 @@ function wordlist(box) {
 }
 
 var sized;
+// title and description in another language
+document.querySelectorAll(".textlang").forEach(function (label) {
+  var item = label.closest(".item");
+  label.hidden = false;
+  label.querySelector("select").addEventListener("change", function () {
+    var code = this.value;
+    item.querySelectorAll("[data-v]").forEach(function (el) { el.hidden = el.getAttribute("data-v") !== code; });
+  });
+});
+
 window.addEventListener("resize", function () {
   clearTimeout(sized);
   sized = setTimeout(texture, 300);

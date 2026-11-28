@@ -2,7 +2,7 @@
   "_version": "1.7",
   "fileName": "OpenSpeaks-rnp-Bimla-Badwal K.S. Badwal-Nostalgic Past.webm",
   "fileType": "video",
-  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/OpenSpeaks-rnp-Bimla-Badwal_K.S._Badwal-Nostalgic_Past.webm",
+  "fileUrl": "https://archive.org/download/osa-rnp001/rnp001.mp4",
   "format": "WebM",
   "duration": "378",
   "title": "Nostalgic past",
@@ -28,7 +28,13 @@
   ],
   "license": "cc-by-sa-4.0",
   "onCommons": true,
-  "identifiers": [],
+  "identifiers": [
+    {
+      "prop": "P724",
+      "label": "Internet Archive ID",
+      "value": "osa-rnp001"
+    }
+  ],
   "firstPublishedTitle": "Nostalgic Past",
   "firstPublishedBy": "OpenSpeaks Archives",
   "firstPublishedByUrl": "https://theofdn.org/openspeaks/",

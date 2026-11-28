@@ -28,7 +28,13 @@
   ],
   "license": "cc-by-sa-4.0",
   "onCommons": true,
-  "identifiers": [],
+  "identifiers": [
+    {
+      "prop": "P724",
+      "label": "Internet Archive ID",
+      "value": "osa-pcj001"
+    }
+  ],
   "firstPublishedTitle": "Use of Gorum Language",
   "firstPublishedBy": "OpenSpeaks Archives",
   "firstPublishedByUrl": "https://theofdn.org/openspeaks/",

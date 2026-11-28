@@ -2,7 +2,7 @@
   "_version": "1.7",
   "fileName": "OpenSpeaks-kfy-Johari-Surendra Singh Pangtey-Subhashish Panigrahi-Introduction.webm",
   "fileType": "video",
-  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/OpenSpeaks-kfy-Johari-Surendra_Singh_Pangtey-Subhashish_Panigrahi-Introduction.webm",
+  "fileUrl": "https://archive.org/download/osa-kfy001/kfy001.mp4",
   "format": "WebM",
   "duration": "25",
   "title": "Introduction",
@@ -24,7 +24,13 @@
   ],
   "license": "cc-by-sa-4.0",
   "onCommons": true,
-  "identifiers": [],
+  "identifiers": [
+    {
+      "prop": "P724",
+      "label": "Internet Archive ID",
+      "value": "osa-kfy001"
+    }
+  ],
   "firstPublishedTitle": "Introduction",
   "firstPublishedBy": "OpenSpeaks Archives",
   "firstPublishedByUrl": "https://theofdn.org/openspeaks/",

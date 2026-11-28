@@ -104,6 +104,12 @@ const LICENCES = {
 
 const iaIdOf = (t, id) => (t.identifiers || []).find((i) => i.prop === "P724" && i.value?.trim())?.value.trim() || ARK_SHOULDER + id;
 
+// IA wants YYYY-MM-DD, records sometimes spell the month out
+function isoDate(s) {
+  const d = new Date(s + " UTC");
+  return s && !isNaN(d) ? d.toISOString().slice(0, 10) : s;
+}
+
 function iaMetadata(t, id) {
   const people = peopleOf(t);
   const creators = people.filter((p) => p.roles.some((r) => ROLE_CREATOR.includes(r))).map((p) => p.name);
@@ -116,6 +122,7 @@ function iaMetadata(t, id) {
     for (const r of m[2].split(/,\s*/)) roles.get(name).add(r.trim().toLowerCase());
   }
   const contributors = [...roles].map(([name, set]) => [name, [...set].filter((r) => r !== "credited" && !ROLE_CREATOR.includes(r))]).filter(([, r]) => r.length).map(([name, r]) => `${name} (${r.join(", ")})`);
+  const speakers = people.filter((p) => p.roles.some((r) => ROLE_CREATOR.includes(r) && r !== "copyright")).map((p) => p.name);
   const holders = people.filter((p) => p.roles.includes("copyright")).map((p) => p.name);
   const [licence, licenceUrl] = LICENCES[t.license] || [];
   const year = String(t.date || t.year || "").slice(0, 4);
@@ -124,12 +131,13 @@ function iaMetadata(t, id) {
   const md = {
     mediatype: video ? "movies" : "audio",
     collection: video ? "opensource_movies" : "opensource_audio",
-    title: t.title,
+    // OpenSpeaks Archives: Juang (jun) First1 Last1 - Short introduction
+    title: `OpenSpeaks Archives: ${t.language} (${isoOf(t) || id.slice(0, 3)}) ${speakers.join(", ")}${speakers.length ? " - " : ""}${t.title}`,
     description: [plain(t.description), `Published by OpenSpeaks Archives: ${arkUrl(id)}.${licence ? ` Licence: ${licence}.` : ""}`].filter(Boolean).join("\n\n"),
-    date: t.date || t.year,
+    date: isoDate(t.date) || t.year,
     language: t.language,
     subject: [...new Set([t.language, t.dialect, ...projectsOf(t), "OpenSpeaks Archives", ...(t.keywords || [])].filter(Boolean))],
-    coverage: [t.recordingPlace, t.country].filter(Boolean).join(", "),
+    coverage: t.country && !(t.recordingPlace || "").endsWith(t.country) ? [t.recordingPlace, t.country].filter(Boolean).join(", ") : t.recordingPlace,
     creator: creators,
     contributor: contributors,
     rights: holders.length && licence ? `© ${year ? year + " " : ""}${holders.join(", ")}. Licence: ${licence}` : "",

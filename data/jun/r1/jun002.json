@@ -2,7 +2,7 @@
   "_version": "1.7",
   "fileName": "OpenSpeaks-jun-Juang-Kshetrabasi Juanga-OG-Short Introduction 02.webm",
   "fileType": "video",
-  "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/OpenSpeaks-jun-Juang-Kshetrabasi_Juanga-OG-Short_Introduction_02.webm",
+  "fileUrl": "https://archive.org/download/osa-jun002/jun002.mp4",
   "format": "WebM",
   "duration": "46",
   "title": "Short introduction 02",
@@ -28,7 +28,13 @@
   ],
   "license": "cc-by-sa-4.0",
   "onCommons": true,
-  "identifiers": [],
+  "identifiers": [
+    {
+      "prop": "P724",
+      "label": "Internet Archive ID",
+      "value": "osa-jun002"
+    }
+  ],
   "firstPublishedTitle": "Short Introduction 02",
   "firstPublishedBy": "OpenSpeaks Archives",
   "firstPublishedByUrl": "https://theofdn.org/openspeaks/",

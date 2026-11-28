@@ -5,7 +5,7 @@
   "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/OpenSpeaks-sci-Sri_Lanka_Malay-Sejahan_Buckman-SP-Roots_and_Language_of_Sri_Lankan_Malays_02.webm",
   "format": "WebM",
   "duration": "59",
-  "title": "Roots and Language of Sri Lankan Malays 02",
+  "title": "Roots and language of Sri Lankan Malays 02",
   "description": "Sajehan Buckman, a Sri Lanka Malay speaker, talks about the roots and language of the Sri Lanka Malays.",
   "year": "",
   "date": "",
@@ -24,7 +24,13 @@
   ],
   "license": "cc-by-sa-4.0",
   "onCommons": true,
-  "identifiers": [],
+  "identifiers": [
+    {
+      "prop": "P724",
+      "label": "Internet Archive ID",
+      "value": "osa-sci002"
+    }
+  ],
   "firstPublishedTitle": "Roots and Language of Sri Lankan Malays 02",
   "firstPublishedBy": "OpenSpeaks Archives",
   "firstPublishedByUrl": "https://theofdn.org/openspeaks/",

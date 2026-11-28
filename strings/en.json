@@ -113,7 +113,7 @@
   "next": "Next",
 
   "aboutTitle": "about",
-  "aboutIntro": "OpenSpeaks Archives is a public digital archive supporting community-led audio-visual documentation of mother tongues and local languages. It contributes to Wikimedia projects, communities, and the open knowledge movement. It currently lists recordings in {n} languages.",
+  "aboutIntro": "OpenSpeaks Archives is a public digital archive for community-led audio-visual documentation of mother tongues and local languages from South Asia. Communities own the knowledge kept in this archive and own a copy of their recording. The archive also deposits to various other archives and contributes to Wikimedia projects and communities, and the open knowledge movement. It currently lists recordings in {n} languages.",
   "aboutArrangedTitle": "How the archive is arranged",
   "aboutArranged": "Each language has a collection, and a collection holds recording sessions. A session is one sitting with a speaker or a group. Each video or sound recording in it is an item, with its subtitles and other files. Some collections also hold word lists of pronunciation recordings.",
   "aboutCounts": "The archive has {sessions} sessions with {items} items, {subtitles} subtitle files and {words} recorded words.",

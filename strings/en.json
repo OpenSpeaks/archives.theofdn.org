@@ -13,7 +13,8 @@
   "footTools": "Tools",
   "guideFramework": "Oral Knowledge Framework",
   "guideStyle": "Text Style Guide",
-  "footNote": "© {year} {site}. Website by {host}.",
+  "footNote": "© {year} {site}. Website by {host}. Content under {cc} unless noted otherwise. {code} under the Anti-Capitalist Software License.",
+  "siteCode": "Site code",
   "hostName": "O Foundation",
 
   "homeTitle": "voices in {n} languages, from the people who speak them.",

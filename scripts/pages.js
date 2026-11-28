@@ -184,7 +184,7 @@ ${body}
     <svg class="logo" viewBox="-4 -1 96 96" role="img" aria-label="OpenSpeaks"><path d="M46.92,3.92C23.22,4.05,3.79,23.35,3.79,47.18c0,9.71,3.25,19.13,9.28,26.79L-.39,86.14c-1.69,1.52-.6,4.31,1.66,4.31h45.65c23.84,0,43.13-19.26,43.26-43.13,0-11.47-4.41-22.34-12.66-30.6-8.09-8.22-19-12.66-30.6-12.79ZM46.92,83.81h-.13l-34.74-.13,10.31-9.28-2.22-2.49c-6.17-6.76-9.71-15.61-9.71-24.86,0-20.02,16.48-36.33,36.5-36.33,9.85,0,19,3.81,25.89,10.74,6.93,6.93,10.74,16.18,10.61,25.89.12,20.15-16.36,36.46-36.51,36.46Z"/><circle cx="34.12" cy="48.15" r="3.51"/><circle cx="45.63" cy="48.15" r="3.51"/><circle cx="57.13" cy="48.15" r="3.51"/></svg>
     <span class="count">${pad(at + 1)}/${pad(collections.length)}</span>
   </div>
-  <div class="wrap credits"><p>${t("footNote", { year: new Date().getFullYear(), site: esc(site()), host: t("hostName") })}</p></div>
+  <div class="wrap credits"><p>${t("footNote", { year: new Date().getFullYear(), site: esc(site()), host: t("hostName"), cc: `<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>`, code: `<a href="https://github.com/OpenSpeaks/archives.theofdn.org/blob/main/LICENSE">${t("siteCode")}</a>` })}</p></div>
 </footer>
 <script>var STRINGS = ${JSON.stringify(strings).replace(/</g, "\\u003c")};</script>
 ${script}<script src="${u("site.js")}"></script>
